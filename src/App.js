@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
 import TopBar from './components/TopBar';
+import ProfitChart from './components/ProfitChart';
 
 function App() {
   return (
     <div className="App">
       <TopBar />
       <div className="content">
-        <h1>Welcome to Trade FE</h1>
-        <p>Your awesome trading platform</p>
+        <h1>Trading Bots Performance</h1>
+        <div className="chart-container">
+          <ProfitChart />
+        </div>
       </div>
     </div>
   );
