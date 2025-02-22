@@ -35,17 +35,17 @@ function BotCard({ bot }) {
           <div className={`stat-value ${isProfit ? 'profit' : 'loss'}`}>
             {isProfit ? '+' : ''}{performance}%
           </div>
-          <div className="stat-label">Performance</div>
+          <div className="stat-label">Lợi nhuận</div>
         </div>
         <div>
           <div className="stat-value">{trades}</div>
-          <div className="stat-label">Total Trades</div>
+          <div className="stat-label">Tổng giao dịch</div>
         </div>
         <div>
           <div className="stat-value" style={{ color: getStatusColor() }}>
             {winRate}
           </div>
-          <div className="stat-label">Win Rate</div>
+          <div className="stat-label">Tỷ lệ thắng</div>
         </div>
       </div>
     </div>

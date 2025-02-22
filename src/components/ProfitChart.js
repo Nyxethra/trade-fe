@@ -3,133 +3,132 @@ import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
-  Legend,
+  Legend
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 // Đăng ký các components cần thiết
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
   Legend
 );
 
-function ProfitChart({ botsData }) {
-  const options = {
-    responsive: true,
-    maintainAspectRatio: false,
-    animation: {
-      duration: 1500,
-      easing: 'easeInOutQuart',
-    },
-    plugins: {
-      legend: {
-        display: false
-      },
-      title: {
-        display: false
-      },
-      tooltip: {
-        backgroundColor: 'rgba(255, 255, 255, 0.9)',
-        titleColor: '#2c3e50',
-        bodyColor: '#2c3e50',
-        titleFont: {
-          size: 14,
-          weight: 'bold'
-        },
-        bodyFont: {
-          size: 13
-        },
-        padding: 12,
-        borderColor: 'rgba(0, 0, 0, 0.1)',
-        borderWidth: 1,
-        displayColors: true,
-        callbacks: {
-          title: function(context) {
-            const bot = botsData[context[0].dataIndex];
-            return `${bot.name} (${bot.type})`;
-          },
-          label: function(context) {
-            const value = context.raw;
-            const type = value >= 0 ? 'Profit' : 'Loss';
-            return `${type}: ${value > 0 ? '+' : ''}${value}%`;
-          }
-        }
-      }
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-        grid: {
-          color: (context) => {
-            if (context.tick.value === 0) {
-              return '#666';
-            }
-            return '#e5e5e5';
-          },
-          lineWidth: (context) => {
-            if (context.tick.value === 0) {
-              return 2;
-            }
-            return 0.5;
-          },
-        },
-        ticks: {
-          callback: function(value) {
-            return value + '%';
-          },
-          font: {
-            family: "'Segoe UI', 'Roboto', sans-serif",
-            size: 12
-          },
-          color: '#666'
-        }
-      },
-      x: {
-        grid: {
-          display: false
-        },
-        ticks: {
-          font: {
-            family: "'Segoe UI', 'Roboto', sans-serif",
-            size: 12,
-            weight: '500'
-          },
-          color: '#666'
-        }
-      }
-    },
-    barPercentage: 0.8,
-    categoryPercentage: 0.9
+const ProfitChart = ({ botsData, timeRange }) => {
+  // Lọc dữ liệu theo khoảng thời gian
+  const filterDataByTimeRange = (bot) => {
+    const startDate = new Date(timeRange.startDate);
+    const endDate = new Date(timeRange.endDate);
+    
+    return bot.dailyData.filter(day => {
+      const date = new Date(day.timestamp);
+      return date >= startDate && date <= endDate;
+    });
   };
 
+  // Tổng hợp dữ liệu của tất cả bot theo ngày
+  const aggregateDataByDate = () => {
+    const dateMap = new Map();
+
+    botsData.forEach(bot => {
+      const filteredData = filterDataByTimeRange(bot);
+      filteredData.forEach(day => {
+        const date = new Date(day.timestamp).toISOString().split('T')[0];
+        if (!dateMap.has(date)) {
+          dateMap.set(date, {
+            totalPerformance: 0,
+            count: 0
+          });
+        }
+        const data = dateMap.get(date);
+        data.totalPerformance += day.performance;
+        data.count += 1;
+      });
+    });
+
+    // Chuyển đổi Map thành mảng và sắp xếp theo ngày
+    return Array.from(dateMap.entries())
+      .map(([date, data]) => ({
+        date,
+        averagePerformance: data.totalPerformance / data.count
+      }))
+      .sort((a, b) => new Date(a.date) - new Date(b.date));
+  };
+
+  const aggregatedData = aggregateDataByDate();
+
   const data = {
-    labels: botsData.map(bot => bot.name),
+    labels: aggregatedData.map(item => 
+      new Date(item.date).toLocaleDateString('vi-VN', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      })
+    ),
     datasets: [
       {
-        data: botsData.map(bot => bot.performance),
-        backgroundColor: botsData.map(bot => 
-          `${bot.colorCode}${bot.performance >= 0 ? 'cc' : '66'}`
-        ),
-        borderColor: botsData.map(bot => bot.colorCode),
-        borderWidth: 2,
-        borderRadius: 4,
-        hoverBackgroundColor: botsData.map(bot => 
-          `${bot.colorCode}${bot.performance >= 0 ? 'dd' : '88'}`
-        ),
-        hoverBorderColor: botsData.map(bot => bot.colorCode),
-        hoverBorderWidth: 3
+        label: 'Lợi nhuận trung bình',
+        data: aggregatedData.map(item => item.averagePerformance),
+        borderColor: 'rgb(75, 192, 192)',
+        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+        tension: 0.1,
+        fill: true
       }
     ]
   };
 
-  return <Bar options={options} data={data} />;
-}
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Biểu đồ lợi nhuận theo thời gian'
+      },
+      tooltip: {
+        callbacks: {
+          label: (context) => `Lợi nhuận: ${context.parsed.y.toFixed(2)}%`
+        }
+      }
+    },
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Thời gian'
+        },
+        ticks: {
+          maxRotation: 45,
+          minRotation: 45
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Lợi nhuận (%)'
+        },
+        suggestedMin: -10,
+        suggestedMax: 10
+      }
+    }
+  };
+
+  return (
+    <div className="chart-container">
+      <Line data={data} options={options} />
+    </div>
+  );
+};
 
 export default ProfitChart; 
