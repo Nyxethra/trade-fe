@@ -79,27 +79,33 @@
 
 .main-boxes {
   display: flex;
-  gap: 24px;
   flex-direction: column;
   flex: 1;
   width: 100%;
-}
-
-.box {
   background: var(--color-card);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(59, 130, 246, 0.1);
   border-radius: 16px;
-  padding: 24px;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
-  height: fit-content;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-.box:hover {
+.main-boxes:hover {
   box-shadow: var(--shadow-md);
+}
+
+.dashboard-section {
+  padding: 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dashboard-section:last-child {
+  border-bottom: none;
+}
+
+.box {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .box-empty {
@@ -112,7 +118,7 @@
 }
 
 .header-section {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .header-section h1 {
@@ -125,6 +131,7 @@
 .subtitle {
   color: var(--color-text-secondary);
   margin: 0;
+  margin-bottom: 24px;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -516,5 +523,144 @@
   .bot-stats {
     grid-template-columns: repeat(3, 1fr);
     font-size: 0.9rem;
+  }
+}
+
+/* Weekly Stats Styles */
+.weekly-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weekly-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.weekly-item {
+  background: var(--color-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.weekly-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.weekly-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weekly-label {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.day-performance {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.weekly-chart {
+  background: var(--color-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  height: 300px;
+}
+
+.daily-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.day-label {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.bar-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  width: 40px;
+}
+
+.profit-bar {
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.profit-bar.positive {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.profit-bar.negative {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.profit-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.profit-bar.positive .profit-label {
+  bottom: calc(100% + 4px);
+}
+
+.profit-bar.negative .profit-label {
+  top: calc(100% + 4px);
+}
+
+@media screen and (max-width: 1200px) {
+  .weekly-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .weekly-summary {
+    grid-template-columns: 1fr;
   }
 }

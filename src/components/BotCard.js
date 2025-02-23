@@ -1,13 +1,13 @@
 import React from 'react';
 import { BOT_COLORS, COLORS } from '../constants/colors';
 
-function BotCard({ bot, index, isHighlighted }) {
+function BotCard({ bot, index, isHighlighted, type = 'daily' }) {
   // Lấy màu tương ứng với bot
   const botColor = BOT_COLORS[index % BOT_COLORS.length];
   
   return (
     <div 
-      id={`bot-${bot.name}`}
+      id={`bot-${type}-${bot.name}`}
       className={`bot-card ${isHighlighted ? 'highlighted' : ''}`}
       style={{ '--bot-color': botColor }}
     >

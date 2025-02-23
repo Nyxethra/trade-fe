@@ -21,7 +21,7 @@ ChartJS.register(
   Legend
 );
 
-function ProfitChart({ botsData, onBotHover }) {
+function ProfitChart({ botsData, onBotHover, type = 'daily' }) {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -97,7 +97,7 @@ function ProfitChart({ botsData, onBotHover }) {
         const botName = botsData[elements[0].index].name;
         onBotHover(botName);
         
-        const botCard = document.getElementById(`bot-${botName}`);
+        const botCard = document.getElementById(`bot-${type}-${botName}`);
         if (botCard) {
           botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }

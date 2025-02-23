@@ -4,6 +4,7 @@ import TopBar from './components/TopBar';
 import ProfitChart from './components/ProfitChart';
 import BotCard from './components/BotCard';
 import StatsSummary from './components/StatsSummary';
+import WeeklyStatsSummary from './components/WeeklyStatsSummary';
 import { botsData } from './mocks/botsData';
 
 function App() {
@@ -59,12 +60,70 @@ function App() {
     };
   });
 
+  // Prepare weekly data
+  const weeklyData = Array.from({ length: 7 }).map((_, index) => ({
+    date: botsData[0].daily_stats[index].date,
+    bots: botsData.map(bot => ({
+      name: bot.name,
+      performance: bot.daily_stats[index].profit_percent
+    }))
+  }));
+
+  // Calculate weekly metrics for each bot
+  const weeklyBotsData = botsData.map(bot => {
+    const weeklyStats = bot.daily_stats.slice(0, 7);
+    
+    // Calculate average daily performance
+    const avgPerformance = (weeklyStats.reduce((sum, day) => sum + day.profit_percent, 0) / 7).toFixed(1);
+    const avgWinRate = (weeklyStats.reduce((sum, day) => sum + day.winrate, 0) / 7).toFixed(2);
+    const totalNetProfit = weeklyStats.reduce((sum, day) => sum + day.net_profit, 0);
+    
+    return {
+      id: bot.name,
+      name: bot.name,
+      performance: avgPerformance,
+      winRate: `${avgWinRate}%`,
+      balance: weeklyStats[0].balance,
+      netProfit: totalNetProfit
+    };
+  });
+
+  // Calculate weekly summary metrics
+  const weeklyNetProfit = botsData.reduce((sum, bot) => {
+    const weeklyStats = bot.daily_stats.slice(0, 7);
+    return sum + weeklyStats.reduce((daySum, day) => daySum + day.net_profit, 0);
+  }, 0);
+  
+  const topWeeklyPerformer = weeklyBotsData.reduce((best, current) => 
+    parseFloat(current.performance) > parseFloat(best.performance) ? current : best
+  );
+  const bottomWeeklyPerformer = weeklyBotsData.reduce((worst, current) => 
+    parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst
+  );
+
+  // Calculate average profitable bots per day
+  const profitableBotsPerDay = weeklyData.map(day => 
+    day.bots.filter(bot => bot.performance > 0).length
+  );
+  const avgProfitableBotsPerDay = Math.round(
+    profitableBotsPerDay.reduce((sum, count) => sum + count, 0) / 7
+  );
+
+  // Format date helper
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
   return (
     <div className="App">
       <TopBar />
       <div className="content">
         <div className="main-boxes">
-          <div className="box">
+          <div className="dashboard-section">
             <div className="header-section">
               <div>
                 <h1>Daily Trading Summary</h1>
@@ -89,6 +148,7 @@ function App() {
                 <ProfitChart 
                   botsData={latestBotsData} 
                   onBotHover={setHoveredBot}
+                  type="daily"
                 />
               </div>
               <div className="bots-list">
@@ -98,13 +158,50 @@ function App() {
                     bot={bot} 
                     index={index}
                     isHighlighted={hoveredBot === bot.name}
+                    type="daily"
                   />
                 ))}
               </div>
             </div>
           </div>
-          <div className="box box-empty">
-            Box 2 - Coming Soon
+          <div className="dashboard-section">
+            <div className="header-section">
+              <div>
+                <h1>Weekly Performance Analysis</h1>
+                <p className="subtitle">
+                  Last 7 days overview • {new Date(weeklyData[6].date).toLocaleDateString('vi-VN')} - {new Date(weeklyData[0].date).toLocaleDateString('vi-VN')}
+                </p>
+              </div>
+              <WeeklyStatsSummary 
+                weeklyNetProfit={weeklyNetProfit}
+                topPerformer={topWeeklyPerformer.name}
+                topPerformanceValue={topWeeklyPerformer.performance}
+                bottomPerformer={bottomWeeklyPerformer.name}
+                bottomPerformanceValue={bottomWeeklyPerformer.performance}
+                profitableBots={avgProfitableBotsPerDay}
+                totalBots={botsData.length}
+              />
+            </div>
+            <div className="dashboard-container">
+              <div className="chart-section">
+                <ProfitChart 
+                  botsData={weeklyBotsData} 
+                  onBotHover={setHoveredBot}
+                  type="weekly"
+                />
+              </div>
+              <div className="bots-list">
+                {weeklyBotsData.map((bot, index) => (
+                  <BotCard 
+                    key={bot.id} 
+                    bot={bot} 
+                    index={index}
+                    isHighlighted={hoveredBot === bot.name}
+                    type="weekly"
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
