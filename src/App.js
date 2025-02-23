@@ -5,6 +5,7 @@ import ProfitChart from './components/ProfitChart';
 import BotCard from './components/BotCard';
 import StatsSummary from './components/StatsSummary';
 import WeeklyStatsSummary from './components/WeeklyStatsSummary';
+import QuickOverview from './components/QuickOverview';
 import { botsData } from './mocks/botsData';
 
 function App() {
@@ -20,12 +21,16 @@ function App() {
   // Get today's and yesterday's stats
   const todayStats = botsData.map(bot => ({
     name: bot.name,
-    performance: bot.daily_stats[0].profit_percent
+    performance: bot.daily_stats[0].profit_percent,
+    net_profit: bot.daily_stats[0].net_profit,
+    balance: bot.daily_stats[0].balance
   }));
 
   const yesterdayStats = botsData.map(bot => ({
     name: bot.name,
-    performance: bot.daily_stats[1].profit_percent
+    performance: bot.daily_stats[1].profit_percent,
+    net_profit: bot.daily_stats[1].net_profit,
+    balance: bot.daily_stats[1].balance
   }));
 
   // Calculate today's metrics
@@ -46,6 +51,28 @@ function App() {
   const profitableBotsToday = todayStats.filter(bot => bot.performance > 0).length;
   const profitableBotsYesterday = yesterdayStats.filter(bot => bot.performance > 0).length;
   const profitableBotsChange = profitableBotsToday - profitableBotsYesterday;
+
+  // Calculate trading volume (total balance)
+  const tradingVolume = todayStats.reduce((sum, bot) => sum + bot.balance, 0);
+  const formattedVolume = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0
+  }).format(tradingVolume);
+
+  // Determine market sentiment
+  const marketSentiment = profitableBotsToday > botsData.length / 2 ? "Bullish" : "Bearish";
+
+  // Get alerts based on performance
+  const alerts = [
+    topPerformer.performance > 5 ? 
+      `🔥 ${topPerformer.name} vừa đạt lợi nhuận ${topPerformer.performance}% trong 24h qua` : null,
+    profitableBotsToday > profitableBotsYesterday ?
+      `📈 Số lượng bot có lợi nhuận tăng ${profitableBotsChange} so với hôm qua` : null,
+    bottomPerformer.performance < -5 ?
+      `⚠️ ${bottomPerformer.name} đang giảm ${Math.abs(bottomPerformer.performance)}% trong 24h qua` : null
+  ].filter(Boolean);
 
   // Latest data for bot cards
   const latestBotsData = botsData.map(bot => {
@@ -123,6 +150,10 @@ function App() {
       <TopBar />
       <div className="content">
         <div className="main-boxes">
+          <div className="dashboard-header">
+            <h1>Bot Performance Monitor</h1>
+            <p>Track • Analyze • Optimize</p>
+          </div>
           <div className="dashboard-section">
             <div className="header-section">
               <div>
