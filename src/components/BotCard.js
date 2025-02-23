@@ -1,51 +1,35 @@
 import React from 'react';
-import { BOT_COLORS } from '../constants/colors';
+import { BOT_COLORS, COLORS } from '../constants/colors';
 
 function BotCard({ bot, index, isHighlighted }) {
-  const { name, performance, winRate, balance, netProfit } = bot;
-  const isProfit = performance >= 0;
-  const botColor = BOT_COLORS[index];
-
+  // Lấy màu tương ứng với bot
+  const botColor = BOT_COLORS[index % BOT_COLORS.length];
+  
   return (
     <div 
-      id={`bot-${name}`}
-      className={`bot-card ${isHighlighted ? 'highlighted' : ''}`} 
-      style={{ 
-        transition: 'all 0.3s ease',
-        '--bot-color': botColor // Pass color as CSS variable
-      }}
+      id={`bot-${bot.name}`}
+      className={`bot-card ${isHighlighted ? 'highlighted' : ''}`}
+      style={{ '--bot-color': botColor }}
     >
       <div className="bot-header">
-        <h3>
-          <span style={{ color: botColor }}>●</span> {name}
-        </h3>
-        <span className={`performance ${isProfit ? 'profit' : 'loss'}`}>
-          {isProfit ? '+' : ''}{performance}%
-        </span>
+        <h3>{bot.name}</h3>
+        <div className="performance">
+          {bot.performance > 0 ? '+' : ''}{bot.performance}%
+        </div>
       </div>
       <div className="bot-stats">
         <div className="stat-item">
-          <span className="label">
-            <span role="img" aria-label="chart">📊</span> Win Rate
-          </span>
-          <span className="value" style={{ color: botColor }}>
-            {winRate}
-          </span>
+          <span className="label">Win Rate</span>
+          <span className="value">{bot.winRate}</span>
         </div>
         <div className="stat-item">
-          <span className="label">
-            <span role="img" aria-label="money">💰</span> Balance
-          </span>
-          <span className="value">
-            ${balance.toLocaleString()}
-          </span>
+          <span className="label">Balance</span>
+          <span className="value">${bot.balance.toLocaleString()}</span>
         </div>
         <div className="stat-item">
-          <span className="label">
-            <span role="img" aria-label="chart">📈</span> Net Profit
-          </span>
-          <span className={`value ${netProfit >= 0 ? 'profit' : 'loss'}`}>
-            {netProfit >= 0 ? '+$' : '-$'}{Math.abs(netProfit).toLocaleString()}
+          <span className="label">Net Profit</span>
+          <span className="value" style={{ color: bot.netProfit >= 0 ? COLORS.status.success : COLORS.status.danger }}>
+            {bot.netProfit >= 0 ? '+' : '-'}${Math.abs(bot.netProfit).toLocaleString()}
           </span>
         </div>
       </div>

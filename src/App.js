@@ -3,6 +3,7 @@ import './App.css';
 import TopBar from './components/TopBar';
 import ProfitChart from './components/ProfitChart';
 import BotCard from './components/BotCard';
+import StatsSummary from './components/StatsSummary';
 import { botsData } from './mocks/botsData';
 
 function App() {
@@ -46,24 +47,12 @@ function App() {
                   Daily performance analysis • {date}
                 </p>
               </div>
-              <div className="stats-summary">
-                <div className="summary-item profit">
-                  <span className="summary-value">+{totalProfit}%</span>
-                  <span className="summary-label">Total Profit</span>
-                </div>
-                <div className="summary-item loss">
-                  <span className="summary-value">-{totalLoss}%</span>
-                  <span className="summary-label">Total Loss</span>
-                </div>
-                <div className="summary-item">
-                  <span className="summary-value">{avgWinRate}%</span>
-                  <span className="summary-label">Avg Win Rate</span>
-                </div>
-                <div className="summary-item">
-                  <span className="summary-value">{profitableBots}/{latestBotsData.length}</span>
-                  <span className="summary-label">Profitable Bots</span>
-                </div>
-              </div>
+              <StatsSummary 
+                totalProfit={totalProfit}
+                totalLoss={totalLoss}
+                avgWinRate={avgWinRate}
+                profitableBots={`${profitableBots}/${latestBotsData.length}`}
+              />
             </div>
             <div className="dashboard-container">
               <div className="chart-section">

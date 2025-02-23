@@ -9,7 +9,7 @@ import {
   Legend
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { BOT_COLORS } from '../constants/colors';
+import { BOT_COLORS, COLORS, getBackgroundColor, getHoverColor } from '../constants/colors';
 
 // Đăng ký các components cần thiết
 ChartJS.register(
@@ -30,36 +30,65 @@ function ProfitChart({ botsData, onBotHover }) {
         display: false
       },
       tooltip: {
-        backgroundColor: 'rgba(255, 255, 255, 0.95)',
-        titleColor: '#1f2937',
-        bodyColor: '#1f2937',
-        titleFont: {
-          size: 14,
-          weight: 'bold'
-        },
-        bodyFont: {
-          size: 13
-        },
-        padding: 16,
-        borderColor: 'rgba(0, 0, 0, 0.1)',
-        borderWidth: 1,
-        displayColors: true,
-        boxWidth: 8,
-        boxHeight: 8,
-        boxPadding: 4,
-        callbacks: {
-          title: function(context) {
-            return context[0].label;
-          },
-          label: function(context) {
-            const bot = botsData[context.dataIndex];
-            return [
-              `Performance: ${context.raw > 0 ? '+' : ''}${context.raw}%`,
-              `Win Rate: ${bot.winRate}`,
-              `Balance: $${bot.balance.toLocaleString()}`,
-              `Net Profit: ${bot.netProfit >= 0 ? '+' : '-'}$${Math.abs(bot.netProfit).toLocaleString()}`
-            ];
+        enabled: false,
+        external: function(context) {
+          let tooltipEl = document.getElementById('chartjs-tooltip');
+          
+          if (!tooltipEl) {
+            tooltipEl = document.createElement('div');
+            tooltipEl.id = 'chartjs-tooltip';
+            tooltipEl.style.background = COLORS.card;
+            tooltipEl.style.backdropFilter = 'blur(10px)';
+            tooltipEl.style.borderRadius = '6px';
+            tooltipEl.style.padding = '8px 12px';
+            tooltipEl.style.position = 'absolute';
+            tooltipEl.style.transition = 'all .1s ease';
+            tooltipEl.style.pointerEvents = 'none';
+            tooltipEl.style.transform = 'translate(-50%, 0)';
+            tooltipEl.style.border = `1px solid ${COLORS.border}`;
+            document.body.appendChild(tooltipEl);
           }
+
+          if (context.tooltip.opacity === 0) {
+            tooltipEl.style.opacity = 0;
+            return;
+          }
+
+          const dataPoint = context.tooltip.dataPoints[0];
+          const bot = botsData[dataPoint.dataIndex];
+          const botColor = BOT_COLORS[dataPoint.dataIndex % BOT_COLORS.length];
+          
+          tooltipEl.innerHTML = `
+            <div style="font-family: Inter, sans-serif; min-width: 150px;">
+              <div style="color: ${botColor}; font-size: 12px; margin-bottom: 4px;">
+                ${bot.name}
+              </div>
+              <div style="color: ${dataPoint.raw >= 0 ? COLORS.status.success : COLORS.status.danger}; font-size: 16px; font-weight: 600; margin-bottom: 8px;">
+                ${dataPoint.raw > 0 ? '+' : ''}${dataPoint.raw}%
+              </div>
+              <div style="color: ${COLORS.text.primary}; font-size: 13px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                  <span style="color: ${COLORS.text.secondary};">Win Rate</span>
+                  <span>${bot.winRate}</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                  <span style="color: ${COLORS.text.secondary};">Balance</span>
+                  <span>$${bot.balance.toLocaleString()}</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="color: ${COLORS.text.secondary};">Net Profit</span>
+                  <span style="color: ${bot.netProfit >= 0 ? COLORS.status.success : COLORS.status.danger}">
+                    ${bot.netProfit >= 0 ? '+' : '-'}$${Math.abs(bot.netProfit).toLocaleString()}
+                  </span>
+                </div>
+              </div>
+            </div>
+          `;
+
+          const position = context.chart.canvas.getBoundingClientRect();
+          tooltipEl.style.opacity = 1;
+          tooltipEl.style.left = position.left + window.pageXOffset + context.tooltip.caretX + 'px';
+          tooltipEl.style.top = position.top + window.pageYOffset + context.tooltip.caretY + 'px';
         }
       }
     },
@@ -68,7 +97,6 @@ function ProfitChart({ botsData, onBotHover }) {
         const botName = botsData[elements[0].index].name;
         onBotHover(botName);
         
-        // Scroll to bot card
         const botCard = document.getElementById(`bot-${botName}`);
         if (botCard) {
           botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -84,37 +112,47 @@ function ProfitChart({ botsData, onBotHover }) {
         },
         ticks: {
           font: {
-            size: 12
+            size: 12,
+            family: "'Inter', sans-serif"
           },
-          color: '#6b7280',
+          color: (context) => {
+            const index = context.index;
+            return BOT_COLORS[index % BOT_COLORS.length] + 'CC';
+          },
           maxRotation: 45,
           minRotation: 45
+        },
+        border: {
+          display: false
         }
       },
       y: {
         grid: {
-          color: '#f3f4f6',
-          drawBorder: false
+          color: COLORS.border,
+          drawBorder: false,
+          lineWidth: 1
         },
         ticks: {
           font: {
-            size: 12
+            size: 12,
+            family: "'Inter', sans-serif"
           },
-          color: '#6b7280',
+          color: COLORS.text.secondary,
           callback: function(value) {
-            return value + '%';
-          }
+            return value > 0 ? `+${value}%` : `${value}%`;
+          },
+          padding: 10
         },
         border: {
-          dash: [4, 4]
+          display: false
         }
       }
     },
-    barPercentage: 0.7,
-    categoryPercentage: 0.9,
+    barPercentage: 0.6,
+    categoryPercentage: 0.8,
     animation: {
-      duration: 1000,
-      easing: 'easeInOutQuart'
+      duration: 2000,
+      easing: 'easeOutQuart'
     },
     hover: {
       mode: 'index',
@@ -127,20 +165,40 @@ function ProfitChart({ botsData, onBotHover }) {
     datasets: [
       {
         data: botsData.map(bot => bot.performance),
-        backgroundColor: botsData.map((_, index) => `${BOT_COLORS[index]}CC`), // CC = 80% opacity
-        borderColor: botsData.map((_, index) => BOT_COLORS[index]),
-        borderWidth: 1,
+        backgroundColor: botsData.map((_, index) => getBackgroundColor(BOT_COLORS[index % BOT_COLORS.length])),
+        borderColor: botsData.map((_, index) => BOT_COLORS[index % BOT_COLORS.length]),
+        borderWidth: 2,
         borderRadius: {
           topLeft: 4,
           topRight: 4
         },
-        hoverBackgroundColor: botsData.map((_, index) => BOT_COLORS[index])
+        hoverBackgroundColor: botsData.map((_, index) => getHoverColor(BOT_COLORS[index % BOT_COLORS.length])),
+        hoverBorderColor: botsData.map((_, index) => BOT_COLORS[index % BOT_COLORS.length]),
+        hoverBorderWidth: 2
       }
     ]
   };
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+      <div style={{
+        position: 'absolute',
+        top: '8px',
+        right: '8px',
+        fontSize: '12px',
+        color: COLORS.text.secondary + '99',
+        textAlign: 'right',
+        fontStyle: 'italic',
+        background: 'rgba(0,0,0,0.4)',
+        padding: '4px 12px',
+        borderRadius: '12px',
+        backdropFilter: 'blur(4px)',
+        border: `1px solid ${COLORS.border}`,
+        textShadow: '0 0 10px rgba(255,255,255,0.2)',
+        zIndex: 1
+      }}>
+        Click vào cột để xem chi tiết bot 
+      </div>
       <Bar options={options} data={data} />
     </div>
   );
