@@ -5,13 +5,39 @@ function TopBar() {
   return (
     <nav className="topbar">
       <div className="topbar-left">
-        <h1 className="logo">Trade FE</h1>
+        <h1 className="logo">
+          <span className="logo-icon">⚡</span>
+          Trade<span className="highlight">FE</span>
+        </h1>
       </div>
       <div className="topbar-right">
-        <a href="#" className="nav-link">Home</a>
-        <a href="#" className="nav-link">Products</a>
-        <a href="#" className="nav-link">About</a>
-        <a href="#" className="nav-link">Contact</a>
+        <div className="nav-links">
+          <a href="#" className="nav-link active">
+            <span className="nav-icon">📊</span>
+            Dashboard
+          </a>
+          <a href="#" className="nav-link">
+            <span className="nav-icon">🤖</span>
+            Bots
+          </a>
+          <a href="#" className="nav-link">
+            <span className="nav-icon">📈</span>
+            Markets
+          </a>
+          <a href="#" className="nav-link">
+            <span className="nav-icon">⚙️</span>
+            Settings
+          </a>
+        </div>
+        <div className="user-section">
+          <div className="network-status">
+            <span className="status-dot"></span>
+            Mainnet
+          </div>
+          <button className="connect-wallet">
+            Connect Wallet
+          </button>
+        </div>
       </div>
     </nav>
   );

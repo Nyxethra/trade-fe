@@ -1,51 +1,52 @@
 import React from 'react';
+import { BOT_COLORS } from '../constants/colors';
 
-function BotCard({ bot }) {
-  const { name, type, colorName, performance, trades, winRate } = bot;
+function BotCard({ bot, index, isHighlighted }) {
+  const { name, performance, winRate, balance, netProfit } = bot;
   const isProfit = performance >= 0;
-
-  const getStatusColor = () => {
-    if (winRate.replace('%', '') >= 60) return '#10b981';
-    if (winRate.replace('%', '') >= 50) return '#f59e0b';
-    return '#ef4444';
-  };
+  const botColor = BOT_COLORS[index];
 
   return (
-    <div className={`bot-card ${isProfit ? 'profit' : 'loss'}`}>
-      <div className="bot-name">
-        {name}
-        <span style={{ 
-          fontSize: '0.875rem',
-          color: '#6b7280',
-          fontWeight: 'normal'
-        }}>
-          ({colorName})
+    <div 
+      id={`bot-${name}`}
+      className={`bot-card ${isHighlighted ? 'highlighted' : ''}`} 
+      style={{ 
+        transition: 'all 0.3s ease',
+        '--bot-color': botColor // Pass color as CSS variable
+      }}
+    >
+      <div className="bot-header">
+        <h3>
+          <span style={{ color: botColor }}>●</span> {name}
+        </h3>
+        <span className={`performance ${isProfit ? 'profit' : 'loss'}`}>
+          {isProfit ? '+' : ''}{performance}%
         </span>
-        <div style={{
-          width: '8px',
-          height: '8px',
-          borderRadius: '50%',
-          backgroundColor: getStatusColor(),
-          marginLeft: 'auto'
-        }} />
       </div>
-      <div className="bot-type">{type}</div>
       <div className="bot-stats">
-        <div>
-          <div className={`stat-value ${isProfit ? 'profit' : 'loss'}`}>
-            {isProfit ? '+' : ''}{performance}%
-          </div>
-          <div className="stat-label">Performance</div>
-        </div>
-        <div>
-          <div className="stat-value">{trades}</div>
-          <div className="stat-label">Total Trades</div>
-        </div>
-        <div>
-          <div className="stat-value" style={{ color: getStatusColor() }}>
+        <div className="stat-item">
+          <span className="label">
+            <span role="img" aria-label="chart">📊</span> Win Rate
+          </span>
+          <span className="value" style={{ color: botColor }}>
             {winRate}
-          </div>
-          <div className="stat-label">Win Rate</div>
+          </span>
+        </div>
+        <div className="stat-item">
+          <span className="label">
+            <span role="img" aria-label="money">💰</span> Balance
+          </span>
+          <span className="value">
+            ${balance.toLocaleString()}
+          </span>
+        </div>
+        <div className="stat-item">
+          <span className="label">
+            <span role="img" aria-label="chart">📈</span> Net Profit
+          </span>
+          <span className={`value ${netProfit >= 0 ? 'profit' : 'loss'}`}>
+            {netProfit >= 0 ? '+$' : '-$'}{Math.abs(netProfit).toLocaleString()}
+          </span>
         </div>
       </div>
     </div>
