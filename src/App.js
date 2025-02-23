@@ -10,50 +10,69 @@ import { botsData } from './mocks/botsData';
 
 function App() {
   const [hoveredBot, setHoveredBot] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(new Date('2025-02-23')); // Use the latest date from mock data
   
-  const date = new Date().toLocaleDateString('en-US', { 
+  // Format date for display
+  const formattedDate = selectedDate.toLocaleDateString('vi-VN', { 
     weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric'
   });
 
-  // Get today's and yesterday's stats
-  const todayStats = botsData.map(bot => ({
+  // Handle date navigation
+  const changeDate = (days) => {
+    const newDate = new Date(selectedDate);
+    newDate.setDate(selectedDate.getDate() + days);
+    setSelectedDate(newDate);
+  };
+
+  // Get stats for selected date and previous day
+  const getDateIndex = (date) => {
+    return botsData[0].daily_stats.findIndex(stat => 
+      new Date(stat.date).toISOString().split('T')[0] === date.toISOString().split('T')[0]
+    );
+  };
+
+  const selectedDateIndex = getDateIndex(selectedDate);
+  const previousDateIndex = selectedDateIndex + 1;
+
+  // Get selected date and previous date stats
+  const selectedDateStats = botsData.map(bot => ({
     name: bot.name,
-    performance: bot.daily_stats[0].profit_percent,
-    net_profit: bot.daily_stats[0].net_profit,
-    balance: bot.daily_stats[0].balance
+    performance: bot.daily_stats[selectedDateIndex]?.profit_percent || 0,
+    net_profit: bot.daily_stats[selectedDateIndex]?.net_profit || 0,
+    balance: bot.daily_stats[selectedDateIndex]?.balance || 0
   }));
 
-  const yesterdayStats = botsData.map(bot => ({
+  const previousDateStats = botsData.map(bot => ({
     name: bot.name,
-    performance: bot.daily_stats[1].profit_percent,
-    net_profit: bot.daily_stats[1].net_profit,
-    balance: bot.daily_stats[1].balance
+    performance: bot.daily_stats[previousDateIndex]?.profit_percent || 0,
+    net_profit: bot.daily_stats[previousDateIndex]?.net_profit || 0,
+    balance: bot.daily_stats[previousDateIndex]?.balance || 0
   }));
 
-  // Calculate today's metrics
-  const todayNetProfit = todayStats.reduce((sum, bot) => sum + bot.performance, 0).toFixed(1);
-  const yesterdayNetProfit = yesterdayStats.reduce((sum, bot) => sum + bot.performance, 0).toFixed(1);
-  const netProfitChange = (todayNetProfit - yesterdayNetProfit).toFixed(1);
+  // Calculate metrics for selected date
+  const selectedNetProfit = selectedDateStats.reduce((sum, bot) => sum + bot.performance, 0).toFixed(1);
+  const previousNetProfit = previousDateStats.reduce((sum, bot) => sum + bot.performance, 0).toFixed(1);
+  const netProfitChange = (selectedNetProfit - previousNetProfit).toFixed(1);
 
   // Find top and bottom performers
-  const topPerformer = todayStats.reduce((best, current) => 
+  const topPerformer = selectedDateStats.reduce((best, current) => 
     current.performance > best.performance ? current : best
   );
 
-  const bottomPerformer = todayStats.reduce((worst, current) => 
+  const bottomPerformer = selectedDateStats.reduce((worst, current) => 
     current.performance < worst.performance ? current : worst
   );
 
   // Calculate profitable bots
-  const profitableBotsToday = todayStats.filter(bot => bot.performance > 0).length;
-  const profitableBotsYesterday = yesterdayStats.filter(bot => bot.performance > 0).length;
+  const profitableBotsToday = selectedDateStats.filter(bot => bot.performance > 0).length;
+  const profitableBotsYesterday = previousDateStats.filter(bot => bot.performance > 0).length;
   const profitableBotsChange = profitableBotsToday - profitableBotsYesterday;
 
   // Calculate trading volume (total balance)
-  const tradingVolume = todayStats.reduce((sum, bot) => sum + bot.balance, 0);
+  const tradingVolume = selectedDateStats.reduce((sum, bot) => sum + bot.balance, 0);
   const formattedVolume = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -75,17 +94,14 @@ function App() {
   ].filter(Boolean);
 
   // Latest data for bot cards
-  const latestBotsData = botsData.map(bot => {
-    const latestStats = bot.daily_stats[0];
-    return {
-      id: bot.name,
-      name: bot.name,
-      performance: latestStats.profit_percent,
-      winRate: `${latestStats.winrate}%`,
-      balance: latestStats.balance,
-      netProfit: latestStats.net_profit
-    };
-  });
+  const latestBotsData = selectedDateStats.map(bot => ({
+    id: bot.name,
+    name: bot.name,
+    performance: bot.performance,
+    winRate: `${botsData.find(b => b.name === bot.name).daily_stats[selectedDateIndex]?.winrate || 0}%`,
+    balance: bot.balance,
+    netProfit: bot.net_profit
+  }));
 
   // Prepare weekly data
   const weeklyData = Array.from({ length: 7 }).map((_, index) => ({
@@ -158,12 +174,40 @@ function App() {
             <div className="header-section">
               <div>
                 <h1>Daily Trading Summary</h1>
-                <p className="subtitle">
-                  Performance overview • {date}
-                </p>
+                <div className="subtitle-with-controls">
+                  <div className="subtitle">
+                    Performance overview • 
+                    <div className="date-controls">
+                      <button 
+                        className="date-nav-btn" 
+                        onClick={() => changeDate(-1)}
+                        title="Previous day"
+                        disabled={selectedDateIndex === botsData[0].daily_stats.length - 1}
+                      >
+                        ←
+                      </button>
+                      <input 
+                        type="date" 
+                        value={selectedDate.toISOString().split('T')[0]}
+                        onChange={(e) => setSelectedDate(new Date(e.target.value))}
+                        className="date-picker"
+                        min={new Date(botsData[0].daily_stats[botsData[0].daily_stats.length - 1].date).toISOString().split('T')[0]}
+                        max={new Date(botsData[0].daily_stats[0].date).toISOString().split('T')[0]}
+                      />
+                      <button 
+                        className="date-nav-btn" 
+                        onClick={() => changeDate(1)}
+                        title="Next day"
+                        disabled={selectedDateIndex === 0}
+                      >
+                        →
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <StatsSummary 
-                todayNetProfit={todayNetProfit}
+                todayNetProfit={selectedNetProfit}
                 todayNetProfitChange={netProfitChange}
                 topPerformer={topPerformer.name}
                 topPerformanceValue={topPerformer.performance.toFixed(1)}
