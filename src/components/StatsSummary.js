@@ -1,43 +1,53 @@
 import React from 'react';
 import { COLORS } from '../constants/colors';
 
-function StatsSummary({ totalProfit, totalLoss, avgWinRate, profitableBots }) {
+function StatsSummary({ 
+  todayNetProfit, 
+  todayNetProfitChange,
+  topPerformer,
+  topPerformanceValue,
+  bottomPerformer,
+  bottomPerformanceValue,
+  profitableBots,
+  totalBots,
+  profitableBotsChange
+}) {
   return (
     <div className="stats-summary">
       <div className="summary-item">
-        <div className="summary-value" style={{ color: COLORS.status.success }}>
-          +{totalProfit}%
+        <div className="summary-value" style={{ color: todayNetProfit >= 0 ? COLORS.status.success : COLORS.status.danger }}>
+          {todayNetProfit >= 0 ? '+' : ''}{todayNetProfit}%
+          <span className="change-indicator" style={{ color: todayNetProfitChange >= 0 ? COLORS.status.success : COLORS.status.danger }}>
+            ({todayNetProfitChange >= 0 ? '↑' : '↓'}{Math.abs(todayNetProfitChange)}% vs yesterday)
+          </span>
         </div>
-        <div className="summary-label">
-          TOTAL PROFIT
-        </div>
+        <div className="summary-label">TODAY'S NET PROFIT</div>
       </div>
-      
+
+      <div className="summary-item">
+        <div className="summary-value" style={{ color: COLORS.status.success }}>
+          {topPerformer}
+          <span className="performance-value">(+{topPerformanceValue}%)</span>
+        </div>
+        <div className="summary-label">TOP PERFORMER</div>
+      </div>
+
       <div className="summary-item">
         <div className="summary-value" style={{ color: COLORS.status.danger }}>
-          {totalLoss}%
+          {bottomPerformer}
+          <span className="performance-value">({bottomPerformanceValue}%)</span>
         </div>
-        <div className="summary-label">
-          TOTAL LOSS
-        </div>
+        <div className="summary-label">BOTTOM PERFORMER</div>
       </div>
-      
+
       <div className="summary-item">
-        <div className="summary-value" style={{ color: COLORS.text.primary }}>
-          {avgWinRate}%
+        <div className="summary-value">
+          {profitableBots}/{totalBots}
+          <span className="change-indicator" style={{ color: profitableBotsChange >= 0 ? COLORS.status.success : COLORS.status.danger }}>
+            ({profitableBotsChange >= 0 ? '↑' : '↓'}{Math.abs(profitableBotsChange)} vs yesterday)
+          </span>
         </div>
-        <div className="summary-label">
-          AVG WIN RATE
-        </div>
-      </div>
-      
-      <div className="summary-item">
-        <div className="summary-value" style={{ color: COLORS.text.primary }}>
-          {profitableBots}
-        </div>
-        <div className="summary-label">
-          PROFITABLE BOTS
-        </div>
+        <div className="summary-label">PROFITABLE BOTS</div>
       </div>
     </div>
   );

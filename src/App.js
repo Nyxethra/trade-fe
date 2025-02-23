@@ -16,9 +16,39 @@ function App() {
     day: 'numeric'
   });
 
-  // Lấy thông tin từ ngày mới nhất của mỗi bot
+  // Get today's and yesterday's stats
+  const todayStats = botsData.map(bot => ({
+    name: bot.name,
+    performance: bot.daily_stats[0].profit_percent
+  }));
+
+  const yesterdayStats = botsData.map(bot => ({
+    name: bot.name,
+    performance: bot.daily_stats[1].profit_percent
+  }));
+
+  // Calculate today's metrics
+  const todayNetProfit = todayStats.reduce((sum, bot) => sum + bot.performance, 0).toFixed(1);
+  const yesterdayNetProfit = yesterdayStats.reduce((sum, bot) => sum + bot.performance, 0).toFixed(1);
+  const netProfitChange = (todayNetProfit - yesterdayNetProfit).toFixed(1);
+
+  // Find top and bottom performers
+  const topPerformer = todayStats.reduce((best, current) => 
+    current.performance > best.performance ? current : best
+  );
+
+  const bottomPerformer = todayStats.reduce((worst, current) => 
+    current.performance < worst.performance ? current : worst
+  );
+
+  // Calculate profitable bots
+  const profitableBotsToday = todayStats.filter(bot => bot.performance > 0).length;
+  const profitableBotsYesterday = yesterdayStats.filter(bot => bot.performance > 0).length;
+  const profitableBotsChange = profitableBotsToday - profitableBotsYesterday;
+
+  // Latest data for bot cards
   const latestBotsData = botsData.map(bot => {
-    const latestStats = bot.daily_stats[0]; // Giả sử daily_stats được sắp xếp mới nhất đầu tiên
+    const latestStats = bot.daily_stats[0];
     return {
       id: bot.name,
       name: bot.name,
@@ -29,11 +59,6 @@ function App() {
     };
   });
 
-  const totalProfit = latestBotsData.reduce((sum, bot) => sum + (bot.performance > 0 ? bot.performance : 0), 0).toFixed(1);
-  const totalLoss = Math.abs(latestBotsData.reduce((sum, bot) => sum + (bot.performance < 0 ? bot.performance : 0), 0)).toFixed(1);
-  const avgWinRate = (latestBotsData.reduce((sum, bot) => sum + parseFloat(bot.winRate), 0) / latestBotsData.length).toFixed(1);
-  const profitableBots = latestBotsData.filter(bot => bot.performance > 0).length;
-
   return (
     <div className="App">
       <TopBar />
@@ -42,16 +67,21 @@ function App() {
           <div className="box">
             <div className="header-section">
               <div>
-                <h1>Trading Bots Performance</h1>
+                <h1>Daily Trading Summary</h1>
                 <p className="subtitle">
-                  Daily performance analysis • {date}
+                  Performance overview • {date}
                 </p>
               </div>
               <StatsSummary 
-                totalProfit={totalProfit}
-                totalLoss={totalLoss}
-                avgWinRate={avgWinRate}
-                profitableBots={`${profitableBots}/${latestBotsData.length}`}
+                todayNetProfit={todayNetProfit}
+                todayNetProfitChange={netProfitChange}
+                topPerformer={topPerformer.name}
+                topPerformanceValue={topPerformer.performance.toFixed(1)}
+                bottomPerformer={bottomPerformer.name}
+                bottomPerformanceValue={bottomPerformer.performance.toFixed(1)}
+                profitableBots={profitableBotsToday}
+                totalBots={botsData.length}
+                profitableBotsChange={profitableBotsChange}
               />
             </div>
             <div className="dashboard-container">
