@@ -11,9 +11,9 @@ import { botsData } from './mocks/botsData';
 function App() {
   const [hoveredBot, setHoveredBot] = useState(null);
   const [selectedDate, setSelectedDate] = useState(new Date('2025-02-23')); // Use the latest date from mock data
-  
+
   // Format date for display
-  const formattedDate = selectedDate.toLocaleDateString('vi-VN', { 
+  const formattedDate = selectedDate.toLocaleDateString('vi-VN', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
@@ -29,7 +29,7 @@ function App() {
 
   // Get stats for selected date and previous day
   const getDateIndex = (date) => {
-    return botsData[0].daily_stats.findIndex(stat => 
+    return botsData[0].daily_stats.findIndex(stat =>
       new Date(stat.date).toISOString().split('T')[0] === date.toISOString().split('T')[0]
     );
   };
@@ -60,11 +60,11 @@ function App() {
   const netProfitChange = (selectedNetProfit - previousNetProfit).toFixed(1);
 
   // Find top and bottom performers
-  const topPerformer = selectedDateStats.reduce((best, current) => 
+  const topPerformer = selectedDateStats.reduce((best, current) =>
     current.performance > best.performance ? current : best
   );
 
-  const bottomPerformer = selectedDateStats.reduce((worst, current) => 
+  const bottomPerformer = selectedDateStats.reduce((worst, current) =>
     current.performance < worst.performance ? current : worst
   );
 
@@ -87,7 +87,7 @@ function App() {
 
   // Get alerts based on performance
   const alerts = [
-    topPerformer.performance > 5 ? 
+    topPerformer.performance > 5 ?
       `🔥 ${topPerformer.name} vừa đạt lợi nhuận ${topPerformer.performance}% trong 24h qua` : null,
     profitableBotsToday > profitableBotsYesterday ?
       `📈 Số lượng bot có lợi nhuận tăng ${profitableBotsChange} so với hôm qua` : null,
@@ -117,13 +117,13 @@ function App() {
   // Calculate weekly metrics for each bot
   const weeklyBotsData = botsData.map(bot => {
     const weeklyStats = bot.daily_stats.slice(0, 7);
-    
+
     // Calculate average daily performance
     const avgPerformance = (weeklyStats.reduce((sum, day) => sum + day.profit_percent, 0) / 7).toFixed(1);
     const avgWinRate = (weeklyStats.reduce((sum, day) => sum + day.winrate, 0) / 7).toFixed(2);
     const totalNetProfit = weeklyStats.reduce((sum, day) => sum + day.net_profit, 0);
     const avgBalance = Math.round(weeklyStats.reduce((sum, day) => sum + day.balance, 0) / 7);
-    
+
     return {
       id: bot.name,
       name: bot.name,
@@ -140,16 +140,16 @@ function App() {
     const weeklyStats = bot.daily_stats.slice(0, 7);
     return sum + weeklyStats.reduce((daySum, day) => daySum + day.net_profit, 0);
   }, 0);
-  
-  const topWeeklyPerformer = weeklyBotsData.reduce((best, current) => 
+
+  const topWeeklyPerformer = weeklyBotsData.reduce((best, current) =>
     parseFloat(current.performance) > parseFloat(best.performance) ? current : best
   );
-  const bottomWeeklyPerformer = weeklyBotsData.reduce((worst, current) => 
+  const bottomWeeklyPerformer = weeklyBotsData.reduce((worst, current) =>
     parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst
   );
 
   // Calculate average profitable bots per day
-  const profitableBotsPerDay = weeklyData.map(day => 
+  const profitableBotsPerDay = weeklyData.map(day =>
     day.bots.filter(bot => bot.performance > 0).length
   );
   const avgProfitableBotsPerDay = Math.round(
@@ -165,43 +165,105 @@ function App() {
     return `${day}/${month}/${year}`;
   };
 
+  // Prepare monthly data
+  const monthlyData = Array.from({ length: 30 }).map((_, index) => {
+    const currentDate = new Date(selectedDate);
+    currentDate.setDate(selectedDate.getDate() - index);
+    
+    return {
+      date: currentDate.toISOString().split('T')[0],
+      bots: botsData.map(bot => {
+        const dailyStat = bot.daily_stats.find(stat => 
+          new Date(stat.date).toISOString().split('T')[0] === currentDate.toISOString().split('T')[0]
+        );
+        return {
+          name: bot.name,
+          performance: dailyStat ? dailyStat.profit_percent : 0
+        };
+      })
+    };
+  });
+
+  // Calculate monthly metrics for each bot
+  const monthlyBotsData = botsData.map(bot => {
+    const monthlyStats = bot.daily_stats.slice(0, 30);
+    if (!monthlyStats.length) return null;
+
+    // Calculate average daily performance for the month
+    const avgPerformance = (monthlyStats.reduce((sum, day) => sum + (day ? day.profit_percent : 0), 0) / monthlyStats.length).toFixed(1);
+    const avgWinRate = (monthlyStats.reduce((sum, day) => sum + (day ? day.winrate : 0), 0) / monthlyStats.length).toFixed(2);
+    const totalNetProfit = monthlyStats.reduce((sum, day) => sum + (day ? day.net_profit : 0), 0);
+    const avgBalance = Math.round(monthlyStats.reduce((sum, day) => sum + (day ? day.balance : 0), 0) / monthlyStats.length);
+
+    return {
+      id: bot.name,
+      name: bot.name,
+      performance: avgPerformance,
+      winRate: `${avgWinRate}%`,
+      balance: monthlyStats[0].balance,
+      avgBalance: avgBalance,
+      netProfit: totalNetProfit
+    };
+  }).filter(Boolean);
+
+  // Calculate monthly summary metrics
+  const monthlyNetProfit = botsData.reduce((sum, bot) => {
+    const monthlyStats = bot.daily_stats.slice(0, 30);
+    return sum + monthlyStats.reduce((daySum, day) => daySum + day.net_profit, 0);
+  }, 0);
+
+  const topMonthlyPerformer = monthlyBotsData.reduce((best, current) =>
+    parseFloat(current.performance) > parseFloat(best.performance) ? current : best
+  );
+  const bottomMonthlyPerformer = monthlyBotsData.reduce((worst, current) =>
+    parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst
+  );
+
+  // Calculate average profitable bots per day for the month
+  const profitableBotsPerDayMonthly = monthlyData.map(day =>
+    day.bots.filter(bot => bot.performance > 0).length
+  );
+  const avgProfitableBotsPerDayMonthly = Math.round(
+    profitableBotsPerDayMonthly.reduce((sum, count) => sum + count, 0) / 30
+  );
+
   return (
     <div className="App">
       <TopBar />
       <div className="content">
         <div className="main-boxes">
           <div className="dashboard-header">
-            <h1>Bot Performance Monitor</h1>
-            <p>Track • Analyze • Optimize</p>
+            <h1>Theo Dõi Hiệu Suất Bot</h1>
+            <p>Theo Dõi • Phân Tích • Tối Ưu</p>
           </div>
           <div className="dashboard-section">
             <div className="header-section">
               <div>
-                <h1>Daily Trading Summary</h1>
+                <h1>Tổng Quan Giao Dịch Hôm Nay</h1>
                 <div className="subtitle-with-controls">
                   <div className="subtitle">
-                    Performance overview • 
+                    Hiệu suất tổng quan •
                     <div className="date-controls">
-                      <button 
-                        className="date-nav-btn" 
+                      <button
+                        className="date-nav-btn"
                         onClick={() => changeDate(-1)}
-                        title="Previous day"
+                        title="Ngày trước"
                         disabled={selectedDateIndex === botsData[0].daily_stats.length - 1}
                       >
                         ←
                       </button>
-                      <input 
-                        type="date" 
+                      <input
+                        type="date"
                         value={selectedDate.toISOString().split('T')[0]}
                         onChange={(e) => setSelectedDate(new Date(e.target.value))}
                         className="date-picker"
                         min={new Date(botsData[0].daily_stats[botsData[0].daily_stats.length - 1].date).toISOString().split('T')[0]}
                         max={new Date(botsData[0].daily_stats[0].date).toISOString().split('T')[0]}
                       />
-                      <button 
-                        className="date-nav-btn" 
+                      <button
+                        className="date-nav-btn"
                         onClick={() => changeDate(1)}
-                        title="Next day"
+                        title="Ngày sau"
                         disabled={selectedDateIndex === 0}
                       >
                         →
@@ -210,7 +272,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <StatsSummary 
+              <StatsSummary
                 todayNetProfit={selectedNetProfit}
                 todayNetProfitChange={netProfitChange}
                 topPerformer={topPerformer.name}
@@ -224,17 +286,17 @@ function App() {
             </div>
             <div className="dashboard-container">
               <div className="chart-section">
-                <ProfitChart 
-                  botsData={latestBotsData} 
+                <ProfitChart
+                  botsData={latestBotsData}
                   onBotHover={setHoveredBot}
                   type="daily"
                 />
               </div>
               <div className="bots-list">
                 {latestBotsData.map((bot, index) => (
-                  <BotCard 
-                    key={bot.id} 
-                    bot={bot} 
+                  <BotCard
+                    key={bot.id}
+                    bot={bot}
                     index={index}
                     isHighlighted={hoveredBot === bot.name}
                     type="daily"
@@ -246,12 +308,12 @@ function App() {
           <div className="dashboard-section">
             <div className="header-section">
               <div>
-                <h1>Weekly Performance Analysis</h1>
+                <h1>Phân Tích Hiệu Suất Tuần</h1>
                 <p className="subtitle">
-                  Last 7 days overview • {new Date(weeklyData[6].date).toLocaleDateString('vi-VN')} - {new Date(weeklyData[0].date).toLocaleDateString('vi-VN')}
+                  Tổng quan 7 ngày qua • {new Date(weeklyData[6].date).toLocaleDateString('vi-VN')} - {new Date(weeklyData[0].date).toLocaleDateString('vi-VN')}
                 </p>
               </div>
-              <WeeklyStatsSummary 
+              <WeeklyStatsSummary
                 weeklyNetProfit={weeklyNetProfit}
                 topPerformer={topWeeklyPerformer.name}
                 topPerformanceValue={topWeeklyPerformer.performance}
@@ -263,20 +325,59 @@ function App() {
             </div>
             <div className="dashboard-container">
               <div className="chart-section">
-                <ProfitChart 
-                  botsData={weeklyBotsData} 
+                <ProfitChart
+                  botsData={weeklyBotsData}
                   onBotHover={setHoveredBot}
                   type="weekly"
                 />
               </div>
               <div className="bots-list">
                 {weeklyBotsData.map((bot, index) => (
-                  <BotCard 
-                    key={bot.id} 
-                    bot={bot} 
+                  <BotCard
+                    key={bot.id}
+                    bot={bot}
                     index={index}
                     isHighlighted={hoveredBot === bot.name}
                     type="weekly"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="dashboard-section">
+            <div className="header-section">
+              <div>
+                <h1>Phân Tích Hiệu Suất Tháng</h1>
+                <p className="subtitle">
+                  Tổng quan 30 ngày qua • {new Date(monthlyData[29].date).toLocaleDateString('vi-VN')} - {new Date(monthlyData[0].date).toLocaleDateString('vi-VN')}
+                </p>
+              </div>
+              <WeeklyStatsSummary
+                weeklyNetProfit={monthlyNetProfit}
+                topPerformer={topMonthlyPerformer.name}
+                topPerformanceValue={topMonthlyPerformer.performance}
+                bottomPerformer={bottomMonthlyPerformer.name}
+                bottomPerformanceValue={bottomMonthlyPerformer.performance}
+                profitableBots={avgProfitableBotsPerDayMonthly}
+                totalBots={botsData.length}
+              />
+            </div>
+            <div className="dashboard-container">
+              <div className="chart-section">
+                <ProfitChart
+                  botsData={monthlyBotsData}
+                  onBotHover={setHoveredBot}
+                  type="monthly"
+                />
+              </div>
+              <div className="bots-list">
+                {monthlyBotsData.map((bot, index) => (
+                  <BotCard
+                    key={bot.id}
+                    bot={bot}
+                    index={index}
+                    isHighlighted={hoveredBot === bot.name}
+                    type="monthly"
                   />
                 ))}
               </div>

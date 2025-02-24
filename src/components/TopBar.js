@@ -14,28 +14,28 @@ function TopBar() {
         <div className="nav-links">
           <a href="#" className="nav-link active">
             <span className="nav-icon">📊</span>
-            Dashboard
+            Bảng Điều Khiển
           </a>
           <a href="#" className="nav-link">
             <span className="nav-icon">🤖</span>
-            Bots
+            Bot
           </a>
           <a href="#" className="nav-link">
             <span className="nav-icon">📈</span>
-            Markets
+            Thị Trường
           </a>
           <a href="#" className="nav-link">
             <span className="nav-icon">⚙️</span>
-            Settings
+            Cài Đặt
           </a>
         </div>
         <div className="user-section">
           <div className="network-status">
-            <span className="status-dot"></span>
-            Mainnet
+            <span className="status-dot online"></span>
+            Mạng Chính
           </div>
           <button className="connect-wallet">
-            Connect Wallet
+            Kết Nối Ví
           </button>
         </div>
       </div>

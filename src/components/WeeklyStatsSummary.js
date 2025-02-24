@@ -10,15 +10,23 @@ function WeeklyStatsSummary({
   profitableBots,
   totalBots
 }) {
+  // Hàm format số tiền theo định dạng VND
+  const formatCurrency = (value) => {
+    return new Intl.NumberFormat('vi-VN', {
+      style: 'currency',
+      currency: 'VND'
+    }).format(value * 23000); // Giả sử tỷ giá 1 USD = 23000 VND
+  };
+
   return (
     <div className="stats-summary">
       <div className="summary-item">
         <div className="summary-value">
           <span className={weeklyNetProfit >= 0 ? 'profit' : 'loss'}>
-            {weeklyNetProfit >= 0 ? '+$' : '-$'}{Math.abs(weeklyNetProfit)}
+            {weeklyNetProfit >= 0 ? '+' : '-'}{formatCurrency(Math.abs(weeklyNetProfit))}
           </span>
         </div>
-        <div className="summary-label">TOTAL NET PROFIT</div>
+        <div className="summary-label">TỔNG LỢI NHUẬN RÒNG</div>
       </div>
 
       <div className="summary-item">
@@ -30,7 +38,7 @@ function WeeklyStatsSummary({
             </span>
           </span>
         </div>
-        <div className="summary-label">BEST PERFORMING BOT</div>
+        <div className="summary-label">BOT HIỆU SUẤT TỐT NHẤT</div>
       </div>
 
       <div className="summary-item">
@@ -42,7 +50,7 @@ function WeeklyStatsSummary({
             </span>
           </span>
         </div>
-        <div className="summary-label">WORST PERFORMING BOT</div>
+        <div className="summary-label">BOT HIỆU SUẤT KÉM NHẤT</div>
       </div>
 
       <div className="summary-item">
@@ -52,7 +60,7 @@ function WeeklyStatsSummary({
             / {totalBots}
           </span>
         </div>
-        <div className="summary-label">AVG PROFITABLE BOTS/DAY</div>
+        <div className="summary-label">TRUNG BÌNH BOT CÓ LỢI NHUẬN/NGÀY</div>
       </div>
     </div>
   );
