@@ -14,9 +14,24 @@ def generate_bot_data():
     # Danh sách bot
     bots_data = []
     
+    # Tạo danh sách xu hướng bot để đảm bảo tỷ lệ bot thắng/thua
+    bot_trends = []
+    num_positive_bots = 20  # Số bot muốn có xu hướng tích cực
+    
+    # Tạo xu hướng tích cực cho 20 bot
+    for _ in range(num_positive_bots):
+        bot_trends.append(random.uniform(0.5, 3))
+    
+    # Tạo xu hướng tiêu cực cho 10 bot còn lại
+    for _ in range(NUM_BOTS - num_positive_bots):
+        bot_trends.append(random.uniform(-3, -0.5))
+    
+    # Xáo trộn danh sách xu hướng
+    random.shuffle(bot_trends)
+    
     for bot_idx in range(NUM_BOTS):
-        # Tạo xu hướng riêng cho mỗi bot (-2 đến +2)
-        bot_trend = random.uniform(-2, 2)
+        # Lấy xu hướng cho bot hiện tại
+        bot_trend = bot_trends[bot_idx]
         
         # Balance ban đầu ngẫu nhiên từ 8000 đến 15000
         initial_balance = random.randint(8000, 15000)
@@ -29,7 +44,12 @@ def generate_bot_data():
             current_date = start_date + timedelta(days=day)
             
             # Tạo profit_percent với xu hướng của bot
-            base_profit = random.uniform(-6, 6)
+            # Tăng cơ hội profit dương bằng cách điều chỉnh phạm vi
+            if bot_trend > 0:
+                base_profit = random.uniform(-4, 8)  # Thiên về profit dương
+            else:
+                base_profit = random.uniform(-8, 4)  # Thiên về profit âm
+                
             profit_percent = base_profit + bot_trend
             profit_percent = round(profit_percent, 2)
             
@@ -40,10 +60,10 @@ def generate_bot_data():
             current_balance += net_profit
             
             # Tạo winrate phù hợp với profit_percent
-            base_winrate = 65  # Tỷ lệ thắng trung bình mục tiêu
-            winrate_variation = profit_percent * 1.5  # Biến động dựa trên profit
+            base_winrate = 68  # Tăng tỷ lệ thắng cơ bản lên
+            winrate_variation = profit_percent * 1.2  # Giảm biến động để ổn định hơn
             winrate = base_winrate + winrate_variation
-            winrate = round(min(max(winrate, 55), 75), 2)  # Giới hạn trong khoảng 55-75%
+            winrate = round(min(max(winrate, 58), 78), 2)  # Tăng khoảng winrate lên
             
             daily_stat = {
                 "date": current_date.strftime("%Y-%m-%d"),
