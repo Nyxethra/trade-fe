@@ -21,7 +21,7 @@ function StatsSummary({
             ({todayNetProfitChange >= 0 ? '↑' : '↓'}{Math.abs(todayNetProfitChange)}% vs yesterday)
           </span>
         </div>
-        <div className="summary-label">TODAY'S NET PROFIT</div>
+        <div className="summary-label">TODAY'S TOTAL PERFORMANCE</div>
       </div>
 
       <div className="summary-item">

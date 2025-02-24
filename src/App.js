@@ -35,7 +35,9 @@ function App() {
   };
 
   const selectedDateIndex = getDateIndex(selectedDate);
-  const previousDateIndex = selectedDateIndex + 1;
+  const yesterdayDate = new Date(selectedDate);
+  yesterdayDate.setDate(selectedDate.getDate() - 1);
+  const previousDateIndex = getDateIndex(yesterdayDate);
 
   // Get selected date and previous date stats
   const selectedDateStats = botsData.map(bot => ({
@@ -120,6 +122,7 @@ function App() {
     const avgPerformance = (weeklyStats.reduce((sum, day) => sum + day.profit_percent, 0) / 7).toFixed(1);
     const avgWinRate = (weeklyStats.reduce((sum, day) => sum + day.winrate, 0) / 7).toFixed(2);
     const totalNetProfit = weeklyStats.reduce((sum, day) => sum + day.net_profit, 0);
+    const avgBalance = Math.round(weeklyStats.reduce((sum, day) => sum + day.balance, 0) / 7);
     
     return {
       id: bot.name,
@@ -127,6 +130,7 @@ function App() {
       performance: avgPerformance,
       winRate: `${avgWinRate}%`,
       balance: weeklyStats[0].balance,
+      avgBalance: avgBalance,
       netProfit: totalNetProfit
     };
   });
