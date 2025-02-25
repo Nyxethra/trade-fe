@@ -1,8 +1,9 @@
 import React from 'react';
 import { COLORS } from '../constants/colors';
 
-function WeeklyStatsSummary({ 
+function WeeklyStatsSummary({
   weeklyNetProfit,
+  totalProfitPercent,
   topPerformer,
   topPerformanceValue,
   bottomPerformer,
@@ -10,12 +11,14 @@ function WeeklyStatsSummary({
   profitableBots,
   totalBots
 }) {
-  // Hàm format số tiền theo định dạng VND
+  // Format currency in USD
   const formatCurrency = (value) => {
-    return new Intl.NumberFormat('vi-VN', {
+    return new Intl.NumberFormat('en-US', {
       style: 'currency',
-      currency: 'VND'
-    }).format(value * 23000); // Giả sử tỷ giá 1 USD = 23000 VND
+      currency: 'USD',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(value);
   };
 
   return (
@@ -25,42 +28,49 @@ function WeeklyStatsSummary({
           <span className={weeklyNetProfit >= 0 ? 'profit' : 'loss'}>
             {weeklyNetProfit >= 0 ? '+' : '-'}{formatCurrency(Math.abs(weeklyNetProfit))}
           </span>
+          <div className="profit-percent" style={{
+            color: totalProfitPercent >= 0 ? COLORS.status.success : COLORS.status.danger,
+            fontSize: '1rem',
+
+          }}>
+            ({totalProfitPercent >= 0 ? '+' : ''}{totalProfitPercent}%)
+          </div>
         </div>
-        <div className="summary-label">TỔNG LỢI NHUẬN RÒNG</div>
+        <div className="summary-label">TOTAL PROFIT</div>
       </div>
 
       <div className="summary-item">
         <div className="summary-value">
           <span style={{ color: COLORS.status.success }}>
             {topPerformer}
-            <span className="performance-value">
+            <span className="profit-value">
               (+{topPerformanceValue}%)
             </span>
           </span>
         </div>
-        <div className="summary-label">BOT HIỆU SUẤT TỐT NHẤT</div>
+        <div className="summary-label">HIGHEST PROFIT BOT</div>
       </div>
 
       <div className="summary-item">
         <div className="summary-value">
           <span style={{ color: COLORS.status.danger }}>
             {bottomPerformer}
-            <span className="performance-value">
+            <span className="profit-value">
               ({bottomPerformanceValue}%)
             </span>
           </span>
         </div>
-        <div className="summary-label">BOT HIỆU SUẤT KÉM NHẤT</div>
+        <div className="summary-label">LOWEST PROFIT BOT</div>
       </div>
 
       <div className="summary-item">
         <div className="summary-value">
           {profitableBots}
-          <span className="performance-value">
+          <span className="profit-value">
             / {totalBots}
           </span>
         </div>
-        <div className="summary-label">TRUNG BÌNH BOT CÓ LỢI NHUẬN/NGÀY</div>
+        <div className="summary-label">AVG PROFITABLE BOTS/DAY</div>
       </div>
     </div>
   );

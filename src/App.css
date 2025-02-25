@@ -848,7 +848,7 @@
   font-size: 0.9rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 2000px) {
   .quick-overview {
     grid-template-columns: 1fr;
   }

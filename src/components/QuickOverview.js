@@ -1,74 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { COLORS } from '../constants/colors';
+import './QuickOverview.css';
 
-function QuickOverview({ 
-  totalBots, 
-  tradingVolume, 
-  marketSentiment, 
-  hotMarket,
-  alerts,
-  marketData
-}) {
+function QuickOverview({ botsData }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Tính toán các chỉ số tổng quan từ dữ liệu mới nhất
+  const calculateOverview = () => {
+    // Lấy dữ liệu mới nhất (index 0 trong daily_stats)
+    const latestStats = botsData.map(bot => ({
+      netProfit: bot.daily_stats[0].net_profit,
+      balance: bot.daily_stats[0].balance,
+      winRate: bot.daily_stats[0].winrate
+    }));
+
+    const totalProfit = latestStats.reduce((sum, stat) => sum + stat.netProfit, 0);
+    const totalBalance = latestStats.reduce((sum, stat) => sum + stat.balance, 0);
+    const averageWinRate = latestStats.reduce((sum, stat) => sum + stat.winRate, 0) / latestStats.length;
+
+    return {
+      totalProfit,
+      totalBalance,
+      averageWinRate: averageWinRate.toFixed(2)
+    };
+  };
+
+  const { totalProfit, totalBalance, averageWinRate } = calculateOverview();
+
+  const formatCurrency = (value) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(value);
+  };
+
   return (
-    <div className="quick-overview">
-      <div className="overview-section stats">
-        <div className="stat-box">
-          <div className="stat-value">{totalBots}</div>
-          <div className="stat-label">Active Bots</div>
-        </div>
-        <div className="stat-box">
-          <div className="stat-value">{tradingVolume}</div>
-          <div className="stat-label">24h Volume</div>
-        </div>
-        <div className="stat-box">
-          <div className="stat-value" style={{ color: marketSentiment === 'Bullish' ? COLORS.status.success : COLORS.status.danger }}>
-            {marketSentiment}
-          </div>
-          <div className="stat-label">Market Sentiment</div>
-        </div>
-        <div className="stat-box">
-          <div className="stat-value">{hotMarket}</div>
-          <div className="stat-label">Hottest Market</div>
-        </div>
+    <div className={`quick-overview ${isExpanded ? 'expanded' : ''}`}>
+      <div 
+        className="overview-header"
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
+        <h2>Tổng Quan Nhanh</h2>
+        <span className="toggle-icon">{isExpanded ? '▼' : '▶'}</span>
       </div>
-
-      <div className="overview-section alerts">
-        <div className="section-title">Recent Alerts</div>
-        <div className="alerts-list">
-          {alerts.map((alert, index) => (
-            <div key={index} className="alert-item">
-              {alert}
-            </div>
-          ))}
+      
+      <div className="overview-content">
+        <div className="overview-item">
+          <div className="item-label">Tổng Lợi Nhuận Ròng</div>
+          <div 
+            className="item-value"
+            style={{ color: totalProfit >= 0 ? COLORS.status.success : COLORS.status.danger }}
+          >
+            {totalProfit >= 0 ? '+' : ''}{formatCurrency(totalProfit)}
+          </div>
         </div>
-      </div>
 
-      <div className="overview-section markets">
-        <div className="section-title">Market Overview</div>
-        <div className="markets-list">
-          <div className="market-item">
-            <img src="/icons/btc.svg" alt="BTC" className="market-icon" />
-            <div className="market-name">BTC</div>
-            <div className="market-price">{marketData.btc.price}</div>
-            <div className="market-change" style={{ color: marketData.btc.change.startsWith('+') ? COLORS.status.success : COLORS.status.danger }}>
-              {marketData.btc.change}
-            </div>
-          </div>
-          <div className="market-item">
-            <img src="/icons/eth.svg" alt="ETH" className="market-icon" />
-            <div className="market-name">ETH</div>
-            <div className="market-price">{marketData.eth.price}</div>
-            <div className="market-change" style={{ color: marketData.eth.change.startsWith('+') ? COLORS.status.success : COLORS.status.danger }}>
-              {marketData.eth.change}
-            </div>
-          </div>
-          <div className="market-item">
-            <img src="/icons/bnb.svg" alt="BNB" className="market-icon" />
-            <div className="market-name">BNB</div>
-            <div className="market-price">{marketData.bnb.price}</div>
-            <div className="market-change" style={{ color: marketData.bnb.change.startsWith('+') ? COLORS.status.success : COLORS.status.danger }}>
-              {marketData.bnb.change}
-            </div>
+        <div className="overview-item">
+          <div className="item-label">Tổng Số Dư</div>
+          <div className="item-value">{formatCurrency(totalBalance)}</div>
+        </div>
+
+        <div className="overview-item">
+          <div className="item-label">Tỷ Lệ Thắng Trung Bình</div>
+          <div 
+            className="item-value"
+            style={{ color: averageWinRate >= 65 ? COLORS.status.success : COLORS.status.warning }}
+          >
+            {averageWinRate}%
           </div>
         </div>
       </div>

@@ -13,29 +13,29 @@ function TopBar() {
       <div className="topbar-right">
         <div className="nav-links">
           <a href="#" className="nav-link active">
-            <span className="nav-icon">📊</span>
-            Bảng Điều Khiển
+            <span className="nav-icon">��</span>
+            Dashboard
           </a>
           <a href="#" className="nav-link">
             <span className="nav-icon">🤖</span>
-            Bot
+            Bots
           </a>
           <a href="#" className="nav-link">
             <span className="nav-icon">📈</span>
-            Thị Trường
+            Markets
           </a>
           <a href="#" className="nav-link">
             <span className="nav-icon">⚙️</span>
-            Cài Đặt
+            Settings
           </a>
         </div>
         <div className="user-section">
           <div className="network-status">
             <span className="status-dot online"></span>
-            Mạng Chính
+            Mainnet
           </div>
           <button className="connect-wallet">
-            Kết Nối Ví
+            Connect Wallet
           </button>
         </div>
       </div>

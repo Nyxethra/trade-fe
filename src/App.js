@@ -88,11 +88,11 @@ function App() {
   // Get alerts based on performance
   const alerts = [
     topPerformer.performance > 5 ?
-      `🔥 ${topPerformer.name} vừa đạt lợi nhuận ${topPerformer.performance}% trong 24h qua` : null,
+      `🔥 ${topPerformer.name} just reached a profit of ${topPerformer.performance}% in the last 24 hours` : null,
     profitableBotsToday > profitableBotsYesterday ?
-      `📈 Số lượng bot có lợi nhuận tăng ${profitableBotsChange} so với hôm qua` : null,
+      `📈 Number of profitable bots increased by ${profitableBotsChange} compared to yesterday` : null,
     bottomPerformer.performance < -5 ?
-      `⚠️ ${bottomPerformer.name} đang giảm ${Math.abs(bottomPerformer.performance)}% trong 24h qua` : null
+      `⚠️ ${bottomPerformer.name} is down ${Math.abs(bottomPerformer.performance)}% in the last 24 hours` : null
   ].filter(Boolean);
 
   // Latest data for bot cards
@@ -156,14 +156,9 @@ function App() {
     profitableBotsPerDay.reduce((sum, count) => sum + count, 0) / 7
   );
 
-  // Format date helper
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    const day = date.getDate().toString().padStart(2, '0');
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const year = date.getFullYear();
-    return `${day}/${month}/${year}`;
-  };
+  // Calculate weekly total profit percent
+  const weeklyTotalProfitPercent = weeklyBotsData.reduce((sum, bot) => 
+    sum + parseFloat(bot.performance), 0).toFixed(2);
 
   // Prepare monthly data
   const monthlyData = Array.from({ length: 30 }).map((_, index) => {
@@ -227,27 +222,31 @@ function App() {
     profitableBotsPerDayMonthly.reduce((sum, count) => sum + count, 0) / 30
   );
 
+  // Calculate monthly total profit percent
+  const monthlyTotalProfitPercent = monthlyBotsData.reduce((sum, bot) => 
+    sum + parseFloat(bot.performance), 0).toFixed(2);
+
   return (
     <div className="App">
       <TopBar />
       <div className="content">
         <div className="main-boxes">
           <div className="dashboard-header">
-            <h1>Theo Dõi Hiệu Suất Bot</h1>
-            <p>Theo Dõi • Phân Tích • Tối Ưu</p>
+            <h1>Bot Profit Monitor</h1>
+            <p>Track • Analyze • Optimize</p>
           </div>
           <div className="dashboard-section">
             <div className="header-section">
               <div>
-                <h1>Tổng Quan Giao Dịch Hôm Nay</h1>
+                <h1>Daily Trading Summary</h1>
                 <div className="subtitle-with-controls">
                   <div className="subtitle">
-                    Hiệu suất tổng quan •
+                    Profit Overview •
                     <div className="date-controls">
                       <button
                         className="date-nav-btn"
                         onClick={() => changeDate(-1)}
-                        title="Ngày trước"
+                        title="Previous day"
                         disabled={selectedDateIndex === botsData[0].daily_stats.length - 1}
                       >
                         ←
@@ -263,7 +262,7 @@ function App() {
                       <button
                         className="date-nav-btn"
                         onClick={() => changeDate(1)}
-                        title="Ngày sau"
+                        title="Next day"
                         disabled={selectedDateIndex === 0}
                       >
                         →
@@ -308,13 +307,14 @@ function App() {
           <div className="dashboard-section">
             <div className="header-section">
               <div>
-                <h1>Phân Tích Hiệu Suất Tuần</h1>
+                <h1>Weekly Profit Analysis</h1>
                 <p className="subtitle">
-                  Tổng quan 7 ngày qua • {new Date(weeklyData[6].date).toLocaleDateString('vi-VN')} - {new Date(weeklyData[0].date).toLocaleDateString('vi-VN')}
+                  Last 7 days overview • {new Date(weeklyData[6].date).toLocaleDateString('en-US')} - {new Date(weeklyData[0].date).toLocaleDateString('en-US')}
                 </p>
               </div>
               <WeeklyStatsSummary
                 weeklyNetProfit={weeklyNetProfit}
+                totalProfitPercent={weeklyTotalProfitPercent}
                 topPerformer={topWeeklyPerformer.name}
                 topPerformanceValue={topWeeklyPerformer.performance}
                 bottomPerformer={bottomWeeklyPerformer.name}
@@ -347,13 +347,14 @@ function App() {
           <div className="dashboard-section">
             <div className="header-section">
               <div>
-                <h1>Phân Tích Hiệu Suất Tháng</h1>
+                <h1>Monthly Profit Analysis</h1>
                 <p className="subtitle">
-                  Tổng quan 30 ngày qua • {new Date(monthlyData[29].date).toLocaleDateString('vi-VN')} - {new Date(monthlyData[0].date).toLocaleDateString('vi-VN')}
+                  Last 30 days overview • {new Date(monthlyData[29].date).toLocaleDateString('en-US')} - {new Date(monthlyData[0].date).toLocaleDateString('en-US')}
                 </p>
               </div>
               <WeeklyStatsSummary
                 weeklyNetProfit={monthlyNetProfit}
+                totalProfitPercent={monthlyTotalProfitPercent}
                 topPerformer={topMonthlyPerformer.name}
                 topPerformanceValue={topMonthlyPerformer.performance}
                 bottomPerformer={bottomMonthlyPerformer.name}
@@ -385,6 +386,7 @@ function App() {
           </div>
         </div>
       </div>
+      <QuickOverview botsData={botsData} />
     </div>
   );
 }
