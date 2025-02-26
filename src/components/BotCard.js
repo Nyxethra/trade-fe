@@ -23,15 +23,9 @@ function BotCard({ bot, index, isHighlighted, type = 'daily' }) {
           <span className="value">{bot.winRate}</span>
         </div>
         <div className="stat-item">
-          <span className="label">{type === 'weekly' ? 'Current Balance' : 'Balance'}</span>
+          <span className="label">Balance</span>
           <span className="value">${bot.balance.toLocaleString()}</span>
         </div>
-        {type === 'weekly' && (
-          <div className="stat-item">
-            <span className="label">Avg Balance</span>
-            <span className="value">${bot.avgBalance?.toLocaleString()}</span>
-          </div>
-        )}
         <div className="stat-item">
           <span className="label">Net Profit</span>
           <span className="value" style={{ color: bot.netProfit >= 0 ? COLORS.status.success : COLORS.status.danger }}>

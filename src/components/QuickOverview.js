@@ -42,13 +42,13 @@ function QuickOverview({ botsData }) {
         className="overview-header"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <h2>Tổng Quan Nhanh</h2>
+        <h2>Quick Overview</h2>
         <span className="toggle-icon">{isExpanded ? '▼' : '▶'}</span>
       </div>
       
       <div className="overview-content">
         <div className="overview-item">
-          <div className="item-label">Tổng Lợi Nhuận Ròng</div>
+          <div className="item-label">Total Net Profit</div>
           <div 
             className="item-value"
             style={{ color: totalProfit >= 0 ? COLORS.status.success : COLORS.status.danger }}
@@ -58,12 +58,12 @@ function QuickOverview({ botsData }) {
         </div>
 
         <div className="overview-item">
-          <div className="item-label">Tổng Số Dư</div>
+          <div className="item-label">Total Balance</div>
           <div className="item-value">{formatCurrency(totalBalance)}</div>
         </div>
 
         <div className="overview-item">
-          <div className="item-label">Tỷ Lệ Thắng Trung Bình</div>
+          <div className="item-label">Average Win Rate</div>
           <div 
             className="item-value"
             style={{ color: averageWinRate >= 65 ? COLORS.status.success : COLORS.status.warning }}

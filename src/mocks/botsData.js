@@ -3,214 +3,214 @@ export const botsData = [
     "name": "bot_001",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 547,
+        "profit_percent": 4.72,
+        "winrate": 70.22,
+        "balance": 12127
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 722,
+        "profit_percent": 5.95,
+        "winrate": 73.45,
+        "balance": 12849
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 745,
+        "profit_percent": 5.8,
+        "winrate": 73.34,
+        "balance": 13594
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 931,
+        "profit_percent": 6.85,
+        "winrate": 73.81,
+        "balance": 14525
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 371,
-        "profit_percent": 2.63,
-        "winrate": 71.16,
-        "balance": 14473
+        "net_profit": 1028,
+        "profit_percent": 7.08,
+        "winrate": 75.85,
+        "balance": 15553
       },
       {
         "date": "2025-02-02",
-        "net_profit": 769,
-        "profit_percent": 5.31,
-        "winrate": 74.37,
-        "balance": 15242
+        "net_profit": 1176,
+        "profit_percent": 7.56,
+        "winrate": 75.76,
+        "balance": 16729
       },
       {
         "date": "2025-02-03",
-        "net_profit": 1149,
-        "profit_percent": 7.54,
-        "winrate": 77.05,
-        "balance": 16391
+        "net_profit": 1091,
+        "profit_percent": 6.52,
+        "winrate": 74.92,
+        "balance": 17820
       },
       {
         "date": "2025-02-04",
-        "net_profit": 970,
-        "profit_percent": 5.92,
-        "winrate": 75.1,
-        "balance": 17361
+        "net_profit": 1137,
+        "profit_percent": 6.38,
+        "winrate": 72.17,
+        "balance": 18957
       },
       {
         "date": "2025-02-05",
-        "net_profit": 328,
-        "profit_percent": 1.89,
-        "winrate": 70.27,
-        "balance": 17689
+        "net_profit": 1010,
+        "profit_percent": 5.33,
+        "winrate": 69.83,
+        "balance": 19967
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1412,
-        "profit_percent": 7.98,
-        "winrate": 77.58,
-        "balance": 19101
+        "net_profit": 903,
+        "profit_percent": 4.52,
+        "winrate": 68.61,
+        "balance": 20870
       },
       {
         "date": "2025-02-07",
-        "net_profit": 688,
-        "profit_percent": 3.6,
-        "winrate": 72.32,
-        "balance": 19789
+        "net_profit": 799,
+        "profit_percent": 3.83,
+        "winrate": 69.06,
+        "balance": 21669
       },
       {
         "date": "2025-02-08",
-        "net_profit": 1146,
-        "profit_percent": 5.79,
-        "winrate": 74.95,
-        "balance": 20935
+        "net_profit": 765,
+        "profit_percent": 3.53,
+        "winrate": 68.33,
+        "balance": 22434
       },
       {
         "date": "2025-02-09",
-        "net_profit": 1187,
-        "profit_percent": 5.67,
-        "winrate": 74.8,
-        "balance": 22122
+        "net_profit": 740,
+        "profit_percent": 3.3,
+        "winrate": 69.58,
+        "balance": 23174
       },
       {
         "date": "2025-02-10",
-        "net_profit": 1681,
-        "profit_percent": 7.6,
-        "winrate": 77.12,
-        "balance": 23803
+        "net_profit": 945,
+        "profit_percent": 4.08,
+        "winrate": 71.65,
+        "balance": 24119
       },
       {
         "date": "2025-02-11",
-        "net_profit": -229,
-        "profit_percent": -0.96,
-        "winrate": 66.85,
-        "balance": 23574
+        "net_profit": 1066,
+        "profit_percent": 4.42,
+        "winrate": 72.05,
+        "balance": 25185
       },
       {
         "date": "2025-02-12",
-        "net_profit": 170,
-        "profit_percent": 0.72,
-        "winrate": 68.86,
-        "balance": 23744
+        "net_profit": 567,
+        "profit_percent": 2.25,
+        "winrate": 67.23,
+        "balance": 25752
       },
       {
         "date": "2025-02-13",
-        "net_profit": 416,
-        "profit_percent": 1.75,
-        "winrate": 70.1,
-        "balance": 24160
+        "net_profit": 793,
+        "profit_percent": 3.08,
+        "winrate": 68.79,
+        "balance": 26545
       },
       {
         "date": "2025-02-14",
-        "net_profit": -505,
-        "profit_percent": -2.09,
-        "winrate": 65.49,
-        "balance": 23655
+        "net_profit": 804,
+        "profit_percent": 3.03,
+        "winrate": 69.25,
+        "balance": 27349
       },
       {
         "date": "2025-02-15",
-        "net_profit": -610,
-        "profit_percent": -2.58,
-        "winrate": 64.9,
-        "balance": 23045
+        "net_profit": 706,
+        "profit_percent": 2.58,
+        "winrate": 66.84,
+        "balance": 28055
       },
       {
         "date": "2025-02-16",
-        "net_profit": -760,
-        "profit_percent": -3.3,
-        "winrate": 64.04,
-        "balance": 22285
+        "net_profit": 856,
+        "profit_percent": 3.05,
+        "winrate": 68.58,
+        "balance": 28911
       },
       {
         "date": "2025-02-17",
-        "net_profit": 1493,
-        "profit_percent": 6.7,
-        "winrate": 76.04,
-        "balance": 23778
+        "net_profit": 804,
+        "profit_percent": 2.78,
+        "winrate": 68.42,
+        "balance": 29715
       },
       {
         "date": "2025-02-18",
-        "net_profit": 1605,
-        "profit_percent": 6.75,
-        "winrate": 76.1,
-        "balance": 25383
+        "net_profit": 446,
+        "profit_percent": 1.5,
+        "winrate": 65.1,
+        "balance": 30161
       },
       {
         "date": "2025-02-19",
-        "net_profit": 401,
-        "profit_percent": 1.58,
-        "winrate": 69.9,
-        "balance": 25784
+        "net_profit": 745,
+        "profit_percent": 2.47,
+        "winrate": 67.37,
+        "balance": 30906
       },
       {
         "date": "2025-02-20",
-        "net_profit": -371,
-        "profit_percent": -1.44,
-        "winrate": 66.27,
-        "balance": 25413
+        "net_profit": 430,
+        "profit_percent": 1.39,
+        "winrate": 66.47,
+        "balance": 31336
       },
       {
         "date": "2025-02-21",
-        "net_profit": 460,
-        "profit_percent": 1.81,
-        "winrate": 70.17,
-        "balance": 25873
+        "net_profit": 323,
+        "profit_percent": 1.03,
+        "winrate": 65.17,
+        "balance": 31659
       },
       {
         "date": "2025-02-22",
-        "net_profit": -587,
-        "profit_percent": -2.27,
-        "winrate": 65.28,
-        "balance": 25286
+        "net_profit": 674,
+        "profit_percent": 2.13,
+        "winrate": 66.62,
+        "balance": 32333
       },
       {
         "date": "2025-02-23",
-        "net_profit": 1229,
-        "profit_percent": 4.86,
-        "winrate": 73.83,
-        "balance": 26515
+        "net_profit": 608,
+        "profit_percent": 1.88,
+        "winrate": 67.48,
+        "balance": 32941
       },
       {
         "date": "2025-02-24",
-        "net_profit": -297,
-        "profit_percent": -1.12,
-        "winrate": 66.66,
-        "balance": 26218
+        "net_profit": 764,
+        "profit_percent": 2.32,
+        "winrate": 69.47,
+        "balance": 33705
       },
       {
         "date": "2025-02-25",
-        "net_profit": 1078,
-        "profit_percent": 4.11,
-        "winrate": 72.93,
-        "balance": 27296
+        "net_profit": 313,
+        "profit_percent": 0.93,
+        "winrate": 66.98,
+        "balance": 34018
       },
       {
         "date": "2025-02-26",
-        "net_profit": -903,
-        "profit_percent": -3.31,
-        "winrate": 64.03,
-        "balance": 26393
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 2056,
-        "profit_percent": 7.79,
-        "winrate": 77.35,
-        "balance": 28449
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 2282,
-        "profit_percent": 8.02,
-        "winrate": 77.62,
-        "balance": 30731
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1272,
-        "profit_percent": 4.14,
-        "winrate": 72.97,
-        "balance": 32003
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 2000,
-        "profit_percent": 6.25,
-        "winrate": 75.5,
-        "balance": 34003
+        "net_profit": 918,
+        "profit_percent": 2.7,
+        "winrate": 68.77,
+        "balance": 34936
       }
     ]
   },
@@ -218,214 +218,214 @@ export const botsData = [
     "name": "bot_002",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 409,
+        "profit_percent": 3.04,
+        "winrate": 68.8,
+        "balance": 13861
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 345,
+        "profit_percent": 2.49,
+        "winrate": 67.2,
+        "balance": 14206
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 443,
+        "profit_percent": 3.12,
+        "winrate": 66.86,
+        "balance": 14649
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 429,
+        "profit_percent": 2.93,
+        "winrate": 67.88,
+        "balance": 15078
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 1116,
-        "profit_percent": 8.01,
-        "winrate": 77.61,
-        "balance": 15053
+        "net_profit": 593,
+        "profit_percent": 3.93,
+        "winrate": 69.95,
+        "balance": 15671
       },
       {
         "date": "2025-02-02",
-        "net_profit": 1009,
-        "profit_percent": 6.7,
-        "winrate": 76.04,
-        "balance": 16062
+        "net_profit": 732,
+        "profit_percent": 4.67,
+        "winrate": 72.37,
+        "balance": 16403
       },
       {
         "date": "2025-02-03",
-        "net_profit": 483,
-        "profit_percent": 3.01,
-        "winrate": 71.61,
-        "balance": 16545
+        "net_profit": 397,
+        "profit_percent": 2.42,
+        "winrate": 68.12,
+        "balance": 16800
       },
       {
         "date": "2025-02-04",
-        "net_profit": 647,
-        "profit_percent": 3.91,
-        "winrate": 72.69,
-        "balance": 17192
+        "net_profit": 625,
+        "profit_percent": 3.72,
+        "winrate": 70.45,
+        "balance": 17425
       },
       {
         "date": "2025-02-05",
-        "net_profit": 488,
-        "profit_percent": 2.84,
-        "winrate": 71.41,
-        "balance": 17680
+        "net_profit": 472,
+        "profit_percent": 2.71,
+        "winrate": 69.81,
+        "balance": 17897
       },
       {
         "date": "2025-02-06",
-        "net_profit": 585,
-        "profit_percent": 3.31,
-        "winrate": 71.97,
-        "balance": 18265
+        "net_profit": 369,
+        "profit_percent": 2.06,
+        "winrate": 68.63,
+        "balance": 18266
       },
       {
         "date": "2025-02-07",
-        "net_profit": 833,
-        "profit_percent": 4.56,
-        "winrate": 73.47,
-        "balance": 19098
+        "net_profit": 415,
+        "profit_percent": 2.27,
+        "winrate": 68.95,
+        "balance": 18681
       },
       {
         "date": "2025-02-08",
-        "net_profit": 1663,
-        "profit_percent": 8.71,
-        "winrate": 78,
-        "balance": 20761
+        "net_profit": 226,
+        "profit_percent": 1.21,
+        "winrate": 67.52,
+        "balance": 18907
       },
       {
         "date": "2025-02-09",
-        "net_profit": 486,
-        "profit_percent": 2.34,
-        "winrate": 70.81,
-        "balance": 21247
+        "net_profit": 42,
+        "profit_percent": 0.22,
+        "winrate": 65.78,
+        "balance": 18949
       },
       {
         "date": "2025-02-10",
-        "net_profit": 1944,
-        "profit_percent": 9.15,
-        "winrate": 78,
-        "balance": 23191
+        "net_profit": 252,
+        "profit_percent": 1.33,
+        "winrate": 67.38,
+        "balance": 19201
       },
       {
         "date": "2025-02-11",
-        "net_profit": 1044,
-        "profit_percent": 4.5,
-        "winrate": 73.4,
-        "balance": 24235
+        "net_profit": 250,
+        "profit_percent": 1.3,
+        "winrate": 68.36,
+        "balance": 19451
       },
       {
         "date": "2025-02-12",
-        "net_profit": 625,
-        "profit_percent": 2.58,
-        "winrate": 71.1,
-        "balance": 24860
+        "net_profit": 82,
+        "profit_percent": 0.42,
+        "winrate": 66.83,
+        "balance": 19533
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1715,
-        "profit_percent": 6.9,
-        "winrate": 76.28,
-        "balance": 26575
+        "net_profit": 334,
+        "profit_percent": 1.71,
+        "winrate": 69.25,
+        "balance": 19867
       },
       {
         "date": "2025-02-14",
-        "net_profit": 696,
-        "profit_percent": 2.62,
-        "winrate": 71.14,
-        "balance": 27271
+        "net_profit": 161,
+        "profit_percent": 0.81,
+        "winrate": 66.85,
+        "balance": 20028
       },
       {
         "date": "2025-02-15",
-        "net_profit": -494,
-        "profit_percent": -1.81,
-        "winrate": 65.83,
-        "balance": 26777
+        "net_profit": -16,
+        "profit_percent": -0.08,
+        "winrate": 64.33,
+        "balance": 20012
       },
       {
         "date": "2025-02-16",
-        "net_profit": 2145,
-        "profit_percent": 8.01,
-        "winrate": 77.61,
-        "balance": 28922
+        "net_profit": 136,
+        "profit_percent": 0.68,
+        "winrate": 65.42,
+        "balance": 20148
       },
       {
         "date": "2025-02-17",
-        "net_profit": 584,
-        "profit_percent": 2.02,
-        "winrate": 70.42,
-        "balance": 29506
+        "net_profit": 48,
+        "profit_percent": 0.24,
+        "winrate": 65.1,
+        "balance": 20196
       },
       {
         "date": "2025-02-18",
-        "net_profit": 900,
-        "profit_percent": 3.05,
-        "winrate": 71.66,
-        "balance": 30406
+        "net_profit": 129,
+        "profit_percent": 0.64,
+        "winrate": 64.97,
+        "balance": 20325
       },
       {
         "date": "2025-02-19",
-        "net_profit": 140,
-        "profit_percent": 0.46,
-        "winrate": 68.55,
-        "balance": 30546
+        "net_profit": -157,
+        "profit_percent": -0.77,
+        "winrate": 63.58,
+        "balance": 20168
       },
       {
         "date": "2025-02-20",
-        "net_profit": 1949,
-        "profit_percent": 6.38,
-        "winrate": 75.66,
-        "balance": 32495
+        "net_profit": 113,
+        "profit_percent": 0.56,
+        "winrate": 65.93,
+        "balance": 20281
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1430,
-        "profit_percent": 4.4,
-        "winrate": 73.28,
-        "balance": 33925
+        "net_profit": -195,
+        "profit_percent": -0.96,
+        "winrate": 62.22,
+        "balance": 20086
       },
       {
         "date": "2025-02-22",
-        "net_profit": -675,
-        "profit_percent": -1.99,
-        "winrate": 65.61,
-        "balance": 33250
+        "net_profit": -225,
+        "profit_percent": -1.12,
+        "winrate": 63.22,
+        "balance": 19861
       },
       {
         "date": "2025-02-23",
-        "net_profit": 146,
-        "profit_percent": 0.44,
-        "winrate": 68.53,
-        "balance": 33396
+        "net_profit": -139,
+        "profit_percent": -0.7,
+        "winrate": 65.18,
+        "balance": 19722
       },
       {
         "date": "2025-02-24",
-        "net_profit": 2718,
-        "profit_percent": 8.14,
-        "winrate": 77.77,
-        "balance": 36114
+        "net_profit": 189,
+        "profit_percent": 0.96,
+        "winrate": 68.59,
+        "balance": 19911
       },
       {
         "date": "2025-02-25",
-        "net_profit": 173,
-        "profit_percent": 0.48,
-        "winrate": 68.58,
-        "balance": 36287
+        "net_profit": -171,
+        "profit_percent": -0.86,
+        "winrate": 64.84,
+        "balance": 19740
       },
       {
         "date": "2025-02-26",
-        "net_profit": 229,
-        "profit_percent": 0.63,
-        "winrate": 68.76,
-        "balance": 36516
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 1326,
-        "profit_percent": 3.63,
-        "winrate": 72.36,
-        "balance": 37842
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 3345,
-        "profit_percent": 8.84,
-        "winrate": 78,
-        "balance": 41187
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1816,
-        "profit_percent": 4.41,
-        "winrate": 73.29,
-        "balance": 43003
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 3328,
-        "profit_percent": 7.74,
-        "winrate": 77.29,
-        "balance": 46331
+        "net_profit": 83,
+        "profit_percent": 0.42,
+        "winrate": 64.15,
+        "balance": 19823
       }
     ]
   },
@@ -433,214 +433,214 @@ export const botsData = [
     "name": "bot_003",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 147,
+        "profit_percent": 1.18,
+        "winrate": 68.41,
+        "balance": 12588
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": -16,
+        "profit_percent": -0.13,
+        "winrate": 65.19,
+        "balance": 12572
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 67,
+        "profit_percent": 0.53,
+        "winrate": 64.34,
+        "balance": 12639
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 174,
+        "profit_percent": 1.38,
+        "winrate": 66.06,
+        "balance": 12813
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 841,
-        "profit_percent": 5.75,
-        "winrate": 74.9,
-        "balance": 15466
+        "net_profit": 78,
+        "profit_percent": 0.61,
+        "winrate": 67.0,
+        "balance": 12891
       },
       {
         "date": "2025-02-02",
-        "net_profit": 905,
-        "profit_percent": 5.85,
-        "winrate": 75.02,
-        "balance": 16371
+        "net_profit": 322,
+        "profit_percent": 2.5,
+        "winrate": 68.77,
+        "balance": 13213
       },
       {
         "date": "2025-02-03",
-        "net_profit": 488,
-        "profit_percent": 2.98,
-        "winrate": 71.58,
-        "balance": 16859
+        "net_profit": -15,
+        "profit_percent": -0.11,
+        "winrate": 64.44,
+        "balance": 13198
       },
       {
         "date": "2025-02-04",
-        "net_profit": 243,
-        "profit_percent": 1.44,
-        "winrate": 69.73,
-        "balance": 17102
+        "net_profit": 228,
+        "profit_percent": 1.73,
+        "winrate": 65.89,
+        "balance": 13426
       },
       {
         "date": "2025-02-05",
-        "net_profit": 792,
-        "profit_percent": 4.63,
-        "winrate": 73.56,
-        "balance": 17894
+        "net_profit": 52,
+        "profit_percent": 0.39,
+        "winrate": 66.31,
+        "balance": 13478
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1546,
-        "profit_percent": 8.64,
-        "winrate": 78,
-        "balance": 19440
+        "net_profit": 61,
+        "profit_percent": 0.45,
+        "winrate": 67.78,
+        "balance": 13539
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1454,
-        "profit_percent": 7.48,
-        "winrate": 76.98,
-        "balance": 20894
+        "net_profit": 20,
+        "profit_percent": 0.15,
+        "winrate": 64.77,
+        "balance": 13559
       },
       {
         "date": "2025-02-08",
-        "net_profit": 779,
-        "profit_percent": 3.73,
-        "winrate": 72.48,
-        "balance": 21673
+        "net_profit": -240,
+        "profit_percent": -1.77,
+        "winrate": 60.64,
+        "balance": 13319
       },
       {
         "date": "2025-02-09",
-        "net_profit": 141,
-        "profit_percent": 0.65,
-        "winrate": 68.78,
-        "balance": 21814
+        "net_profit": -222,
+        "profit_percent": -1.67,
+        "winrate": 61.83,
+        "balance": 13097
       },
       {
         "date": "2025-02-10",
-        "net_profit": 1355,
-        "profit_percent": 6.21,
-        "winrate": 75.45,
-        "balance": 23169
+        "net_profit": -157,
+        "profit_percent": -1.2,
+        "winrate": 63.4,
+        "balance": 12940
       },
       {
         "date": "2025-02-11",
-        "net_profit": 2196,
-        "profit_percent": 9.48,
-        "winrate": 78,
-        "balance": 25365
+        "net_profit": -280,
+        "profit_percent": -2.16,
+        "winrate": 61.07,
+        "balance": 12660
       },
       {
         "date": "2025-02-12",
-        "net_profit": 2422,
-        "profit_percent": 9.55,
-        "winrate": 78,
-        "balance": 27787
+        "net_profit": -265,
+        "profit_percent": -2.09,
+        "winrate": 62.95,
+        "balance": 12395
       },
       {
         "date": "2025-02-13",
-        "net_profit": -19,
-        "profit_percent": -0.07,
-        "winrate": 67.92,
-        "balance": 27768
+        "net_profit": -201,
+        "profit_percent": -1.62,
+        "winrate": 63.01,
+        "balance": 12194
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1686,
-        "profit_percent": 6.07,
-        "winrate": 75.28,
-        "balance": 29454
+        "net_profit": -105,
+        "profit_percent": -0.86,
+        "winrate": 65.73,
+        "balance": 12089
       },
       {
         "date": "2025-02-15",
-        "net_profit": 451,
-        "profit_percent": 1.53,
-        "winrate": 69.84,
-        "balance": 29905
+        "net_profit": -30,
+        "profit_percent": -0.25,
+        "winrate": 66.56,
+        "balance": 12059
       },
       {
         "date": "2025-02-16",
-        "net_profit": 775,
-        "profit_percent": 2.59,
-        "winrate": 71.11,
-        "balance": 30680
+        "net_profit": -157,
+        "profit_percent": -1.3,
+        "winrate": 64.21,
+        "balance": 11902
       },
       {
         "date": "2025-02-17",
-        "net_profit": 681,
-        "profit_percent": 2.22,
-        "winrate": 70.66,
-        "balance": 31361
+        "net_profit": -240,
+        "profit_percent": -2.02,
+        "winrate": 63.13,
+        "balance": 11662
       },
       {
         "date": "2025-02-18",
-        "net_profit": -521,
-        "profit_percent": -1.66,
-        "winrate": 66.01,
-        "balance": 30840
+        "net_profit": 2,
+        "profit_percent": 0.02,
+        "winrate": 67.36,
+        "balance": 11664
       },
       {
         "date": "2025-02-19",
-        "net_profit": 1113,
-        "profit_percent": 3.61,
-        "winrate": 72.33,
-        "balance": 31953
+        "net_profit": -108,
+        "profit_percent": -0.93,
+        "winrate": 63.84,
+        "balance": 11556
       },
       {
         "date": "2025-02-20",
-        "net_profit": 185,
-        "profit_percent": 0.58,
-        "winrate": 68.7,
-        "balance": 32138
+        "net_profit": -285,
+        "profit_percent": -2.47,
+        "winrate": 61.61,
+        "balance": 11271
       },
       {
         "date": "2025-02-21",
-        "net_profit": 379,
-        "profit_percent": 1.18,
-        "winrate": 69.42,
-        "balance": 32517
+        "net_profit": -206,
+        "profit_percent": -1.83,
+        "winrate": 61.17,
+        "balance": 11065
       },
       {
         "date": "2025-02-22",
-        "net_profit": 143,
-        "profit_percent": 0.44,
-        "winrate": 68.53,
-        "balance": 32660
+        "net_profit": -409,
+        "profit_percent": -3.7,
+        "winrate": 57.72,
+        "balance": 10656
       },
       {
         "date": "2025-02-23",
-        "net_profit": -271,
-        "profit_percent": -0.83,
-        "winrate": 67.0,
-        "balance": 32389
+        "net_profit": -289,
+        "profit_percent": -2.71,
+        "winrate": 57.78,
+        "balance": 10367
       },
       {
         "date": "2025-02-24",
-        "net_profit": 1934,
-        "profit_percent": 5.97,
-        "winrate": 75.16,
-        "balance": 34323
+        "net_profit": -272,
+        "profit_percent": -2.62,
+        "winrate": 58.75,
+        "balance": 10095
       },
       {
         "date": "2025-02-25",
-        "net_profit": 1596,
-        "profit_percent": 4.65,
-        "winrate": 73.58,
-        "balance": 35919
+        "net_profit": -340,
+        "profit_percent": -3.37,
+        "winrate": 58.76,
+        "balance": 9755
       },
       {
         "date": "2025-02-26",
-        "net_profit": 359,
-        "profit_percent": 1.0,
-        "winrate": 69.2,
-        "balance": 36278
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 2122,
-        "profit_percent": 5.85,
-        "winrate": 75.02,
-        "balance": 38400
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1624,
-        "profit_percent": 4.23,
-        "winrate": 73.08,
-        "balance": 40024
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -324,
-        "profit_percent": -0.81,
-        "winrate": 67.03,
-        "balance": 39700
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 2835,
-        "profit_percent": 7.14,
-        "winrate": 76.57,
-        "balance": 42535
+        "net_profit": -181,
+        "profit_percent": -1.86,
+        "winrate": 59.31,
+        "balance": 9574
       }
     ]
   },
@@ -648,214 +648,214 @@ export const botsData = [
     "name": "bot_004",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 764,
+        "profit_percent": 5.95,
+        "winrate": 72.84,
+        "balance": 13606
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 694,
+        "profit_percent": 5.1,
+        "winrate": 70.71,
+        "balance": 14300
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 672,
+        "profit_percent": 4.7,
+        "winrate": 68.82,
+        "balance": 14972
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 737,
+        "profit_percent": 4.92,
+        "winrate": 68.61,
+        "balance": 15709
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -1172,
-        "profit_percent": -9.63,
-        "winrate": 58,
-        "balance": 10994
+        "net_profit": 886,
+        "profit_percent": 5.64,
+        "winrate": 71.62,
+        "balance": 16595
       },
       {
         "date": "2025-02-02",
-        "net_profit": -542,
-        "profit_percent": -4.93,
-        "winrate": 62.08,
-        "balance": 10452
+        "net_profit": 992,
+        "profit_percent": 5.98,
+        "winrate": 72.9,
+        "balance": 17587
       },
       {
         "date": "2025-02-03",
-        "net_profit": 119,
-        "profit_percent": 1.14,
-        "winrate": 69.37,
-        "balance": 10571
+        "net_profit": 1080,
+        "profit_percent": 6.14,
+        "winrate": 72.71,
+        "balance": 18667
       },
       {
         "date": "2025-02-04",
-        "net_profit": -423,
-        "profit_percent": -4.0,
-        "winrate": 63.2,
-        "balance": 10148
+        "net_profit": 1083,
+        "profit_percent": 5.8,
+        "winrate": 71.03,
+        "balance": 19750
       },
       {
         "date": "2025-02-05",
-        "net_profit": -1020,
-        "profit_percent": -10.05,
-        "winrate": 58,
-        "balance": 9128
+        "net_profit": 1063,
+        "profit_percent": 5.38,
+        "winrate": 71.09,
+        "balance": 20813
       },
       {
         "date": "2025-02-06",
-        "net_profit": -843,
-        "profit_percent": -9.23,
-        "winrate": 58,
-        "balance": 8285
+        "net_profit": 928,
+        "profit_percent": 4.46,
+        "winrate": 71.15,
+        "balance": 21741
       },
       {
         "date": "2025-02-07",
-        "net_profit": -654,
-        "profit_percent": -7.89,
-        "winrate": 58.53,
-        "balance": 7631
+        "net_profit": 937,
+        "profit_percent": 4.31,
+        "winrate": 70.22,
+        "balance": 22678
       },
       {
         "date": "2025-02-08",
-        "net_profit": 64,
-        "profit_percent": 0.84,
-        "winrate": 69.01,
-        "balance": 7695
+        "net_profit": 830,
+        "profit_percent": 3.66,
+        "winrate": 67.84,
+        "balance": 23508
       },
       {
         "date": "2025-02-09",
-        "net_profit": -629,
-        "profit_percent": -8.18,
-        "winrate": 58.18,
-        "balance": 7066
+        "net_profit": 715,
+        "profit_percent": 3.04,
+        "winrate": 68.0,
+        "balance": 24223
       },
       {
         "date": "2025-02-10",
-        "net_profit": -221,
-        "profit_percent": -3.13,
-        "winrate": 64.24,
-        "balance": 6845
+        "net_profit": 916,
+        "profit_percent": 3.78,
+        "winrate": 68.82,
+        "balance": 25139
       },
       {
         "date": "2025-02-11",
-        "net_profit": -523,
-        "profit_percent": -7.64,
-        "winrate": 58.83,
-        "balance": 6322
+        "net_profit": 1151,
+        "profit_percent": 4.58,
+        "winrate": 71.92,
+        "balance": 26290
       },
       {
         "date": "2025-02-12",
-        "net_profit": -262,
-        "profit_percent": -4.14,
-        "winrate": 63.03,
-        "balance": 6060
+        "net_profit": 883,
+        "profit_percent": 3.36,
+        "winrate": 69.79,
+        "balance": 27173
       },
       {
         "date": "2025-02-13",
-        "net_profit": -313,
-        "profit_percent": -5.16,
-        "winrate": 61.81,
-        "balance": 5747
+        "net_profit": 1304,
+        "profit_percent": 4.8,
+        "winrate": 72.64,
+        "balance": 28477
       },
       {
         "date": "2025-02-14",
-        "net_profit": -126,
-        "profit_percent": -2.19,
-        "winrate": 65.37,
-        "balance": 5621
+        "net_profit": 1119,
+        "profit_percent": 3.93,
+        "winrate": 69.46,
+        "balance": 29596
       },
       {
         "date": "2025-02-15",
-        "net_profit": -277,
-        "profit_percent": -4.93,
-        "winrate": 62.08,
-        "balance": 5344
+        "net_profit": 814,
+        "profit_percent": 2.75,
+        "winrate": 67.56,
+        "balance": 30410
       },
       {
         "date": "2025-02-16",
-        "net_profit": -363,
-        "profit_percent": -6.79,
-        "winrate": 59.85,
-        "balance": 4981
+        "net_profit": 1016,
+        "profit_percent": 3.34,
+        "winrate": 69.34,
+        "balance": 31426
       },
       {
         "date": "2025-02-17",
-        "net_profit": -270,
-        "profit_percent": -5.43,
-        "winrate": 61.48,
-        "balance": 4711
+        "net_profit": 805,
+        "profit_percent": 2.56,
+        "winrate": 68.52,
+        "balance": 32231
       },
       {
         "date": "2025-02-18",
-        "net_profit": -400,
-        "profit_percent": -8.5,
-        "winrate": 58,
-        "balance": 4311
+        "net_profit": 1115,
+        "profit_percent": 3.46,
+        "winrate": 68.77,
+        "balance": 33346
       },
       {
         "date": "2025-02-19",
-        "net_profit": -263,
-        "profit_percent": -6.1,
-        "winrate": 60.68,
-        "balance": 4048
+        "net_profit": 1214,
+        "profit_percent": 3.64,
+        "winrate": 69.41,
+        "balance": 34560
       },
       {
         "date": "2025-02-20",
-        "net_profit": -176,
-        "profit_percent": -4.34,
-        "winrate": 62.79,
-        "balance": 3872
+        "net_profit": 729,
+        "profit_percent": 2.11,
+        "winrate": 65.95,
+        "balance": 35289
       },
       {
         "date": "2025-02-21",
-        "net_profit": -82,
-        "profit_percent": -2.11,
-        "winrate": 65.47,
-        "balance": 3790
+        "net_profit": 536,
+        "profit_percent": 1.52,
+        "winrate": 65.84,
+        "balance": 35825
       },
       {
         "date": "2025-02-22",
-        "net_profit": -172,
-        "profit_percent": -4.54,
-        "winrate": 62.55,
-        "balance": 3618
+        "net_profit": 813,
+        "profit_percent": 2.27,
+        "winrate": 67.84,
+        "balance": 36638
       },
       {
         "date": "2025-02-23",
-        "net_profit": -311,
-        "profit_percent": -8.6,
-        "winrate": 58,
-        "balance": 3307
+        "net_profit": 564,
+        "profit_percent": 1.54,
+        "winrate": 65.13,
+        "balance": 37202
       },
       {
         "date": "2025-02-24",
-        "net_profit": 36,
-        "profit_percent": 1.1,
-        "winrate": 69.32,
-        "balance": 3343
+        "net_profit": 964,
+        "profit_percent": 2.59,
+        "winrate": 67.13,
+        "balance": 38166
       },
       {
         "date": "2025-02-25",
-        "net_profit": 10,
-        "profit_percent": 0.3,
-        "winrate": 68.36,
-        "balance": 3353
+        "net_profit": 1050,
+        "profit_percent": 2.75,
+        "winrate": 69.45,
+        "balance": 39216
       },
       {
         "date": "2025-02-26",
-        "net_profit": -36,
-        "profit_percent": -1.06,
-        "winrate": 66.73,
-        "balance": 3317
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -283,
-        "profit_percent": -8.54,
-        "winrate": 58,
-        "balance": 3034
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -290,
-        "profit_percent": -9.56,
-        "winrate": 58,
-        "balance": 2744
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -21,
-        "profit_percent": -0.77,
-        "winrate": 67.08,
-        "balance": 2723
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 4,
-        "profit_percent": 0.13,
-        "winrate": 68.16,
-        "balance": 2727
+        "net_profit": 953,
+        "profit_percent": 2.43,
+        "winrate": 66.76,
+        "balance": 40169
       }
     ]
   },
@@ -863,214 +863,214 @@ export const botsData = [
     "name": "bot_005",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 494,
+        "profit_percent": 5.04,
+        "winrate": 72.27,
+        "balance": 10302
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 556,
+        "profit_percent": 5.4,
+        "winrate": 73.5,
+        "balance": 10858
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 767,
+        "profit_percent": 7.06,
+        "winrate": 75.64,
+        "balance": 11625
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 751,
+        "profit_percent": 6.46,
+        "winrate": 73.58,
+        "balance": 12376
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 1178,
-        "profit_percent": 7.89,
-        "winrate": 77.47,
-        "balance": 16108
+        "net_profit": 745,
+        "profit_percent": 6.02,
+        "winrate": 72.09,
+        "balance": 13121
       },
       {
         "date": "2025-02-02",
-        "net_profit": 1068,
-        "profit_percent": 6.63,
-        "winrate": 75.96,
-        "balance": 17176
+        "net_profit": 879,
+        "profit_percent": 6.7,
+        "winrate": 72.07,
+        "balance": 14000
       },
       {
         "date": "2025-02-03",
-        "net_profit": 723,
-        "profit_percent": 4.21,
-        "winrate": 73.05,
-        "balance": 17899
+        "net_profit": 749,
+        "profit_percent": 5.35,
+        "winrate": 71.74,
+        "balance": 14749
       },
       {
         "date": "2025-02-04",
-        "net_profit": 950,
-        "profit_percent": 5.31,
-        "winrate": 74.37,
-        "balance": 18849
+        "net_profit": 917,
+        "profit_percent": 6.22,
+        "winrate": 73.47,
+        "balance": 15666
       },
       {
         "date": "2025-02-05",
-        "net_profit": 1566,
-        "profit_percent": 8.31,
-        "winrate": 77.97,
-        "balance": 20415
+        "net_profit": 1010,
+        "profit_percent": 6.45,
+        "winrate": 74.81,
+        "balance": 16676
       },
       {
         "date": "2025-02-06",
-        "net_profit": 590,
-        "profit_percent": 2.89,
-        "winrate": 71.47,
-        "balance": 21005
+        "net_profit": 844,
+        "profit_percent": 5.06,
+        "winrate": 73.27,
+        "balance": 17520
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1397,
-        "profit_percent": 6.65,
-        "winrate": 75.98,
-        "balance": 22402
+        "net_profit": 564,
+        "profit_percent": 3.22,
+        "winrate": 68.43,
+        "balance": 18084
       },
       {
         "date": "2025-02-08",
-        "net_profit": 1770,
-        "profit_percent": 7.9,
-        "winrate": 77.48,
-        "balance": 24172
+        "net_profit": 830,
+        "profit_percent": 4.59,
+        "winrate": 71.27,
+        "balance": 18914
       },
       {
         "date": "2025-02-09",
-        "net_profit": 2173,
-        "profit_percent": 8.99,
-        "winrate": 78,
-        "balance": 26345
+        "net_profit": 607,
+        "profit_percent": 3.21,
+        "winrate": 70.13,
+        "balance": 19521
       },
       {
         "date": "2025-02-10",
-        "net_profit": 1056,
-        "profit_percent": 4.01,
-        "winrate": 72.81,
-        "balance": 27401
+        "net_profit": 777,
+        "profit_percent": 3.98,
+        "winrate": 69.99,
+        "balance": 20298
       },
       {
         "date": "2025-02-11",
-        "net_profit": 518,
-        "profit_percent": 1.89,
-        "winrate": 70.27,
-        "balance": 27919
+        "net_profit": 629,
+        "profit_percent": 3.1,
+        "winrate": 67.71,
+        "balance": 20927
       },
       {
         "date": "2025-02-12",
-        "net_profit": 201,
-        "profit_percent": 0.72,
-        "winrate": 68.86,
-        "balance": 28120
+        "net_profit": 565,
+        "profit_percent": 2.7,
+        "winrate": 66.73,
+        "balance": 21492
       },
       {
         "date": "2025-02-13",
-        "net_profit": 2272,
-        "profit_percent": 8.08,
-        "winrate": 77.7,
-        "balance": 30392
+        "net_profit": 589,
+        "profit_percent": 2.74,
+        "winrate": 65.6,
+        "balance": 22081
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1863,
-        "profit_percent": 6.13,
-        "winrate": 75.36,
-        "balance": 32255
+        "net_profit": 724,
+        "profit_percent": 3.28,
+        "winrate": 67.82,
+        "balance": 22805
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1345,
-        "profit_percent": 4.17,
-        "winrate": 73.0,
-        "balance": 33600
+        "net_profit": 634,
+        "profit_percent": 2.78,
+        "winrate": 69.47,
+        "balance": 23439
       },
       {
         "date": "2025-02-16",
-        "net_profit": 1878,
-        "profit_percent": 5.59,
-        "winrate": 74.71,
-        "balance": 35478
+        "net_profit": 560,
+        "profit_percent": 2.39,
+        "winrate": 67.22,
+        "balance": 23999
       },
       {
         "date": "2025-02-17",
-        "net_profit": 773,
-        "profit_percent": 2.18,
-        "winrate": 70.62,
-        "balance": 36251
+        "net_profit": 655,
+        "profit_percent": 2.73,
+        "winrate": 68.4,
+        "balance": 24654
       },
       {
         "date": "2025-02-18",
-        "net_profit": 2643,
-        "profit_percent": 7.29,
-        "winrate": 76.75,
-        "balance": 38894
+        "net_profit": 570,
+        "profit_percent": 2.31,
+        "winrate": 67.46,
+        "balance": 25224
       },
       {
         "date": "2025-02-19",
-        "net_profit": 148,
-        "profit_percent": 0.38,
-        "winrate": 68.46,
-        "balance": 39042
+        "net_profit": 446,
+        "profit_percent": 1.77,
+        "winrate": 65.48,
+        "balance": 25670
       },
       {
         "date": "2025-02-20",
-        "net_profit": -234,
-        "profit_percent": -0.6,
-        "winrate": 67.28,
-        "balance": 38808
+        "net_profit": 467,
+        "profit_percent": 1.82,
+        "winrate": 64.76,
+        "balance": 26137
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1700,
-        "profit_percent": 4.38,
-        "winrate": 73.26,
-        "balance": 40508
+        "net_profit": 350,
+        "profit_percent": 1.34,
+        "winrate": 65.82,
+        "balance": 26487
       },
       {
         "date": "2025-02-22",
-        "net_profit": 1317,
-        "profit_percent": 3.25,
-        "winrate": 71.9,
-        "balance": 41825
+        "net_profit": 604,
+        "profit_percent": 2.28,
+        "winrate": 69.05,
+        "balance": 27091
       },
       {
         "date": "2025-02-23",
-        "net_profit": 50,
-        "profit_percent": 0.12,
-        "winrate": 68.14,
-        "balance": 41875
+        "net_profit": 507,
+        "profit_percent": 1.87,
+        "winrate": 68.28,
+        "balance": 27598
       },
       {
         "date": "2025-02-24",
-        "net_profit": -590,
-        "profit_percent": -1.41,
-        "winrate": 66.31,
-        "balance": 41285
+        "net_profit": 483,
+        "profit_percent": 1.75,
+        "winrate": 68.27,
+        "balance": 28081
       },
       {
         "date": "2025-02-25",
-        "net_profit": 140,
-        "profit_percent": 0.34,
-        "winrate": 68.41,
-        "balance": 41425
+        "net_profit": 649,
+        "profit_percent": 2.31,
+        "winrate": 69.43,
+        "balance": 28730
       },
       {
         "date": "2025-02-26",
-        "net_profit": 2514,
-        "profit_percent": 6.07,
-        "winrate": 75.28,
-        "balance": 43939
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 844,
-        "profit_percent": 1.92,
-        "winrate": 70.3,
-        "balance": 44783
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1948,
-        "profit_percent": 4.35,
-        "winrate": 73.22,
-        "balance": 46731
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 2393,
-        "profit_percent": 5.12,
-        "winrate": 74.14,
-        "balance": 49124
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 486,
-        "profit_percent": 0.99,
-        "winrate": 69.19,
-        "balance": 49610
+        "net_profit": 776,
+        "profit_percent": 2.7,
+        "winrate": 69.0,
+        "balance": 29506
       }
     ]
   },
@@ -1078,214 +1078,214 @@ export const botsData = [
     "name": "bot_006",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 60,
+        "profit_percent": 0.42,
+        "winrate": 67.29,
+        "balance": 14330
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 19,
+        "profit_percent": 0.13,
+        "winrate": 65.33,
+        "balance": 14349
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": -145,
+        "profit_percent": -1.01,
+        "winrate": 63.45,
+        "balance": 14204
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 139,
+        "profit_percent": 0.98,
+        "winrate": 64.72,
+        "balance": 14343
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 745,
-        "profit_percent": 7.69,
-        "winrate": 77.23,
-        "balance": 10429
+        "net_profit": -89,
+        "profit_percent": -0.62,
+        "winrate": 61.61,
+        "balance": 14254
       },
       {
         "date": "2025-02-02",
-        "net_profit": 387,
-        "profit_percent": 3.71,
-        "winrate": 72.45,
-        "balance": 10816
+        "net_profit": 204,
+        "profit_percent": 1.43,
+        "winrate": 66.16,
+        "balance": 14458
       },
       {
         "date": "2025-02-03",
-        "net_profit": -224,
-        "profit_percent": -2.07,
-        "winrate": 65.52,
-        "balance": 10592
+        "net_profit": -51,
+        "profit_percent": -0.35,
+        "winrate": 64.78,
+        "balance": 14407
       },
       {
         "date": "2025-02-04",
-        "net_profit": -78,
-        "profit_percent": -0.74,
-        "winrate": 67.11,
-        "balance": 10514
+        "net_profit": 42,
+        "profit_percent": 0.29,
+        "winrate": 64.41,
+        "balance": 14449
       },
       {
         "date": "2025-02-05",
-        "net_profit": -207,
-        "profit_percent": -1.97,
-        "winrate": 65.64,
-        "balance": 10307
+        "net_profit": -48,
+        "profit_percent": -0.33,
+        "winrate": 64.84,
+        "balance": 14401
       },
       {
         "date": "2025-02-06",
-        "net_profit": 590,
-        "profit_percent": 5.72,
-        "winrate": 74.86,
-        "balance": 10897
+        "net_profit": -240,
+        "profit_percent": -1.67,
+        "winrate": 61.92,
+        "balance": 14161
       },
       {
         "date": "2025-02-07",
-        "net_profit": 161,
-        "profit_percent": 1.48,
-        "winrate": 69.78,
-        "balance": 11058
+        "net_profit": -316,
+        "profit_percent": -2.23,
+        "winrate": 60.36,
+        "balance": 13845
       },
       {
         "date": "2025-02-08",
-        "net_profit": 776,
-        "profit_percent": 7.02,
-        "winrate": 76.42,
-        "balance": 11834
+        "net_profit": -69,
+        "profit_percent": -0.5,
+        "winrate": 62.24,
+        "balance": 13776
       },
       {
         "date": "2025-02-09",
-        "net_profit": 666,
-        "profit_percent": 5.63,
-        "winrate": 74.76,
-        "balance": 12500
+        "net_profit": -242,
+        "profit_percent": -1.76,
+        "winrate": 59.59,
+        "balance": 13534
       },
       {
         "date": "2025-02-10",
-        "net_profit": 808,
-        "profit_percent": 6.46,
-        "winrate": 75.75,
-        "balance": 13308
+        "net_profit": -185,
+        "profit_percent": -1.37,
+        "winrate": 60.69,
+        "balance": 13349
       },
       {
         "date": "2025-02-11",
-        "net_profit": -69,
-        "profit_percent": -0.52,
-        "winrate": 67.38,
-        "balance": 13239
+        "net_profit": -335,
+        "profit_percent": -2.51,
+        "winrate": 59.0,
+        "balance": 13014
       },
       {
         "date": "2025-02-12",
-        "net_profit": 935,
-        "profit_percent": 7.06,
-        "winrate": 76.47,
-        "balance": 14174
+        "net_profit": -342,
+        "profit_percent": -2.63,
+        "winrate": 61.58,
+        "balance": 12672
       },
       {
         "date": "2025-02-13",
-        "net_profit": 860,
-        "profit_percent": 6.07,
-        "winrate": 75.28,
-        "balance": 15034
+        "net_profit": -148,
+        "profit_percent": -1.17,
+        "winrate": 65.07,
+        "balance": 12524
       },
       {
         "date": "2025-02-14",
-        "net_profit": -337,
-        "profit_percent": -2.24,
-        "winrate": 65.31,
-        "balance": 14697
+        "net_profit": 8,
+        "profit_percent": 0.06,
+        "winrate": 66.77,
+        "balance": 12532
       },
       {
         "date": "2025-02-15",
-        "net_profit": -34,
-        "profit_percent": -0.23,
-        "winrate": 67.72,
-        "balance": 14663
+        "net_profit": -86,
+        "profit_percent": -0.69,
+        "winrate": 66.61,
+        "balance": 12446
       },
       {
         "date": "2025-02-16",
-        "net_profit": -374,
-        "profit_percent": -2.55,
-        "winrate": 64.94,
-        "balance": 14289
+        "net_profit": -271,
+        "profit_percent": -2.18,
+        "winrate": 63.5,
+        "balance": 12175
       },
       {
         "date": "2025-02-17",
-        "net_profit": 457,
-        "profit_percent": 3.2,
-        "winrate": 71.84,
-        "balance": 14746
+        "net_profit": -334,
+        "profit_percent": -2.74,
+        "winrate": 60.67,
+        "balance": 11841
       },
       {
         "date": "2025-02-18",
-        "net_profit": -348,
-        "profit_percent": -2.36,
-        "winrate": 65.17,
-        "balance": 14398
+        "net_profit": -131,
+        "profit_percent": -1.11,
+        "winrate": 64.08,
+        "balance": 11710
       },
       {
         "date": "2025-02-19",
-        "net_profit": 318,
-        "profit_percent": 2.21,
-        "winrate": 70.65,
-        "balance": 14716
+        "net_profit": -42,
+        "profit_percent": -0.36,
+        "winrate": 66.55,
+        "balance": 11668
       },
       {
         "date": "2025-02-20",
-        "net_profit": 421,
-        "profit_percent": 2.86,
-        "winrate": 71.43,
-        "balance": 15137
+        "net_profit": -238,
+        "profit_percent": -2.04,
+        "winrate": 62.06,
+        "balance": 11430
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1214,
-        "profit_percent": 8.02,
-        "winrate": 77.62,
-        "balance": 16351
+        "net_profit": -266,
+        "profit_percent": -2.33,
+        "winrate": 63.48,
+        "balance": 11164
       },
       {
         "date": "2025-02-22",
-        "net_profit": -347,
-        "profit_percent": -2.12,
-        "winrate": 65.46,
-        "balance": 16004
+        "net_profit": -363,
+        "profit_percent": -3.25,
+        "winrate": 60.18,
+        "balance": 10801
       },
       {
         "date": "2025-02-23",
-        "net_profit": -315,
-        "profit_percent": -1.97,
-        "winrate": 65.64,
-        "balance": 15689
+        "net_profit": -316,
+        "profit_percent": -2.93,
+        "winrate": 62.59,
+        "balance": 10485
       },
       {
         "date": "2025-02-24",
-        "net_profit": 901,
-        "profit_percent": 5.74,
-        "winrate": 74.89,
-        "balance": 16590
+        "net_profit": -215,
+        "profit_percent": -2.05,
+        "winrate": 63.39,
+        "balance": 10270
       },
       {
         "date": "2025-02-25",
-        "net_profit": 753,
-        "profit_percent": 4.54,
-        "winrate": 73.45,
-        "balance": 17343
+        "net_profit": -149,
+        "profit_percent": -1.45,
+        "winrate": 65.5,
+        "balance": 10121
       },
       {
         "date": "2025-02-26",
-        "net_profit": 324,
-        "profit_percent": 1.87,
-        "winrate": 70.24,
-        "balance": 17667
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 837,
-        "profit_percent": 4.74,
-        "winrate": 73.69,
-        "balance": 18504
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1375,
-        "profit_percent": 7.43,
-        "winrate": 76.92,
-        "balance": 19879
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 932,
-        "profit_percent": 4.69,
-        "winrate": 73.63,
-        "balance": 20811
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -152,
-        "profit_percent": -0.73,
-        "winrate": 67.12,
-        "balance": 20659
+        "net_profit": -224,
+        "profit_percent": -2.21,
+        "winrate": 62.28,
+        "balance": 9897
       }
     ]
   },
@@ -1293,214 +1293,214 @@ export const botsData = [
     "name": "bot_007",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 568,
+        "profit_percent": 3.91,
+        "winrate": 67.83,
+        "balance": 15101
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 732,
+        "profit_percent": 4.85,
+        "winrate": 70.82,
+        "balance": 15833
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 961,
+        "profit_percent": 6.07,
+        "winrate": 72.37,
+        "balance": 16794
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 1160,
+        "profit_percent": 6.91,
+        "winrate": 75.27,
+        "balance": 17954
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -383,
-        "profit_percent": -4.48,
-        "winrate": 62.62,
-        "balance": 8177
+        "net_profit": 1117,
+        "profit_percent": 6.22,
+        "winrate": 72.31,
+        "balance": 19071
       },
       {
         "date": "2025-02-02",
-        "net_profit": -169,
-        "profit_percent": -2.07,
-        "winrate": 65.52,
-        "balance": 8008
+        "net_profit": 1354,
+        "profit_percent": 7.1,
+        "winrate": 74.82,
+        "balance": 20425
       },
       {
         "date": "2025-02-03",
-        "net_profit": -182,
-        "profit_percent": -2.27,
-        "winrate": 65.28,
-        "balance": 7826
+        "net_profit": 1099,
+        "profit_percent": 5.38,
+        "winrate": 70.53,
+        "balance": 21524
       },
       {
         "date": "2025-02-04",
-        "net_profit": 28,
-        "profit_percent": 0.36,
-        "winrate": 68.43,
-        "balance": 7854
+        "net_profit": 1259,
+        "profit_percent": 5.85,
+        "winrate": 71.48,
+        "balance": 22783
       },
       {
         "date": "2025-02-05",
-        "net_profit": -193,
-        "profit_percent": -2.46,
-        "winrate": 65.05,
-        "balance": 7661
+        "net_profit": 1110,
+        "profit_percent": 4.87,
+        "winrate": 69.34,
+        "balance": 23893
       },
       {
         "date": "2025-02-06",
-        "net_profit": -311,
-        "profit_percent": -4.06,
-        "winrate": 63.13,
-        "balance": 7350
+        "net_profit": 975,
+        "profit_percent": 4.08,
+        "winrate": 68.67,
+        "balance": 24868
       },
       {
         "date": "2025-02-07",
-        "net_profit": 114,
-        "profit_percent": 1.55,
-        "winrate": 69.86,
-        "balance": 7464
+        "net_profit": 838,
+        "profit_percent": 3.37,
+        "winrate": 68.6,
+        "balance": 25706
       },
       {
         "date": "2025-02-08",
-        "net_profit": -285,
-        "profit_percent": -3.82,
-        "winrate": 63.42,
-        "balance": 7179
+        "net_profit": 977,
+        "profit_percent": 3.8,
+        "winrate": 68.31,
+        "balance": 26683
       },
       {
         "date": "2025-02-09",
-        "net_profit": -653,
-        "profit_percent": -9.1,
-        "winrate": 58,
-        "balance": 6526
+        "net_profit": 894,
+        "profit_percent": 3.35,
+        "winrate": 66.89,
+        "balance": 27577
       },
       {
         "date": "2025-02-10",
-        "net_profit": -459,
-        "profit_percent": -7.04,
-        "winrate": 59.55,
-        "balance": 6067
+        "net_profit": 921,
+        "profit_percent": 3.34,
+        "winrate": 67.15,
+        "balance": 28498
       },
       {
         "date": "2025-02-11",
-        "net_profit": -231,
-        "profit_percent": -3.81,
-        "winrate": 63.43,
-        "balance": 5836
+        "net_profit": 758,
+        "profit_percent": 2.66,
+        "winrate": 65.02,
+        "balance": 29256
       },
       {
         "date": "2025-02-12",
-        "net_profit": 27,
-        "profit_percent": 0.46,
-        "winrate": 68.55,
-        "balance": 5863
+        "net_profit": 620,
+        "profit_percent": 2.12,
+        "winrate": 66.6,
+        "balance": 29876
       },
       {
         "date": "2025-02-13",
-        "net_profit": -248,
-        "profit_percent": -4.23,
-        "winrate": 62.92,
-        "balance": 5615
+        "net_profit": 866,
+        "profit_percent": 2.9,
+        "winrate": 68.14,
+        "balance": 30742
       },
       {
         "date": "2025-02-14",
-        "net_profit": -248,
-        "profit_percent": -4.41,
-        "winrate": 62.71,
-        "balance": 5367
+        "net_profit": 756,
+        "profit_percent": 2.46,
+        "winrate": 66.46,
+        "balance": 31498
       },
       {
         "date": "2025-02-15",
-        "net_profit": -98,
-        "profit_percent": -1.82,
-        "winrate": 65.82,
-        "balance": 5269
+        "net_profit": 643,
+        "profit_percent": 2.04,
+        "winrate": 65.0,
+        "balance": 32141
       },
       {
         "date": "2025-02-16",
-        "net_profit": -122,
-        "profit_percent": -2.32,
-        "winrate": 65.22,
-        "balance": 5147
+        "net_profit": 865,
+        "profit_percent": 2.69,
+        "winrate": 65.92,
+        "balance": 33006
       },
       {
         "date": "2025-02-17",
-        "net_profit": -268,
-        "profit_percent": -5.21,
-        "winrate": 61.75,
-        "balance": 4879
+        "net_profit": 937,
+        "profit_percent": 2.84,
+        "winrate": 68.43,
+        "balance": 33943
       },
       {
         "date": "2025-02-18",
-        "net_profit": 68,
-        "profit_percent": 1.39,
-        "winrate": 69.67,
-        "balance": 4947
+        "net_profit": 787,
+        "profit_percent": 2.32,
+        "winrate": 66.47,
+        "balance": 34730
       },
       {
         "date": "2025-02-19",
-        "net_profit": 61,
-        "profit_percent": 1.23,
-        "winrate": 69.48,
-        "balance": 5008
+        "net_profit": 1045,
+        "profit_percent": 3.01,
+        "winrate": 68.2,
+        "balance": 35775
       },
       {
         "date": "2025-02-20",
-        "net_profit": -270,
-        "profit_percent": -5.4,
-        "winrate": 61.52,
-        "balance": 4738
+        "net_profit": 587,
+        "profit_percent": 1.64,
+        "winrate": 66.25,
+        "balance": 36362
       },
       {
         "date": "2025-02-21",
-        "net_profit": -432,
-        "profit_percent": -9.11,
-        "winrate": 58,
-        "balance": 4306
+        "net_profit": 520,
+        "profit_percent": 1.43,
+        "winrate": 65.82,
+        "balance": 36882
       },
       {
         "date": "2025-02-22",
-        "net_profit": -238,
-        "profit_percent": -5.52,
-        "winrate": 61.38,
-        "balance": 4068
+        "net_profit": 631,
+        "profit_percent": 1.71,
+        "winrate": 67.42,
+        "balance": 37513
       },
       {
         "date": "2025-02-23",
-        "net_profit": -182,
-        "profit_percent": -4.47,
-        "winrate": 62.64,
-        "balance": 3886
+        "net_profit": 630,
+        "profit_percent": 1.68,
+        "winrate": 67.08,
+        "balance": 38143
       },
       {
         "date": "2025-02-24",
-        "net_profit": -161,
-        "profit_percent": -4.15,
-        "winrate": 63.02,
-        "balance": 3725
+        "net_profit": 954,
+        "profit_percent": 2.5,
+        "winrate": 67.08,
+        "balance": 39097
       },
       {
         "date": "2025-02-25",
-        "net_profit": 17,
-        "profit_percent": 0.45,
-        "winrate": 68.54,
-        "balance": 3742
+        "net_profit": 473,
+        "profit_percent": 1.21,
+        "winrate": 64.8,
+        "balance": 39570
       },
       {
         "date": "2025-02-26",
-        "net_profit": -387,
-        "profit_percent": -10.35,
-        "winrate": 58,
-        "balance": 3355
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -188,
-        "profit_percent": -5.61,
-        "winrate": 61.27,
-        "balance": 3167
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -196,
-        "profit_percent": -6.19,
-        "winrate": 60.57,
-        "balance": 2971
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -209,
-        "profit_percent": -7.02,
-        "winrate": 59.58,
-        "balance": 2762
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -240,
-        "profit_percent": -8.7,
-        "winrate": 58,
-        "balance": 2522
+        "net_profit": 851,
+        "profit_percent": 2.15,
+        "winrate": 65.3,
+        "balance": 40421
       }
     ]
   },
@@ -1508,214 +1508,214 @@ export const botsData = [
     "name": "bot_008",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 464,
+        "profit_percent": 4.37,
+        "winrate": 71.01,
+        "balance": 11081
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 461,
+        "profit_percent": 4.16,
+        "winrate": 71.52,
+        "balance": 11542
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 512,
+        "profit_percent": 4.44,
+        "winrate": 70.87,
+        "balance": 12054
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 604,
+        "profit_percent": 5.01,
+        "winrate": 72.71,
+        "balance": 12658
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 38,
-        "profit_percent": 0.41,
-        "winrate": 68.49,
-        "balance": 9354
+        "net_profit": 746,
+        "profit_percent": 5.89,
+        "winrate": 74.59,
+        "balance": 13404
       },
       {
         "date": "2025-02-02",
-        "net_profit": -213,
-        "profit_percent": -2.28,
-        "winrate": 65.26,
-        "balance": 9141
+        "net_profit": 822,
+        "profit_percent": 6.13,
+        "winrate": 74.85,
+        "balance": 14226
       },
       {
         "date": "2025-02-03",
-        "net_profit": -47,
-        "profit_percent": -0.51,
-        "winrate": 67.39,
-        "balance": 9094
+        "net_profit": 674,
+        "profit_percent": 4.74,
+        "winrate": 71.94,
+        "balance": 14900
       },
       {
         "date": "2025-02-04",
-        "net_profit": -469,
-        "profit_percent": -5.16,
-        "winrate": 61.81,
-        "balance": 8625
+        "net_profit": 600,
+        "profit_percent": 4.03,
+        "winrate": 70.18,
+        "balance": 15500
       },
       {
         "date": "2025-02-05",
-        "net_profit": 175,
-        "profit_percent": 2.03,
-        "winrate": 70.44,
-        "balance": 8800
+        "net_profit": 628,
+        "profit_percent": 4.05,
+        "winrate": 68.47,
+        "balance": 16128
       },
       {
         "date": "2025-02-06",
-        "net_profit": -369,
-        "profit_percent": -4.19,
-        "winrate": 62.97,
-        "balance": 8431
+        "net_profit": 384,
+        "profit_percent": 2.38,
+        "winrate": 65.5,
+        "balance": 16512
       },
       {
         "date": "2025-02-07",
-        "net_profit": -578,
-        "profit_percent": -6.85,
-        "winrate": 59.78,
-        "balance": 7853
+        "net_profit": 291,
+        "profit_percent": 1.76,
+        "winrate": 64.5,
+        "balance": 16803
       },
       {
         "date": "2025-02-08",
-        "net_profit": -264,
-        "profit_percent": -3.36,
-        "winrate": 63.97,
-        "balance": 7589
+        "net_profit": 307,
+        "profit_percent": 1.83,
+        "winrate": 65.28,
+        "balance": 17110
       },
       {
         "date": "2025-02-09",
-        "net_profit": -323,
-        "profit_percent": -4.26,
-        "winrate": 62.89,
-        "balance": 7266
+        "net_profit": 476,
+        "profit_percent": 2.78,
+        "winrate": 67.38,
+        "balance": 17586
       },
       {
         "date": "2025-02-10",
-        "net_profit": -102,
-        "profit_percent": -1.4,
-        "winrate": 66.32,
-        "balance": 7164
+        "net_profit": 394,
+        "profit_percent": 2.24,
+        "winrate": 66.77,
+        "balance": 17980
       },
       {
         "date": "2025-02-11",
-        "net_profit": -299,
-        "profit_percent": -4.18,
-        "winrate": 62.98,
-        "balance": 6865
+        "net_profit": 160,
+        "profit_percent": 0.89,
+        "winrate": 63.73,
+        "balance": 18140
       },
       {
         "date": "2025-02-12",
-        "net_profit": -100,
-        "profit_percent": -1.45,
-        "winrate": 66.26,
-        "balance": 6765
+        "net_profit": 278,
+        "profit_percent": 1.53,
+        "winrate": 66.72,
+        "balance": 18418
       },
       {
         "date": "2025-02-13",
-        "net_profit": 8,
-        "profit_percent": 0.12,
-        "winrate": 68.14,
-        "balance": 6773
+        "net_profit": 532,
+        "profit_percent": 2.89,
+        "winrate": 70.0,
+        "balance": 18950
       },
       {
         "date": "2025-02-14",
-        "net_profit": -178,
-        "profit_percent": -2.63,
-        "winrate": 64.84,
-        "balance": 6595
+        "net_profit": 591,
+        "profit_percent": 3.12,
+        "winrate": 69.6,
+        "balance": 19541
       },
       {
         "date": "2025-02-15",
-        "net_profit": -291,
-        "profit_percent": -4.42,
-        "winrate": 62.7,
-        "balance": 6304
+        "net_profit": 399,
+        "profit_percent": 2.04,
+        "winrate": 69.47,
+        "balance": 19940
       },
       {
         "date": "2025-02-16",
-        "net_profit": -78,
-        "profit_percent": -1.24,
-        "winrate": 66.51,
-        "balance": 6226
+        "net_profit": 437,
+        "profit_percent": 2.19,
+        "winrate": 68.5,
+        "balance": 20377
       },
       {
         "date": "2025-02-17",
-        "net_profit": -564,
-        "profit_percent": -9.06,
-        "winrate": 58,
-        "balance": 5662
+        "net_profit": 353,
+        "profit_percent": 1.73,
+        "winrate": 68.63,
+        "balance": 20730
       },
       {
         "date": "2025-02-18",
-        "net_profit": -181,
-        "profit_percent": -3.2,
-        "winrate": 64.16,
-        "balance": 5481
+        "net_profit": 224,
+        "profit_percent": 1.08,
+        "winrate": 66.09,
+        "balance": 20954
       },
       {
         "date": "2025-02-19",
-        "net_profit": -143,
-        "profit_percent": -2.61,
-        "winrate": 64.87,
-        "balance": 5338
+        "net_profit": 262,
+        "profit_percent": 1.25,
+        "winrate": 65.19,
+        "balance": 21216
       },
       {
         "date": "2025-02-20",
-        "net_profit": 22,
-        "profit_percent": 0.41,
-        "winrate": 68.49,
-        "balance": 5360
+        "net_profit": 378,
+        "profit_percent": 1.78,
+        "winrate": 67.2,
+        "balance": 21594
       },
       {
         "date": "2025-02-21",
-        "net_profit": -247,
-        "profit_percent": -4.61,
-        "winrate": 62.47,
-        "balance": 5113
+        "net_profit": 276,
+        "profit_percent": 1.28,
+        "winrate": 67.68,
+        "balance": 21870
       },
       {
         "date": "2025-02-22",
-        "net_profit": -14,
-        "profit_percent": -0.27,
-        "winrate": 67.68,
-        "balance": 5099
+        "net_profit": 11,
+        "profit_percent": 0.05,
+        "winrate": 64.2,
+        "balance": 21881
       },
       {
         "date": "2025-02-23",
-        "net_profit": -183,
-        "profit_percent": -3.58,
-        "winrate": 63.7,
-        "balance": 4916
+        "net_profit": 127,
+        "profit_percent": 0.58,
+        "winrate": 66.71,
+        "balance": 22008
       },
       {
         "date": "2025-02-24",
-        "net_profit": 115,
-        "profit_percent": 2.34,
-        "winrate": 70.81,
-        "balance": 5031
+        "net_profit": 412,
+        "profit_percent": 1.87,
+        "winrate": 68.15,
+        "balance": 22420
       },
       {
         "date": "2025-02-25",
-        "net_profit": -272,
-        "profit_percent": -5.4,
-        "winrate": 61.52,
-        "balance": 4759
+        "net_profit": 78,
+        "profit_percent": 0.35,
+        "winrate": 65.23,
+        "balance": 22498
       },
       {
         "date": "2025-02-26",
-        "net_profit": -17,
-        "profit_percent": -0.35,
-        "winrate": 67.58,
-        "balance": 4742
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -252,
-        "profit_percent": -5.31,
-        "winrate": 61.63,
-        "balance": 4490
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -319,
-        "profit_percent": -7.1,
-        "winrate": 59.48,
-        "balance": 4171
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -38,
-        "profit_percent": -0.91,
-        "winrate": 66.91,
-        "balance": 4133
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -25,
-        "profit_percent": -0.6,
-        "winrate": 67.28,
-        "balance": 4108
+        "net_profit": 324,
+        "profit_percent": 1.44,
+        "winrate": 68.24,
+        "balance": 22822
       }
     ]
   },
@@ -1723,214 +1723,214 @@ export const botsData = [
     "name": "bot_009",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 359,
+        "profit_percent": 3.93,
+        "winrate": 69.47,
+        "balance": 9489
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 354,
+        "profit_percent": 3.73,
+        "winrate": 68.32,
+        "balance": 9843
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 305,
+        "profit_percent": 3.1,
+        "winrate": 67.01,
+        "balance": 10148
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 404,
+        "profit_percent": 3.98,
+        "winrate": 68.05,
+        "balance": 10552
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -468,
-        "profit_percent": -5.56,
-        "winrate": 61.33,
-        "balance": 7950
+        "net_profit": 524,
+        "profit_percent": 4.97,
+        "winrate": 71.06,
+        "balance": 11076
       },
       {
         "date": "2025-02-02",
-        "net_profit": -842,
-        "profit_percent": -10.59,
-        "winrate": 58,
-        "balance": 7108
+        "net_profit": 605,
+        "profit_percent": 5.46,
+        "winrate": 71.18,
+        "balance": 11681
       },
       {
         "date": "2025-02-03",
-        "net_profit": -592,
-        "profit_percent": -8.33,
-        "winrate": 58.0,
-        "balance": 6516
+        "net_profit": 430,
+        "profit_percent": 3.68,
+        "winrate": 70.8,
+        "balance": 12111
       },
       {
         "date": "2025-02-04",
-        "net_profit": -465,
-        "profit_percent": -7.14,
-        "winrate": 59.43,
-        "balance": 6051
+        "net_profit": 655,
+        "profit_percent": 5.41,
+        "winrate": 73.94,
+        "balance": 12766
       },
       {
         "date": "2025-02-05",
-        "net_profit": -14,
-        "profit_percent": -0.23,
-        "winrate": 67.72,
-        "balance": 6037
+        "net_profit": 474,
+        "profit_percent": 3.71,
+        "winrate": 69.64,
+        "balance": 13240
       },
       {
         "date": "2025-02-06",
-        "net_profit": -434,
-        "profit_percent": -7.19,
-        "winrate": 59.37,
-        "balance": 5603
+        "net_profit": 241,
+        "profit_percent": 1.82,
+        "winrate": 65.82,
+        "balance": 13481
       },
       {
         "date": "2025-02-07",
-        "net_profit": -350,
-        "profit_percent": -6.25,
-        "winrate": 60.5,
-        "balance": 5253
+        "net_profit": 181,
+        "profit_percent": 1.34,
+        "winrate": 65.25,
+        "balance": 13662
       },
       {
         "date": "2025-02-08",
-        "net_profit": -403,
-        "profit_percent": -7.67,
-        "winrate": 58.8,
-        "balance": 4850
+        "net_profit": 321,
+        "profit_percent": 2.35,
+        "winrate": 67.22,
+        "balance": 13983
       },
       {
         "date": "2025-02-09",
-        "net_profit": 44,
-        "profit_percent": 0.9,
-        "winrate": 69.08,
-        "balance": 4894
+        "net_profit": 39,
+        "profit_percent": 0.28,
+        "winrate": 63.07,
+        "balance": 14022
       },
       {
         "date": "2025-02-10",
-        "net_profit": -115,
-        "profit_percent": -2.34,
-        "winrate": 65.19,
-        "balance": 4779
+        "net_profit": 202,
+        "profit_percent": 1.44,
+        "winrate": 64.8,
+        "balance": 14224
       },
       {
         "date": "2025-02-11",
-        "net_profit": -265,
-        "profit_percent": -5.55,
-        "winrate": 61.34,
-        "balance": 4514
+        "net_profit": 186,
+        "profit_percent": 1.31,
+        "winrate": 64.86,
+        "balance": 14410
       },
       {
         "date": "2025-02-12",
-        "net_profit": -363,
-        "profit_percent": -8.05,
-        "winrate": 58.34,
-        "balance": 4151
+        "net_profit": 20,
+        "profit_percent": 0.14,
+        "winrate": 65.54,
+        "balance": 14430
       },
       {
         "date": "2025-02-13",
-        "net_profit": -276,
-        "profit_percent": -6.65,
-        "winrate": 60.02,
-        "balance": 3875
+        "net_profit": 176,
+        "profit_percent": 1.22,
+        "winrate": 65.11,
+        "balance": 14606
       },
       {
         "date": "2025-02-14",
-        "net_profit": -328,
-        "profit_percent": -8.47,
-        "winrate": 58,
-        "balance": 3547
+        "net_profit": 253,
+        "profit_percent": 1.73,
+        "winrate": 65.65,
+        "balance": 14859
       },
       {
         "date": "2025-02-15",
-        "net_profit": 0,
-        "profit_percent": 0.01,
-        "winrate": 68.01,
-        "balance": 3547
+        "net_profit": 10,
+        "profit_percent": 0.07,
+        "winrate": 64.89,
+        "balance": 14869
       },
       {
         "date": "2025-02-16",
-        "net_profit": -356,
-        "profit_percent": -10.03,
-        "winrate": 58,
-        "balance": 3191
+        "net_profit": 101,
+        "profit_percent": 0.68,
+        "winrate": 66.03,
+        "balance": 14970
       },
       {
         "date": "2025-02-17",
-        "net_profit": 22,
-        "profit_percent": 0.69,
-        "winrate": 68.83,
-        "balance": 3213
+        "net_profit": 97,
+        "profit_percent": 0.65,
+        "winrate": 64.38,
+        "balance": 15067
       },
       {
         "date": "2025-02-18",
-        "net_profit": -194,
-        "profit_percent": -6.05,
-        "winrate": 60.74,
-        "balance": 3019
+        "net_profit": 148,
+        "profit_percent": 0.98,
+        "winrate": 64.7,
+        "balance": 15215
       },
       {
         "date": "2025-02-19",
-        "net_profit": -227,
-        "profit_percent": -7.53,
-        "winrate": 58.96,
-        "balance": 2792
+        "net_profit": -111,
+        "profit_percent": -0.73,
+        "winrate": 62.02,
+        "balance": 15104
       },
       {
         "date": "2025-02-20",
-        "net_profit": -139,
-        "profit_percent": -4.97,
-        "winrate": 62.04,
-        "balance": 2653
+        "net_profit": 30,
+        "profit_percent": 0.2,
+        "winrate": 65.48,
+        "balance": 15134
       },
       {
         "date": "2025-02-21",
-        "net_profit": -219,
-        "profit_percent": -8.26,
-        "winrate": 58.09,
-        "balance": 2434
+        "net_profit": -33,
+        "profit_percent": -0.22,
+        "winrate": 66.36,
+        "balance": 15101
       },
       {
         "date": "2025-02-22",
-        "net_profit": -203,
-        "profit_percent": -8.34,
-        "winrate": 58,
-        "balance": 2231
+        "net_profit": -125,
+        "profit_percent": -0.83,
+        "winrate": 65.33,
+        "balance": 14976
       },
       {
         "date": "2025-02-23",
-        "net_profit": -220,
-        "profit_percent": -9.86,
-        "winrate": 58,
-        "balance": 2011
+        "net_profit": 102,
+        "profit_percent": 0.68,
+        "winrate": 68.26,
+        "balance": 15078
       },
       {
         "date": "2025-02-24",
-        "net_profit": -78,
-        "profit_percent": -3.88,
-        "winrate": 63.34,
-        "balance": 1933
+        "net_profit": 36,
+        "profit_percent": 0.24,
+        "winrate": 65.02,
+        "balance": 15114
       },
       {
         "date": "2025-02-25",
-        "net_profit": -96,
-        "profit_percent": -4.96,
-        "winrate": 62.05,
-        "balance": 1837
+        "net_profit": -23,
+        "profit_percent": -0.15,
+        "winrate": 64.15,
+        "balance": 15091
       },
       {
         "date": "2025-02-26",
-        "net_profit": 5,
-        "profit_percent": 0.29,
-        "winrate": 68.35,
-        "balance": 1842
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -5,
-        "profit_percent": -0.28,
-        "winrate": 67.66,
-        "balance": 1837
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -32,
-        "profit_percent": -1.72,
-        "winrate": 65.94,
-        "balance": 1805
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 5,
-        "profit_percent": 0.26,
-        "winrate": 68.31,
-        "balance": 1810
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -126,
-        "profit_percent": -6.97,
-        "winrate": 59.64,
-        "balance": 1684
+        "net_profit": 119,
+        "profit_percent": 0.79,
+        "winrate": 64.3,
+        "balance": 15210
       }
     ]
   },
@@ -1938,214 +1938,214 @@ export const botsData = [
     "name": "bot_010",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 387,
+        "profit_percent": 4.65,
+        "winrate": 71.81,
+        "balance": 8706
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 301,
+        "profit_percent": 3.46,
+        "winrate": 68.38,
+        "balance": 9007
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 360,
+        "profit_percent": 4.0,
+        "winrate": 68.42,
+        "balance": 9367
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 330,
+        "profit_percent": 3.52,
+        "winrate": 69.07,
+        "balance": 9697
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 1353,
-        "profit_percent": 9.61,
-        "winrate": 78,
-        "balance": 15437
+        "net_profit": 555,
+        "profit_percent": 5.72,
+        "winrate": 71.07,
+        "balance": 10252
       },
       {
         "date": "2025-02-02",
-        "net_profit": 1037,
-        "profit_percent": 6.72,
-        "winrate": 76.06,
-        "balance": 16474
+        "net_profit": 592,
+        "profit_percent": 5.77,
+        "winrate": 71.71,
+        "balance": 10844
       },
       {
         "date": "2025-02-03",
-        "net_profit": -158,
-        "profit_percent": -0.96,
-        "winrate": 66.85,
-        "balance": 16316
+        "net_profit": 577,
+        "profit_percent": 5.32,
+        "winrate": 70.79,
+        "balance": 11421
       },
       {
         "date": "2025-02-04",
-        "net_profit": 579,
-        "profit_percent": 3.55,
-        "winrate": 72.26,
-        "balance": 16895
+        "net_profit": 572,
+        "profit_percent": 5.01,
+        "winrate": 69.29,
+        "balance": 11993
       },
       {
         "date": "2025-02-05",
-        "net_profit": 1078,
-        "profit_percent": 6.38,
-        "winrate": 75.66,
-        "balance": 17973
+        "net_profit": 435,
+        "profit_percent": 3.63,
+        "winrate": 68.76,
+        "balance": 12428
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1368,
-        "profit_percent": 7.61,
-        "winrate": 77.13,
-        "balance": 19341
+        "net_profit": 260,
+        "profit_percent": 2.09,
+        "winrate": 66.8,
+        "balance": 12688
       },
       {
         "date": "2025-02-07",
-        "net_profit": 166,
-        "profit_percent": 0.86,
-        "winrate": 69.03,
-        "balance": 19507
+        "net_profit": 449,
+        "profit_percent": 3.54,
+        "winrate": 70.15,
+        "balance": 13137
       },
       {
         "date": "2025-02-08",
-        "net_profit": 581,
-        "profit_percent": 2.98,
-        "winrate": 71.58,
-        "balance": 20088
+        "net_profit": 343,
+        "profit_percent": 2.61,
+        "winrate": 69.15,
+        "balance": 13480
       },
       {
         "date": "2025-02-09",
-        "net_profit": 1466,
-        "profit_percent": 7.3,
-        "winrate": 76.76,
-        "balance": 21554
+        "net_profit": 173,
+        "profit_percent": 1.28,
+        "winrate": 66.92,
+        "balance": 13653
       },
       {
         "date": "2025-02-10",
-        "net_profit": 2017,
-        "profit_percent": 9.36,
-        "winrate": 78,
-        "balance": 23571
+        "net_profit": 440,
+        "profit_percent": 3.22,
+        "winrate": 70.5,
+        "balance": 14093
       },
       {
         "date": "2025-02-11",
-        "net_profit": 1398,
-        "profit_percent": 5.93,
-        "winrate": 75.12,
-        "balance": 24969
+        "net_profit": 388,
+        "profit_percent": 2.75,
+        "winrate": 67.48,
+        "balance": 14481
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1034,
-        "profit_percent": 4.14,
-        "winrate": 72.97,
-        "balance": 26003
+        "net_profit": 287,
+        "profit_percent": 1.98,
+        "winrate": 65.44,
+        "balance": 14768
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1290,
-        "profit_percent": 4.96,
-        "winrate": 73.95,
-        "balance": 27293
+        "net_profit": 198,
+        "profit_percent": 1.34,
+        "winrate": 65.24,
+        "balance": 14966
       },
       {
         "date": "2025-02-14",
-        "net_profit": 2459,
-        "profit_percent": 9.01,
-        "winrate": 78,
-        "balance": 29752
+        "net_profit": 195,
+        "profit_percent": 1.3,
+        "winrate": 67.15,
+        "balance": 15161
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1324,
-        "profit_percent": 4.45,
-        "winrate": 73.34,
-        "balance": 31076
+        "net_profit": 117,
+        "profit_percent": 0.77,
+        "winrate": 64.96,
+        "balance": 15278
       },
       {
         "date": "2025-02-16",
-        "net_profit": -71,
-        "profit_percent": -0.23,
-        "winrate": 67.72,
-        "balance": 31005
+        "net_profit": 341,
+        "profit_percent": 2.23,
+        "winrate": 68.04,
+        "balance": 15619
       },
       {
         "date": "2025-02-17",
-        "net_profit": -87,
-        "profit_percent": -0.28,
-        "winrate": 67.66,
-        "balance": 30918
+        "net_profit": 75,
+        "profit_percent": 0.48,
+        "winrate": 67.34,
+        "balance": 15694
       },
       {
         "date": "2025-02-18",
-        "net_profit": 1466,
-        "profit_percent": 4.74,
-        "winrate": 73.69,
-        "balance": 32384
+        "net_profit": 176,
+        "profit_percent": 1.12,
+        "winrate": 67.7,
+        "balance": 15870
       },
       {
         "date": "2025-02-19",
-        "net_profit": 1334,
-        "profit_percent": 4.12,
-        "winrate": 72.94,
-        "balance": 33718
+        "net_profit": 287,
+        "profit_percent": 1.81,
+        "winrate": 69.44,
+        "balance": 16157
       },
       {
         "date": "2025-02-20",
-        "net_profit": 378,
-        "profit_percent": 1.12,
-        "winrate": 69.34,
-        "balance": 34096
+        "net_profit": 69,
+        "profit_percent": 0.43,
+        "winrate": 67.53,
+        "balance": 16226
       },
       {
         "date": "2025-02-21",
-        "net_profit": 3147,
-        "profit_percent": 9.23,
-        "winrate": 78,
-        "balance": 37243
+        "net_profit": -42,
+        "profit_percent": -0.26,
+        "winrate": 65.72,
+        "balance": 16184
       },
       {
         "date": "2025-02-22",
-        "net_profit": 1162,
-        "profit_percent": 3.12,
-        "winrate": 71.74,
-        "balance": 38405
+        "net_profit": 217,
+        "profit_percent": 1.34,
+        "winrate": 66.89,
+        "balance": 16401
       },
       {
         "date": "2025-02-23",
-        "net_profit": 3744,
-        "profit_percent": 9.75,
-        "winrate": 78,
-        "balance": 42149
+        "net_profit": 136,
+        "profit_percent": 0.83,
+        "winrate": 65.78,
+        "balance": 16537
       },
       {
         "date": "2025-02-24",
-        "net_profit": 3418,
-        "profit_percent": 8.11,
-        "winrate": 77.73,
-        "balance": 45567
+        "net_profit": 172,
+        "profit_percent": 1.04,
+        "winrate": 67.93,
+        "balance": 16709
       },
       {
         "date": "2025-02-25",
-        "net_profit": 2424,
-        "profit_percent": 5.32,
-        "winrate": 74.38,
-        "balance": 47991
+        "net_profit": 244,
+        "profit_percent": 1.46,
+        "winrate": 68.78,
+        "balance": 16953
       },
       {
         "date": "2025-02-26",
-        "net_profit": -250,
-        "profit_percent": -0.52,
-        "winrate": 67.38,
-        "balance": 47741
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 3690,
-        "profit_percent": 7.73,
-        "winrate": 77.28,
-        "balance": 51431
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1224,
-        "profit_percent": 2.38,
-        "winrate": 70.86,
-        "balance": 52655
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1695,
-        "profit_percent": 3.22,
-        "winrate": 71.86,
-        "balance": 54350
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 1641,
-        "profit_percent": 3.02,
-        "winrate": 71.62,
-        "balance": 55991
+        "net_profit": 231,
+        "profit_percent": 1.36,
+        "winrate": 68.89,
+        "balance": 17184
       }
     ]
   },
@@ -2153,214 +2153,214 @@ export const botsData = [
     "name": "bot_011",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 513,
+        "profit_percent": 3.5,
+        "winrate": 68.43,
+        "balance": 15160
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 687,
+        "profit_percent": 4.53,
+        "winrate": 71.41,
+        "balance": 15847
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 900,
+        "profit_percent": 5.68,
+        "winrate": 73.85,
+        "balance": 16747
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 826,
+        "profit_percent": 4.93,
+        "winrate": 72.86,
+        "balance": 17573
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 1138,
-        "profit_percent": 8.56,
-        "winrate": 78,
-        "balance": 14431
+        "net_profit": 912,
+        "profit_percent": 5.19,
+        "winrate": 70.75,
+        "balance": 18485
       },
       {
         "date": "2025-02-02",
-        "net_profit": 406,
-        "profit_percent": 2.81,
-        "winrate": 71.37,
-        "balance": 14837
+        "net_profit": 996,
+        "profit_percent": 5.39,
+        "winrate": 70.22,
+        "balance": 19481
       },
       {
         "date": "2025-02-03",
-        "net_profit": 1482,
-        "profit_percent": 9.99,
-        "winrate": 78,
-        "balance": 16319
+        "net_profit": 703,
+        "profit_percent": 3.61,
+        "winrate": 67.68,
+        "balance": 20184
       },
       {
         "date": "2025-02-04",
-        "net_profit": 18,
-        "profit_percent": 0.11,
-        "winrate": 68.13,
-        "balance": 16337
+        "net_profit": 1112,
+        "profit_percent": 5.51,
+        "winrate": 71.64,
+        "balance": 21296
       },
       {
         "date": "2025-02-05",
-        "net_profit": 941,
-        "profit_percent": 5.76,
-        "winrate": 74.91,
-        "balance": 17278
+        "net_profit": 835,
+        "profit_percent": 3.92,
+        "winrate": 67.94,
+        "balance": 22131
       },
       {
         "date": "2025-02-06",
-        "net_profit": 973,
-        "profit_percent": 5.63,
-        "winrate": 74.76,
-        "balance": 18251
+        "net_profit": 664,
+        "profit_percent": 3.0,
+        "winrate": 65.58,
+        "balance": 22795
       },
       {
         "date": "2025-02-07",
-        "net_profit": 872,
-        "profit_percent": 4.78,
-        "winrate": 73.74,
-        "balance": 19123
+        "net_profit": 574,
+        "profit_percent": 2.52,
+        "winrate": 67.06,
+        "balance": 23369
       },
       {
         "date": "2025-02-08",
-        "net_profit": 319,
-        "profit_percent": 1.67,
-        "winrate": 70.0,
-        "balance": 19442
+        "net_profit": 617,
+        "profit_percent": 2.64,
+        "winrate": 67.42,
+        "balance": 23986
       },
       {
         "date": "2025-02-09",
-        "net_profit": 303,
-        "profit_percent": 1.56,
-        "winrate": 69.87,
-        "balance": 19745
+        "net_profit": 437,
+        "profit_percent": 1.82,
+        "winrate": 66.37,
+        "balance": 24423
       },
       {
         "date": "2025-02-10",
-        "net_profit": -113,
-        "profit_percent": -0.57,
-        "winrate": 67.32,
-        "balance": 19632
+        "net_profit": 464,
+        "profit_percent": 1.9,
+        "winrate": 66.81,
+        "balance": 24887
       },
       {
         "date": "2025-02-11",
-        "net_profit": 2118,
-        "profit_percent": 10.79,
-        "winrate": 78,
-        "balance": 21750
+        "net_profit": 560,
+        "profit_percent": 2.25,
+        "winrate": 67.68,
+        "balance": 25447
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1481,
-        "profit_percent": 6.81,
-        "winrate": 76.17,
-        "balance": 23231
+        "net_profit": 430,
+        "profit_percent": 1.69,
+        "winrate": 67.28,
+        "balance": 25877
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1103,
-        "profit_percent": 4.75,
-        "winrate": 73.7,
-        "balance": 24334
+        "net_profit": 486,
+        "profit_percent": 1.88,
+        "winrate": 67.09,
+        "balance": 26363
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1253,
-        "profit_percent": 5.15,
-        "winrate": 74.18,
-        "balance": 25587
+        "net_profit": 604,
+        "profit_percent": 2.29,
+        "winrate": 65.92,
+        "balance": 26967
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1561,
-        "profit_percent": 6.1,
-        "winrate": 75.32,
-        "balance": 27148
+        "net_profit": 529,
+        "profit_percent": 1.96,
+        "winrate": 67.72,
+        "balance": 27496
       },
       {
         "date": "2025-02-16",
-        "net_profit": 2622,
-        "profit_percent": 9.66,
-        "winrate": 78,
-        "balance": 29770
+        "net_profit": 410,
+        "profit_percent": 1.49,
+        "winrate": 66.33,
+        "balance": 27906
       },
       {
         "date": "2025-02-17",
-        "net_profit": 18,
-        "profit_percent": 0.06,
-        "winrate": 68.07,
-        "balance": 29788
+        "net_profit": 594,
+        "profit_percent": 2.13,
+        "winrate": 69.03,
+        "balance": 28500
       },
       {
         "date": "2025-02-18",
-        "net_profit": 1129,
-        "profit_percent": 3.79,
-        "winrate": 72.55,
-        "balance": 30917
+        "net_profit": 715,
+        "profit_percent": 2.51,
+        "winrate": 70.34,
+        "balance": 29215
       },
       {
         "date": "2025-02-19",
-        "net_profit": 569,
-        "profit_percent": 1.84,
-        "winrate": 70.21,
-        "balance": 31486
+        "net_profit": 529,
+        "profit_percent": 1.81,
+        "winrate": 67.87,
+        "balance": 29744
       },
       {
         "date": "2025-02-20",
-        "net_profit": 1747,
-        "profit_percent": 5.55,
-        "winrate": 74.66,
-        "balance": 33233
+        "net_profit": 678,
+        "profit_percent": 2.28,
+        "winrate": 70.13,
+        "balance": 30422
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1293,
-        "profit_percent": 3.89,
-        "winrate": 72.67,
-        "balance": 34526
+        "net_profit": 417,
+        "profit_percent": 1.37,
+        "winrate": 67.25,
+        "balance": 30839
       },
       {
         "date": "2025-02-22",
-        "net_profit": -76,
-        "profit_percent": -0.22,
-        "winrate": 67.74,
-        "balance": 34450
+        "net_profit": 549,
+        "profit_percent": 1.78,
+        "winrate": 69.41,
+        "balance": 31388
       },
       {
         "date": "2025-02-23",
-        "net_profit": 3445,
-        "profit_percent": 10.0,
-        "winrate": 78,
-        "balance": 37895
+        "net_profit": 279,
+        "profit_percent": 0.89,
+        "winrate": 66.75,
+        "balance": 31667
       },
       {
         "date": "2025-02-24",
-        "net_profit": 19,
-        "profit_percent": 0.05,
-        "winrate": 68.06,
-        "balance": 37914
+        "net_profit": 371,
+        "profit_percent": 1.17,
+        "winrate": 66.24,
+        "balance": 32038
       },
       {
         "date": "2025-02-25",
-        "net_profit": 292,
-        "profit_percent": 0.77,
-        "winrate": 68.92,
-        "balance": 38206
+        "net_profit": 234,
+        "profit_percent": 0.73,
+        "winrate": 67.01,
+        "balance": 32272
       },
       {
         "date": "2025-02-26",
-        "net_profit": -141,
-        "profit_percent": -0.37,
-        "winrate": 67.56,
-        "balance": 38065
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 2421,
-        "profit_percent": 6.36,
-        "winrate": 75.63,
-        "balance": 40486
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1028,
-        "profit_percent": 2.54,
-        "winrate": 71.05,
-        "balance": 41514
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1881,
-        "profit_percent": 4.53,
-        "winrate": 73.44,
-        "balance": 43395
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 1159,
-        "profit_percent": 2.67,
-        "winrate": 71.2,
-        "balance": 44554
+        "net_profit": 652,
+        "profit_percent": 2.02,
+        "winrate": 67.06,
+        "balance": 32924
       }
     ]
   },
@@ -2368,214 +2368,214 @@ export const botsData = [
     "name": "bot_012",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": -31,
+        "profit_percent": -0.29,
+        "winrate": 64.21,
+        "balance": 10709
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": -61,
+        "profit_percent": -0.57,
+        "winrate": 64.8,
+        "balance": 10648
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 12,
+        "profit_percent": 0.11,
+        "winrate": 67.28,
+        "balance": 10660
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 236,
+        "profit_percent": 2.21,
+        "winrate": 70.3,
+        "balance": 10896
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 962,
-        "profit_percent": 7.37,
-        "winrate": 76.84,
-        "balance": 14009
+        "net_profit": 239,
+        "profit_percent": 2.19,
+        "winrate": 69.88,
+        "balance": 11135
       },
       {
         "date": "2025-02-02",
         "net_profit": 111,
-        "profit_percent": 0.79,
-        "winrate": 68.95,
-        "balance": 14120
+        "profit_percent": 1.0,
+        "winrate": 67.55,
+        "balance": 11246
       },
       {
         "date": "2025-02-03",
-        "net_profit": 126,
-        "profit_percent": 0.89,
-        "winrate": 69.07,
-        "balance": 14246
+        "net_profit": 79,
+        "profit_percent": 0.7,
+        "winrate": 65.81,
+        "balance": 11325
       },
       {
         "date": "2025-02-04",
-        "net_profit": 1007,
-        "profit_percent": 7.07,
-        "winrate": 76.48,
-        "balance": 15253
+        "net_profit": -35,
+        "profit_percent": -0.31,
+        "winrate": 63.35,
+        "balance": 11290
       },
       {
         "date": "2025-02-05",
-        "net_profit": 1170,
-        "profit_percent": 7.67,
-        "winrate": 77.2,
-        "balance": 16423
+        "net_profit": -64,
+        "profit_percent": -0.57,
+        "winrate": 62.41,
+        "balance": 11226
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1283,
-        "profit_percent": 7.81,
-        "winrate": 77.37,
-        "balance": 17706
+        "net_profit": -95,
+        "profit_percent": -0.85,
+        "winrate": 63.33,
+        "balance": 11131
       },
       {
         "date": "2025-02-07",
-        "net_profit": -460,
-        "profit_percent": -2.6,
-        "winrate": 64.88,
-        "balance": 17246
+        "net_profit": -177,
+        "profit_percent": -1.59,
+        "winrate": 61.83,
+        "balance": 10954
       },
       {
         "date": "2025-02-08",
-        "net_profit": 216,
-        "profit_percent": 1.25,
-        "winrate": 69.5,
-        "balance": 17462
+        "net_profit": -7,
+        "profit_percent": -0.06,
+        "winrate": 65.78,
+        "balance": 10947
       },
       {
         "date": "2025-02-09",
-        "net_profit": 445,
-        "profit_percent": 2.55,
-        "winrate": 71.06,
-        "balance": 17907
+        "net_profit": -85,
+        "profit_percent": -0.78,
+        "winrate": 65.77,
+        "balance": 10862
       },
       {
         "date": "2025-02-10",
-        "net_profit": 618,
-        "profit_percent": 3.45,
-        "winrate": 72.14,
-        "balance": 18525
+        "net_profit": -159,
+        "profit_percent": -1.46,
+        "winrate": 65.19,
+        "balance": 10703
       },
       {
         "date": "2025-02-11",
-        "net_profit": 176,
-        "profit_percent": 0.95,
-        "winrate": 69.14,
-        "balance": 18701
+        "net_profit": -213,
+        "profit_percent": -1.99,
+        "winrate": 65.12,
+        "balance": 10490
       },
       {
         "date": "2025-02-12",
-        "net_profit": -410,
-        "profit_percent": -2.19,
-        "winrate": 65.37,
-        "balance": 18291
+        "net_profit": -126,
+        "profit_percent": -1.2,
+        "winrate": 67.1,
+        "balance": 10364
       },
       {
         "date": "2025-02-13",
-        "net_profit": 534,
-        "profit_percent": 2.92,
-        "winrate": 71.5,
-        "balance": 18825
+        "net_profit": -76,
+        "profit_percent": -0.73,
+        "winrate": 66.93,
+        "balance": 10288
       },
       {
         "date": "2025-02-14",
-        "net_profit": 921,
-        "profit_percent": 4.89,
-        "winrate": 73.87,
-        "balance": 19746
+        "net_profit": -64,
+        "profit_percent": -0.62,
+        "winrate": 67.07,
+        "balance": 10224
       },
       {
         "date": "2025-02-15",
-        "net_profit": 466,
-        "profit_percent": 2.36,
-        "winrate": 70.83,
-        "balance": 20212
+        "net_profit": -74,
+        "profit_percent": -0.72,
+        "winrate": 67.26,
+        "balance": 10150
       },
       {
         "date": "2025-02-16",
-        "net_profit": -156,
-        "profit_percent": -0.77,
-        "winrate": 67.08,
-        "balance": 20056
+        "net_profit": -187,
+        "profit_percent": -1.84,
+        "winrate": 66.22,
+        "balance": 9963
       },
       {
         "date": "2025-02-17",
-        "net_profit": 1324,
-        "profit_percent": 6.6,
-        "winrate": 75.92,
-        "balance": 21380
+        "net_profit": -165,
+        "profit_percent": -1.66,
+        "winrate": 65.16,
+        "balance": 9798
       },
       {
         "date": "2025-02-18",
-        "net_profit": 759,
-        "profit_percent": 3.55,
-        "winrate": 72.26,
-        "balance": 22139
+        "net_profit": -114,
+        "profit_percent": -1.16,
+        "winrate": 65.2,
+        "balance": 9684
       },
       {
         "date": "2025-02-19",
-        "net_profit": 1767,
-        "profit_percent": 7.98,
-        "winrate": 77.58,
-        "balance": 23906
+        "net_profit": -355,
+        "profit_percent": -3.67,
+        "winrate": 60.4,
+        "balance": 9329
       },
       {
         "date": "2025-02-20",
-        "net_profit": 1759,
-        "profit_percent": 7.36,
-        "winrate": 76.83,
-        "balance": 25665
+        "net_profit": -243,
+        "profit_percent": -2.61,
+        "winrate": 62.55,
+        "balance": 9086
       },
       {
         "date": "2025-02-21",
-        "net_profit": 169,
-        "profit_percent": 0.66,
-        "winrate": 68.79,
-        "balance": 25834
+        "net_profit": -383,
+        "profit_percent": -4.21,
+        "winrate": 58.59,
+        "balance": 8703
       },
       {
         "date": "2025-02-22",
-        "net_profit": -274,
-        "profit_percent": -1.06,
-        "winrate": 66.73,
-        "balance": 25560
+        "net_profit": -326,
+        "profit_percent": -3.75,
+        "winrate": 58.14,
+        "balance": 8377
       },
       {
         "date": "2025-02-23",
-        "net_profit": -43,
-        "profit_percent": -0.17,
-        "winrate": 67.8,
-        "balance": 25517
+        "net_profit": -309,
+        "profit_percent": -3.69,
+        "winrate": 57.94,
+        "balance": 8068
       },
       {
         "date": "2025-02-24",
-        "net_profit": 2039,
-        "profit_percent": 7.99,
-        "winrate": 77.59,
-        "balance": 27556
+        "net_profit": -296,
+        "profit_percent": -3.67,
+        "winrate": 60.35,
+        "balance": 7772
       },
       {
         "date": "2025-02-25",
-        "net_profit": 1174,
-        "profit_percent": 4.26,
-        "winrate": 73.11,
-        "balance": 28730
+        "net_profit": -217,
+        "profit_percent": -2.79,
+        "winrate": 63.42,
+        "balance": 7555
       },
       {
         "date": "2025-02-26",
-        "net_profit": 733,
-        "profit_percent": 2.55,
-        "winrate": 71.06,
-        "balance": 29463
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 239,
-        "profit_percent": 0.81,
-        "winrate": 68.97,
-        "balance": 29702
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -547,
-        "profit_percent": -1.84,
-        "winrate": 65.79,
-        "balance": 29155
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 2507,
-        "profit_percent": 8.6,
-        "winrate": 78,
-        "balance": 31662
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 576,
-        "profit_percent": 1.82,
-        "winrate": 70.18,
-        "balance": 32238
+        "net_profit": -189,
+        "profit_percent": -2.5,
+        "winrate": 64.55,
+        "balance": 7366
       }
     ]
   },
@@ -2583,214 +2583,214 @@ export const botsData = [
     "name": "bot_013",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 678,
+        "profit_percent": 5.77,
+        "winrate": 71.72,
+        "balance": 12427
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 614,
+        "profit_percent": 4.94,
+        "winrate": 69.26,
+        "balance": 13041
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 777,
+        "profit_percent": 5.96,
+        "winrate": 68.99,
+        "balance": 13818
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 795,
+        "profit_percent": 5.75,
+        "winrate": 68.28,
+        "balance": 14613
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 713,
-        "profit_percent": 8.76,
-        "winrate": 78,
-        "balance": 8848
+        "net_profit": 865,
+        "profit_percent": 5.92,
+        "winrate": 70.09,
+        "balance": 15478
       },
       {
         "date": "2025-02-02",
-        "net_profit": 535,
-        "profit_percent": 6.05,
-        "winrate": 75.26,
-        "balance": 9383
+        "net_profit": 1043,
+        "profit_percent": 6.74,
+        "winrate": 73.45,
+        "balance": 16521
       },
       {
         "date": "2025-02-03",
-        "net_profit": 804,
-        "profit_percent": 8.57,
-        "winrate": 78,
-        "balance": 10187
+        "net_profit": 973,
+        "profit_percent": 5.89,
+        "winrate": 70.86,
+        "balance": 17494
       },
       {
         "date": "2025-02-04",
-        "net_profit": -249,
-        "profit_percent": -2.44,
-        "winrate": 65.07,
-        "balance": 9938
+        "net_profit": 1013,
+        "profit_percent": 5.79,
+        "winrate": 70.19,
+        "balance": 18507
       },
       {
         "date": "2025-02-05",
-        "net_profit": 67,
-        "profit_percent": 0.67,
-        "winrate": 68.8,
-        "balance": 10005
+        "net_profit": 1003,
+        "profit_percent": 5.42,
+        "winrate": 71.42,
+        "balance": 19510
       },
       {
         "date": "2025-02-06",
-        "net_profit": 141,
-        "profit_percent": 1.41,
-        "winrate": 69.69,
-        "balance": 10146
+        "net_profit": 870,
+        "profit_percent": 4.46,
+        "winrate": 69.31,
+        "balance": 20380
       },
       {
         "date": "2025-02-07",
-        "net_profit": 578,
-        "profit_percent": 5.7,
-        "winrate": 74.84,
-        "balance": 10724
+        "net_profit": 1003,
+        "profit_percent": 4.92,
+        "winrate": 71.8,
+        "balance": 21383
       },
       {
         "date": "2025-02-08",
-        "net_profit": 828,
-        "profit_percent": 7.72,
-        "winrate": 77.26,
-        "balance": 11552
+        "net_profit": 872,
+        "profit_percent": 4.08,
+        "winrate": 69.89,
+        "balance": 22255
       },
       {
         "date": "2025-02-09",
-        "net_profit": 355,
-        "profit_percent": 3.07,
-        "winrate": 71.68,
-        "balance": 11907
+        "net_profit": 828,
+        "profit_percent": 3.72,
+        "winrate": 71.17,
+        "balance": 23083
       },
       {
         "date": "2025-02-10",
-        "net_profit": 87,
-        "profit_percent": 0.73,
-        "winrate": 68.88,
-        "balance": 11994
+        "net_profit": 963,
+        "profit_percent": 4.17,
+        "winrate": 72.04,
+        "balance": 24046
       },
       {
         "date": "2025-02-11",
-        "net_profit": 606,
-        "profit_percent": 5.05,
-        "winrate": 74.06,
-        "balance": 12600
+        "net_profit": 878,
+        "profit_percent": 3.65,
+        "winrate": 71.05,
+        "balance": 24924
       },
       {
         "date": "2025-02-12",
-        "net_profit": 834,
-        "profit_percent": 6.62,
-        "winrate": 75.94,
-        "balance": 13434
+        "net_profit": 795,
+        "profit_percent": 3.19,
+        "winrate": 69.56,
+        "balance": 25719
       },
       {
         "date": "2025-02-13",
-        "net_profit": 881,
-        "profit_percent": 6.56,
-        "winrate": 75.87,
-        "balance": 14315
+        "net_profit": 867,
+        "profit_percent": 3.37,
+        "winrate": 71.31,
+        "balance": 26586
       },
       {
         "date": "2025-02-14",
-        "net_profit": -285,
-        "profit_percent": -1.99,
-        "winrate": 65.61,
-        "balance": 14030
+        "net_profit": 912,
+        "profit_percent": 3.43,
+        "winrate": 69.8,
+        "balance": 27498
       },
       {
         "date": "2025-02-15",
-        "net_profit": 927,
-        "profit_percent": 6.61,
-        "winrate": 75.93,
-        "balance": 14957
+        "net_profit": 558,
+        "profit_percent": 2.03,
+        "winrate": 67.14,
+        "balance": 28056
       },
       {
         "date": "2025-02-16",
-        "net_profit": 374,
-        "profit_percent": 2.5,
-        "winrate": 71.0,
-        "balance": 15331
+        "net_profit": 589,
+        "profit_percent": 2.1,
+        "winrate": 67.37,
+        "balance": 28645
       },
       {
         "date": "2025-02-17",
-        "net_profit": 857,
-        "profit_percent": 5.59,
-        "winrate": 74.71,
-        "balance": 16188
+        "net_profit": 584,
+        "profit_percent": 2.04,
+        "winrate": 67.45,
+        "balance": 29229
       },
       {
         "date": "2025-02-18",
-        "net_profit": 580,
-        "profit_percent": 3.58,
-        "winrate": 72.3,
-        "balance": 16768
+        "net_profit": 836,
+        "profit_percent": 2.86,
+        "winrate": 70.39,
+        "balance": 30065
       },
       {
         "date": "2025-02-19",
-        "net_profit": -453,
-        "profit_percent": -2.7,
-        "winrate": 64.76,
-        "balance": 16315
+        "net_profit": 610,
+        "profit_percent": 2.03,
+        "winrate": 68.7,
+        "balance": 30675
       },
       {
         "date": "2025-02-20",
-        "net_profit": 925,
-        "profit_percent": 5.67,
-        "winrate": 74.8,
-        "balance": 17240
+        "net_profit": 429,
+        "profit_percent": 1.4,
+        "winrate": 66.09,
+        "balance": 31104
       },
       {
         "date": "2025-02-21",
-        "net_profit": -48,
-        "profit_percent": -0.28,
-        "winrate": 67.66,
-        "balance": 17192
+        "net_profit": 479,
+        "profit_percent": 1.54,
+        "winrate": 65.09,
+        "balance": 31583
       },
       {
         "date": "2025-02-22",
-        "net_profit": 263,
-        "profit_percent": 1.53,
-        "winrate": 69.84,
-        "balance": 17455
+        "net_profit": 199,
+        "profit_percent": 0.63,
+        "winrate": 65.08,
+        "balance": 31782
       },
       {
         "date": "2025-02-23",
-        "net_profit": 16,
-        "profit_percent": 0.09,
-        "winrate": 68.11,
-        "balance": 17471
+        "net_profit": 604,
+        "profit_percent": 1.9,
+        "winrate": 67.1,
+        "balance": 32386
       },
       {
         "date": "2025-02-24",
-        "net_profit": -211,
-        "profit_percent": -1.21,
-        "winrate": 66.55,
-        "balance": 17260
+        "net_profit": 615,
+        "profit_percent": 1.9,
+        "winrate": 66.46,
+        "balance": 33001
       },
       {
         "date": "2025-02-25",
-        "net_profit": 142,
-        "profit_percent": 0.82,
-        "winrate": 68.98,
-        "balance": 17402
+        "net_profit": 92,
+        "profit_percent": 0.28,
+        "winrate": 64.61,
+        "balance": 33093
       },
       {
         "date": "2025-02-26",
-        "net_profit": 268,
-        "profit_percent": 1.54,
-        "winrate": 69.85,
-        "balance": 17670
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -85,
-        "profit_percent": -0.48,
-        "winrate": 67.42,
-        "balance": 17585
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 603,
-        "profit_percent": 3.43,
-        "winrate": 72.12,
-        "balance": 18188
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 24,
-        "profit_percent": 0.13,
-        "winrate": 68.16,
-        "balance": 18212
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 1645,
-        "profit_percent": 9.03,
-        "winrate": 78,
-        "balance": 19857
+        "net_profit": 854,
+        "profit_percent": 2.58,
+        "winrate": 69.46,
+        "balance": 33947
       }
     ]
   },
@@ -2798,214 +2798,214 @@ export const botsData = [
     "name": "bot_014",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 428,
+        "profit_percent": 3.61,
+        "winrate": 67.84,
+        "balance": 12282
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 448,
+        "profit_percent": 3.65,
+        "winrate": 69.76,
+        "balance": 12730
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 718,
+        "profit_percent": 5.64,
+        "winrate": 74.02,
+        "balance": 13448
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 452,
+        "profit_percent": 3.36,
+        "winrate": 70.38,
+        "balance": 13900
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -934,
-        "profit_percent": -8.77,
-        "winrate": 58,
-        "balance": 9716
+        "net_profit": 439,
+        "profit_percent": 3.16,
+        "winrate": 70.21,
+        "balance": 14339
       },
       {
         "date": "2025-02-02",
-        "net_profit": -137,
-        "profit_percent": -1.41,
-        "winrate": 66.31,
-        "balance": 9579
+        "net_profit": 690,
+        "profit_percent": 4.81,
+        "winrate": 72.61,
+        "balance": 15029
       },
       {
         "date": "2025-02-03",
-        "net_profit": -633,
-        "profit_percent": -6.61,
-        "winrate": 60.07,
-        "balance": 8946
+        "net_profit": 577,
+        "profit_percent": 3.84,
+        "winrate": 69.75,
+        "balance": 15606
       },
       {
         "date": "2025-02-04",
-        "net_profit": 166,
-        "profit_percent": 1.85,
-        "winrate": 70.22,
-        "balance": 9112
+        "net_profit": 719,
+        "profit_percent": 4.61,
+        "winrate": 72.27,
+        "balance": 16325
       },
       {
         "date": "2025-02-05",
-        "net_profit": -233,
-        "profit_percent": -2.56,
-        "winrate": 64.93,
-        "balance": 8879
+        "net_profit": 369,
+        "profit_percent": 2.26,
+        "winrate": 67.09,
+        "balance": 16694
       },
       {
         "date": "2025-02-06",
-        "net_profit": -380,
-        "profit_percent": -4.28,
-        "winrate": 62.86,
-        "balance": 8499
+        "net_profit": 609,
+        "profit_percent": 3.65,
+        "winrate": 70.38,
+        "balance": 17303
       },
       {
         "date": "2025-02-07",
-        "net_profit": -509,
-        "profit_percent": -5.99,
-        "winrate": 60.81,
-        "balance": 7990
+        "net_profit": 266,
+        "profit_percent": 1.54,
+        "winrate": 69.07,
+        "balance": 17569
       },
       {
         "date": "2025-02-08",
-        "net_profit": -636,
-        "profit_percent": -7.96,
-        "winrate": 58.45,
-        "balance": 7354
+        "net_profit": 708,
+        "profit_percent": 4.03,
+        "winrate": 72.91,
+        "balance": 18277
       },
       {
         "date": "2025-02-09",
-        "net_profit": -447,
-        "profit_percent": -6.08,
-        "winrate": 60.7,
-        "balance": 6907
+        "net_profit": 163,
+        "profit_percent": 0.89,
+        "winrate": 66.77,
+        "balance": 18440
       },
       {
         "date": "2025-02-10",
-        "net_profit": -548,
-        "profit_percent": -7.93,
-        "winrate": 58.48,
-        "balance": 6359
+        "net_profit": 291,
+        "profit_percent": 1.58,
+        "winrate": 68.76,
+        "balance": 18731
       },
       {
         "date": "2025-02-11",
-        "net_profit": -303,
-        "profit_percent": -4.77,
-        "winrate": 62.28,
-        "balance": 6056
+        "net_profit": 264,
+        "profit_percent": 1.41,
+        "winrate": 66.69,
+        "balance": 18995
       },
       {
         "date": "2025-02-12",
-        "net_profit": -174,
-        "profit_percent": -2.88,
-        "winrate": 64.54,
-        "balance": 5882
+        "net_profit": -47,
+        "profit_percent": -0.25,
+        "winrate": 63.05,
+        "balance": 18948
       },
       {
         "date": "2025-02-13",
-        "net_profit": -2,
-        "profit_percent": -0.03,
-        "winrate": 67.96,
-        "balance": 5880
+        "net_profit": 114,
+        "profit_percent": 0.6,
+        "winrate": 63.76,
+        "balance": 19062
       },
       {
         "date": "2025-02-14",
-        "net_profit": -332,
-        "profit_percent": -5.64,
-        "winrate": 61.23,
-        "balance": 5548
+        "net_profit": 154,
+        "profit_percent": 0.81,
+        "winrate": 66.37,
+        "balance": 19216
       },
       {
         "date": "2025-02-15",
-        "net_profit": -6,
-        "profit_percent": -0.11,
-        "winrate": 67.87,
-        "balance": 5542
+        "net_profit": 311,
+        "profit_percent": 1.62,
+        "winrate": 67.48,
+        "balance": 19527
       },
       {
         "date": "2025-02-16",
-        "net_profit": -323,
-        "profit_percent": -5.83,
-        "winrate": 61.0,
-        "balance": 5219
+        "net_profit": 137,
+        "profit_percent": 0.7,
+        "winrate": 67.7,
+        "balance": 19664
       },
       {
         "date": "2025-02-17",
-        "net_profit": -334,
-        "profit_percent": -6.4,
-        "winrate": 60.32,
-        "balance": 4885
+        "net_profit": 94,
+        "profit_percent": 0.48,
+        "winrate": 67.28,
+        "balance": 19758
       },
       {
         "date": "2025-02-18",
-        "net_profit": -200,
-        "profit_percent": -4.09,
-        "winrate": 63.09,
-        "balance": 4685
+        "net_profit": 83,
+        "profit_percent": 0.42,
+        "winrate": 67.54,
+        "balance": 19841
       },
       {
         "date": "2025-02-19",
-        "net_profit": -172,
-        "profit_percent": -3.67,
-        "winrate": 63.6,
-        "balance": 4513
+        "net_profit": 437,
+        "profit_percent": 2.2,
+        "winrate": 69.56,
+        "balance": 20278
       },
       {
         "date": "2025-02-20",
-        "net_profit": -87,
-        "profit_percent": -1.92,
-        "winrate": 65.7,
-        "balance": 4426
+        "net_profit": -178,
+        "profit_percent": -0.88,
+        "winrate": 63.7,
+        "balance": 20100
       },
       {
         "date": "2025-02-21",
-        "net_profit": -200,
-        "profit_percent": -4.53,
-        "winrate": 62.56,
-        "balance": 4226
+        "net_profit": 36,
+        "profit_percent": 0.18,
+        "winrate": 65.55,
+        "balance": 20136
       },
       {
         "date": "2025-02-22",
-        "net_profit": -313,
-        "profit_percent": -7.4,
-        "winrate": 59.12,
-        "balance": 3913
+        "net_profit": -133,
+        "profit_percent": -0.66,
+        "winrate": 64.58,
+        "balance": 20003
       },
       {
         "date": "2025-02-23",
-        "net_profit": -235,
-        "profit_percent": -6.0,
-        "winrate": 60.8,
-        "balance": 3678
+        "net_profit": 196,
+        "profit_percent": 0.98,
+        "winrate": 67.89,
+        "balance": 20199
       },
       {
         "date": "2025-02-24",
-        "net_profit": -18,
-        "profit_percent": -0.48,
-        "winrate": 67.42,
-        "balance": 3660
+        "net_profit": 347,
+        "profit_percent": 1.72,
+        "winrate": 69.39,
+        "balance": 20546
       },
       {
         "date": "2025-02-25",
-        "net_profit": -303,
-        "profit_percent": -8.27,
-        "winrate": 58.08,
-        "balance": 3357
+        "net_profit": 273,
+        "profit_percent": 1.33,
+        "winrate": 68.45,
+        "balance": 20819
       },
       {
         "date": "2025-02-26",
-        "net_profit": -158,
-        "profit_percent": -4.71,
-        "winrate": 62.35,
-        "balance": 3199
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -58,
-        "profit_percent": -1.81,
-        "winrate": 65.83,
-        "balance": 3141
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -164,
-        "profit_percent": -5.23,
-        "winrate": 61.72,
-        "balance": 2977
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -35,
-        "profit_percent": -1.17,
-        "winrate": 66.6,
-        "balance": 2942
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -31,
-        "profit_percent": -1.05,
-        "winrate": 66.74,
-        "balance": 2911
+        "net_profit": 237,
+        "profit_percent": 1.14,
+        "winrate": 65.68,
+        "balance": 21056
       }
     ]
   },
@@ -3013,214 +3013,214 @@ export const botsData = [
     "name": "bot_015",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 485,
+        "profit_percent": 3.55,
+        "winrate": 69.34,
+        "balance": 14157
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 487,
+        "profit_percent": 3.44,
+        "winrate": 69.19,
+        "balance": 14644
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 573,
+        "profit_percent": 3.91,
+        "winrate": 68.06,
+        "balance": 15217
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 603,
+        "profit_percent": 3.96,
+        "winrate": 67.65,
+        "balance": 15820
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -667,
-        "profit_percent": -7.18,
-        "winrate": 59.38,
-        "balance": 8617
+        "net_profit": 827,
+        "profit_percent": 5.23,
+        "winrate": 70.95,
+        "balance": 16647
       },
       {
         "date": "2025-02-02",
-        "net_profit": 99,
-        "profit_percent": 1.15,
-        "winrate": 69.38,
-        "balance": 8716
+        "net_profit": 1045,
+        "profit_percent": 6.28,
+        "winrate": 73.94,
+        "balance": 17692
       },
       {
         "date": "2025-02-03",
-        "net_profit": -37,
-        "profit_percent": -0.42,
-        "winrate": 67.5,
-        "balance": 8679
+        "net_profit": 863,
+        "profit_percent": 4.88,
+        "winrate": 72.5,
+        "balance": 18555
       },
       {
         "date": "2025-02-04",
-        "net_profit": -304,
-        "profit_percent": -3.5,
-        "winrate": 63.8,
-        "balance": 8375
+        "net_profit": 967,
+        "profit_percent": 5.21,
+        "winrate": 71.7,
+        "balance": 19522
       },
       {
         "date": "2025-02-05",
-        "net_profit": -24,
-        "profit_percent": -0.29,
-        "winrate": 67.65,
-        "balance": 8351
+        "net_profit": 1044,
+        "profit_percent": 5.35,
+        "winrate": 73.61,
+        "balance": 20566
       },
       {
         "date": "2025-02-06",
-        "net_profit": 109,
-        "profit_percent": 1.3,
-        "winrate": 69.56,
-        "balance": 8460
+        "net_profit": 788,
+        "profit_percent": 3.83,
+        "winrate": 72.56,
+        "balance": 21354
       },
       {
         "date": "2025-02-07",
-        "net_profit": -86,
-        "profit_percent": -1.02,
-        "winrate": 66.78,
-        "balance": 8374
+        "net_profit": 758,
+        "profit_percent": 3.55,
+        "winrate": 71.85,
+        "balance": 22112
       },
       {
         "date": "2025-02-08",
-        "net_profit": -557,
-        "profit_percent": -6.65,
-        "winrate": 60.02,
-        "balance": 7817
+        "net_profit": 577,
+        "profit_percent": 2.61,
+        "winrate": 69.2,
+        "balance": 22689
       },
       {
         "date": "2025-02-09",
-        "net_profit": 67,
-        "profit_percent": 0.86,
-        "winrate": 69.03,
-        "balance": 7884
+        "net_profit": 538,
+        "profit_percent": 2.37,
+        "winrate": 67.78,
+        "balance": 23227
       },
       {
         "date": "2025-02-10",
-        "net_profit": -526,
-        "profit_percent": -6.67,
-        "winrate": 60.0,
-        "balance": 7358
+        "net_profit": 381,
+        "profit_percent": 1.64,
+        "winrate": 67.67,
+        "balance": 23608
       },
       {
         "date": "2025-02-11",
-        "net_profit": -127,
-        "profit_percent": -1.72,
-        "winrate": 65.94,
-        "balance": 7231
+        "net_profit": 328,
+        "profit_percent": 1.39,
+        "winrate": 66.72,
+        "balance": 23936
       },
       {
         "date": "2025-02-12",
-        "net_profit": -68,
-        "profit_percent": -0.94,
-        "winrate": 66.87,
-        "balance": 7163
+        "net_profit": 65,
+        "profit_percent": 0.27,
+        "winrate": 64.24,
+        "balance": 24001
       },
       {
         "date": "2025-02-13",
-        "net_profit": -239,
-        "profit_percent": -3.34,
-        "winrate": 63.99,
-        "balance": 6924
+        "net_profit": 588,
+        "profit_percent": 2.45,
+        "winrate": 66.8,
+        "balance": 24589
       },
       {
         "date": "2025-02-14",
-        "net_profit": 52,
-        "profit_percent": 0.75,
-        "winrate": 68.9,
-        "balance": 6976
+        "net_profit": 627,
+        "profit_percent": 2.55,
+        "winrate": 67.69,
+        "balance": 25216
       },
       {
         "date": "2025-02-15",
-        "net_profit": -562,
-        "profit_percent": -8.06,
-        "winrate": 58.33,
-        "balance": 6414
+        "net_profit": 464,
+        "profit_percent": 1.84,
+        "winrate": 68.53,
+        "balance": 25680
       },
       {
         "date": "2025-02-16",
-        "net_profit": -37,
-        "profit_percent": -0.57,
-        "winrate": 67.32,
-        "balance": 6377
+        "net_profit": 265,
+        "profit_percent": 1.03,
+        "winrate": 65.56,
+        "balance": 25945
       },
       {
         "date": "2025-02-17",
-        "net_profit": 170,
-        "profit_percent": 2.67,
-        "winrate": 71.2,
-        "balance": 6547
+        "net_profit": 317,
+        "profit_percent": 1.22,
+        "winrate": 67.81,
+        "balance": 26262
       },
       {
         "date": "2025-02-18",
-        "net_profit": -452,
-        "profit_percent": -6.91,
-        "winrate": 59.71,
-        "balance": 6095
+        "net_profit": 347,
+        "profit_percent": 1.32,
+        "winrate": 65.86,
+        "balance": 26609
       },
       {
         "date": "2025-02-19",
-        "net_profit": -349,
-        "profit_percent": -5.72,
-        "winrate": 61.14,
-        "balance": 5746
+        "net_profit": 19,
+        "profit_percent": 0.07,
+        "winrate": 63.43,
+        "balance": 26628
       },
       {
         "date": "2025-02-20",
-        "net_profit": -396,
-        "profit_percent": -6.89,
-        "winrate": 59.73,
-        "balance": 5350
+        "net_profit": -125,
+        "profit_percent": -0.47,
+        "winrate": 62.39,
+        "balance": 26503
       },
       {
         "date": "2025-02-21",
-        "net_profit": -65,
-        "profit_percent": -1.22,
-        "winrate": 66.54,
-        "balance": 5285
+        "net_profit": -56,
+        "profit_percent": -0.21,
+        "winrate": 64.03,
+        "balance": 26447
       },
       {
         "date": "2025-02-22",
-        "net_profit": -268,
-        "profit_percent": -5.08,
-        "winrate": 61.9,
-        "balance": 5017
+        "net_profit": -61,
+        "profit_percent": -0.23,
+        "winrate": 62.78,
+        "balance": 26386
       },
       {
         "date": "2025-02-23",
-        "net_profit": 48,
-        "profit_percent": 0.95,
-        "winrate": 69.14,
-        "balance": 5065
+        "net_profit": 129,
+        "profit_percent": 0.49,
+        "winrate": 65.76,
+        "balance": 26515
       },
       {
         "date": "2025-02-24",
-        "net_profit": 34,
-        "profit_percent": 0.68,
-        "winrate": 68.82,
-        "balance": 5099
+        "net_profit": 32,
+        "profit_percent": 0.12,
+        "winrate": 66.17,
+        "balance": 26547
       },
       {
         "date": "2025-02-25",
-        "net_profit": 101,
-        "profit_percent": 1.98,
-        "winrate": 70.38,
-        "balance": 5200
+        "net_profit": -66,
+        "profit_percent": -0.25,
+        "winrate": 64.29,
+        "balance": 26481
       },
       {
         "date": "2025-02-26",
-        "net_profit": 138,
-        "profit_percent": 2.66,
-        "winrate": 71.19,
-        "balance": 5338
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -85,
-        "profit_percent": -1.59,
-        "winrate": 66.09,
-        "balance": 5253
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -129,
-        "profit_percent": -2.45,
-        "winrate": 65.06,
-        "balance": 5124
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 71,
-        "profit_percent": 1.39,
-        "winrate": 69.67,
-        "balance": 5195
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 62,
-        "profit_percent": 1.2,
-        "winrate": 69.44,
-        "balance": 5257
+        "net_profit": 413,
+        "profit_percent": 1.56,
+        "winrate": 65.76,
+        "balance": 26894
       }
     ]
   },
@@ -3228,214 +3228,214 @@ export const botsData = [
     "name": "bot_016",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 664,
+        "profit_percent": 4.93,
+        "winrate": 72.82,
+        "balance": 14142
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 632,
+        "profit_percent": 4.47,
+        "winrate": 72.04,
+        "balance": 14774
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 920,
+        "profit_percent": 6.23,
+        "winrate": 74.66,
+        "balance": 15694
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 1008,
+        "profit_percent": 6.42,
+        "winrate": 75.13,
+        "balance": 16702
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 22,
-        "profit_percent": 0.16,
-        "winrate": 68.19,
-        "balance": 13987
+        "net_profit": 1166,
+        "profit_percent": 6.98,
+        "winrate": 74.73,
+        "balance": 17868
       },
       {
         "date": "2025-02-02",
-        "net_profit": -1007,
-        "profit_percent": -7.2,
-        "winrate": 59.36,
-        "balance": 12980
+        "net_profit": 1060,
+        "profit_percent": 5.93,
+        "winrate": 73.52,
+        "balance": 18928
       },
       {
         "date": "2025-02-03",
-        "net_profit": -537,
-        "profit_percent": -4.14,
-        "winrate": 63.03,
-        "balance": 12443
+        "net_profit": 920,
+        "profit_percent": 4.86,
+        "winrate": 72.63,
+        "balance": 19848
       },
       {
         "date": "2025-02-04",
-        "net_profit": -808,
-        "profit_percent": -6.49,
-        "winrate": 60.21,
-        "balance": 11635
+        "net_profit": 1012,
+        "profit_percent": 5.1,
+        "winrate": 70.73,
+        "balance": 20860
       },
       {
         "date": "2025-02-05",
-        "net_profit": 74,
-        "profit_percent": 0.64,
-        "winrate": 68.77,
-        "balance": 11709
+        "net_profit": 1154,
+        "profit_percent": 5.53,
+        "winrate": 70.8,
+        "balance": 22014
       },
       {
         "date": "2025-02-06",
-        "net_profit": -286,
-        "profit_percent": -2.44,
-        "winrate": 65.07,
-        "balance": 11423
+        "net_profit": 658,
+        "profit_percent": 2.99,
+        "winrate": 68.03,
+        "balance": 22672
       },
       {
         "date": "2025-02-07",
-        "net_profit": 171,
-        "profit_percent": 1.5,
-        "winrate": 69.8,
-        "balance": 11594
+        "net_profit": 893,
+        "profit_percent": 3.94,
+        "winrate": 71.2,
+        "balance": 23565
       },
       {
         "date": "2025-02-08",
-        "net_profit": -510,
-        "profit_percent": -4.4,
-        "winrate": 62.72,
-        "balance": 11084
+        "net_profit": 662,
+        "profit_percent": 2.81,
+        "winrate": 70.69,
+        "balance": 24227
       },
       {
         "date": "2025-02-09",
-        "net_profit": -119,
-        "profit_percent": -1.07,
-        "winrate": 66.72,
-        "balance": 10965
+        "net_profit": 296,
+        "profit_percent": 1.22,
+        "winrate": 67.46,
+        "balance": 24523
       },
       {
         "date": "2025-02-10",
-        "net_profit": 44,
-        "profit_percent": 0.4,
-        "winrate": 68.48,
-        "balance": 11009
+        "net_profit": 292,
+        "profit_percent": 1.19,
+        "winrate": 65.74,
+        "balance": 24815
       },
       {
         "date": "2025-02-11",
-        "net_profit": -790,
-        "profit_percent": -7.18,
-        "winrate": 59.38,
-        "balance": 10219
+        "net_profit": 906,
+        "profit_percent": 3.65,
+        "winrate": 70.58,
+        "balance": 25721
       },
       {
         "date": "2025-02-12",
-        "net_profit": -462,
-        "profit_percent": -4.52,
-        "winrate": 62.58,
-        "balance": 9757
+        "net_profit": 188,
+        "profit_percent": 0.73,
+        "winrate": 65.7,
+        "balance": 25909
       },
       {
         "date": "2025-02-13",
-        "net_profit": -793,
-        "profit_percent": -8.13,
-        "winrate": 58.24,
-        "balance": 8964
+        "net_profit": 795,
+        "profit_percent": 3.07,
+        "winrate": 68.75,
+        "balance": 26704
       },
       {
         "date": "2025-02-14",
-        "net_profit": 221,
-        "profit_percent": 2.47,
-        "winrate": 70.96,
-        "balance": 9185
+        "net_profit": 507,
+        "profit_percent": 1.9,
+        "winrate": 67.28,
+        "balance": 27211
       },
       {
         "date": "2025-02-15",
-        "net_profit": -483,
-        "profit_percent": -5.26,
-        "winrate": 61.69,
-        "balance": 8702
+        "net_profit": 514,
+        "profit_percent": 1.89,
+        "winrate": 67.39,
+        "balance": 27725
       },
       {
         "date": "2025-02-16",
-        "net_profit": -337,
-        "profit_percent": -3.87,
-        "winrate": 63.36,
-        "balance": 8365
+        "net_profit": 771,
+        "profit_percent": 2.78,
+        "winrate": 68.72,
+        "balance": 28496
       },
       {
         "date": "2025-02-17",
-        "net_profit": 11,
-        "profit_percent": 0.13,
-        "winrate": 68.16,
-        "balance": 8376
+        "net_profit": 182,
+        "profit_percent": 0.64,
+        "winrate": 66.87,
+        "balance": 28678
       },
       {
         "date": "2025-02-18",
-        "net_profit": -509,
-        "profit_percent": -6.08,
-        "winrate": 60.7,
-        "balance": 7867
+        "net_profit": 728,
+        "profit_percent": 2.54,
+        "winrate": 70.21,
+        "balance": 29406
       },
       {
         "date": "2025-02-19",
-        "net_profit": -259,
-        "profit_percent": -3.29,
-        "winrate": 64.05,
-        "balance": 7608
+        "net_profit": 706,
+        "profit_percent": 2.4,
+        "winrate": 71.35,
+        "balance": 30112
       },
       {
         "date": "2025-02-20",
-        "net_profit": -81,
-        "profit_percent": -1.06,
-        "winrate": 66.73,
-        "balance": 7527
+        "net_profit": 325,
+        "profit_percent": 1.08,
+        "winrate": 67.57,
+        "balance": 30437
       },
       {
         "date": "2025-02-21",
-        "net_profit": -197,
-        "profit_percent": -2.62,
-        "winrate": 64.86,
-        "balance": 7330
+        "net_profit": 170,
+        "profit_percent": 0.56,
+        "winrate": 67.84,
+        "balance": 30607
       },
       {
         "date": "2025-02-22",
-        "net_profit": -43,
-        "profit_percent": -0.58,
-        "winrate": 67.3,
-        "balance": 7287
+        "net_profit": 802,
+        "profit_percent": 2.62,
+        "winrate": 71.56,
+        "balance": 31409
       },
       {
         "date": "2025-02-23",
-        "net_profit": 11,
-        "profit_percent": 0.15,
-        "winrate": 68.18,
-        "balance": 7298
+        "net_profit": 660,
+        "profit_percent": 2.1,
+        "winrate": 70.87,
+        "balance": 32069
       },
       {
         "date": "2025-02-24",
-        "net_profit": -462,
-        "profit_percent": -6.33,
-        "winrate": 60.4,
-        "balance": 6836
+        "net_profit": 439,
+        "profit_percent": 1.37,
+        "winrate": 68.97,
+        "balance": 32508
       },
       {
         "date": "2025-02-25",
-        "net_profit": -18,
-        "profit_percent": -0.27,
-        "winrate": 67.68,
-        "balance": 6818
+        "net_profit": -52,
+        "profit_percent": -0.16,
+        "winrate": 67.19,
+        "balance": 32456
       },
       {
         "date": "2025-02-26",
-        "net_profit": -14,
-        "profit_percent": -0.2,
-        "winrate": 67.76,
-        "balance": 6804
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -73,
-        "profit_percent": -1.08,
-        "winrate": 66.7,
-        "balance": 6731
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -243,
-        "profit_percent": -3.61,
-        "winrate": 63.67,
-        "balance": 6488
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -27,
-        "profit_percent": -0.42,
-        "winrate": 67.5,
-        "balance": 6461
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 28,
-        "profit_percent": 0.43,
-        "winrate": 68.52,
-        "balance": 6489
+        "net_profit": 717,
+        "profit_percent": 2.21,
+        "winrate": 69.32,
+        "balance": 33173
       }
     ]
   },
@@ -3443,214 +3443,214 @@ export const botsData = [
     "name": "bot_017",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 659,
+        "profit_percent": 5.46,
+        "winrate": 72.92,
+        "balance": 12725
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 557,
+        "profit_percent": 4.38,
+        "winrate": 70.67,
+        "balance": 13282
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 713,
+        "profit_percent": 5.37,
+        "winrate": 73.72,
+        "balance": 13995
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 977,
+        "profit_percent": 6.98,
+        "winrate": 73.51,
+        "balance": 14972
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -642,
-        "profit_percent": -7.62,
-        "winrate": 58.86,
-        "balance": 7783
+        "net_profit": 816,
+        "profit_percent": 5.45,
+        "winrate": 70.63,
+        "balance": 15788
       },
       {
         "date": "2025-02-02",
-        "net_profit": -648,
-        "profit_percent": -8.33,
-        "winrate": 58.0,
-        "balance": 7135
+        "net_profit": 914,
+        "profit_percent": 5.79,
+        "winrate": 71.77,
+        "balance": 16702
       },
       {
         "date": "2025-02-03",
-        "net_profit": -161,
-        "profit_percent": -2.25,
-        "winrate": 65.3,
-        "balance": 6974
+        "net_profit": 738,
+        "profit_percent": 4.42,
+        "winrate": 68.46,
+        "balance": 17440
       },
       {
         "date": "2025-02-04",
-        "net_profit": -52,
-        "profit_percent": -0.75,
-        "winrate": 67.1,
-        "balance": 6922
+        "net_profit": 1209,
+        "profit_percent": 6.93,
+        "winrate": 71.1,
+        "balance": 18649
       },
       {
         "date": "2025-02-05",
-        "net_profit": -78,
-        "profit_percent": -1.13,
-        "winrate": 66.64,
-        "balance": 6844
+        "net_profit": 1244,
+        "profit_percent": 6.67,
+        "winrate": 73.24,
+        "balance": 19893
       },
       {
         "date": "2025-02-06",
-        "net_profit": -231,
-        "profit_percent": -3.37,
-        "winrate": 63.96,
-        "balance": 6613
+        "net_profit": 841,
+        "profit_percent": 4.23,
+        "winrate": 69.61,
+        "balance": 20734
       },
       {
         "date": "2025-02-07",
-        "net_profit": -649,
-        "profit_percent": -9.81,
-        "winrate": 58,
-        "balance": 5964
+        "net_profit": 906,
+        "profit_percent": 4.37,
+        "winrate": 70.04,
+        "balance": 21640
       },
       {
         "date": "2025-02-08",
-        "net_profit": -580,
-        "profit_percent": -9.73,
-        "winrate": 58,
-        "balance": 5384
+        "net_profit": 812,
+        "profit_percent": 3.75,
+        "winrate": 71.22,
+        "balance": 22452
       },
       {
         "date": "2025-02-09",
-        "net_profit": -556,
-        "profit_percent": -10.32,
-        "winrate": 58,
-        "balance": 4828
+        "net_profit": 1224,
+        "profit_percent": 5.45,
+        "winrate": 74.61,
+        "balance": 23676
       },
       {
         "date": "2025-02-10",
-        "net_profit": -240,
-        "profit_percent": -4.98,
-        "winrate": 62.02,
-        "balance": 4588
+        "net_profit": 1231,
+        "profit_percent": 5.2,
+        "winrate": 74.32,
+        "balance": 24907
       },
       {
         "date": "2025-02-11",
-        "net_profit": -463,
-        "profit_percent": -10.1,
-        "winrate": 58,
-        "balance": 4125
+        "net_profit": 981,
+        "profit_percent": 3.94,
+        "winrate": 72.62,
+        "balance": 25888
       },
       {
         "date": "2025-02-12",
-        "net_profit": -409,
-        "profit_percent": -9.91,
-        "winrate": 58,
-        "balance": 3716
+        "net_profit": 1054,
+        "profit_percent": 4.07,
+        "winrate": 69.95,
+        "balance": 26942
       },
       {
         "date": "2025-02-13",
-        "net_profit": -228,
-        "profit_percent": -6.14,
-        "winrate": 60.63,
-        "balance": 3488
+        "net_profit": 1040,
+        "profit_percent": 3.86,
+        "winrate": 68.5,
+        "balance": 27982
       },
       {
         "date": "2025-02-14",
-        "net_profit": -302,
-        "profit_percent": -8.67,
-        "winrate": 58,
-        "balance": 3186
+        "net_profit": 915,
+        "profit_percent": 3.27,
+        "winrate": 68.48,
+        "balance": 28897
       },
       {
         "date": "2025-02-15",
-        "net_profit": -103,
-        "profit_percent": -3.22,
-        "winrate": 64.14,
-        "balance": 3083
+        "net_profit": 621,
+        "profit_percent": 2.15,
+        "winrate": 66.86,
+        "balance": 29518
       },
       {
         "date": "2025-02-16",
-        "net_profit": 33,
-        "profit_percent": 1.08,
-        "winrate": 69.3,
-        "balance": 3116
+        "net_profit": 986,
+        "profit_percent": 3.34,
+        "winrate": 67.64,
+        "balance": 30504
       },
       {
         "date": "2025-02-17",
-        "net_profit": -78,
-        "profit_percent": -2.49,
-        "winrate": 65.01,
-        "balance": 3038
+        "net_profit": 503,
+        "profit_percent": 1.65,
+        "winrate": 65.58,
+        "balance": 31007
       },
       {
         "date": "2025-02-18",
-        "net_profit": -127,
-        "profit_percent": -4.19,
-        "winrate": 62.97,
-        "balance": 2911
+        "net_profit": 673,
+        "profit_percent": 2.17,
+        "winrate": 65.77,
+        "balance": 31680
       },
       {
         "date": "2025-02-19",
-        "net_profit": -135,
-        "profit_percent": -4.64,
-        "winrate": 62.43,
-        "balance": 2776
+        "net_profit": 998,
+        "profit_percent": 3.15,
+        "winrate": 66.71,
+        "balance": 32678
       },
       {
         "date": "2025-02-20",
-        "net_profit": -134,
-        "profit_percent": -4.84,
-        "winrate": 62.19,
-        "balance": 2642
+        "net_profit": 725,
+        "profit_percent": 2.22,
+        "winrate": 67.56,
+        "balance": 33403
       },
       {
         "date": "2025-02-21",
-        "net_profit": 34,
-        "profit_percent": 1.29,
-        "winrate": 69.55,
-        "balance": 2676
+        "net_profit": 832,
+        "profit_percent": 2.49,
+        "winrate": 69.65,
+        "balance": 34235
       },
       {
         "date": "2025-02-22",
-        "net_profit": -88,
-        "profit_percent": -3.3,
-        "winrate": 64.04,
-        "balance": 2588
+        "net_profit": 609,
+        "profit_percent": 1.78,
+        "winrate": 66.6,
+        "balance": 34844
       },
       {
         "date": "2025-02-23",
-        "net_profit": -227,
-        "profit_percent": -8.76,
-        "winrate": 58,
-        "balance": 2361
+        "net_profit": 240,
+        "profit_percent": 0.69,
+        "winrate": 65.81,
+        "balance": 35084
       },
       {
         "date": "2025-02-24",
-        "net_profit": -51,
-        "profit_percent": -2.16,
-        "winrate": 65.41,
-        "balance": 2310
+        "net_profit": 810,
+        "profit_percent": 2.31,
+        "winrate": 66.48,
+        "balance": 35894
       },
       {
         "date": "2025-02-25",
-        "net_profit": 7,
-        "profit_percent": 0.29,
-        "winrate": 68.35,
-        "balance": 2317
+        "net_profit": 714,
+        "profit_percent": 1.99,
+        "winrate": 66.75,
+        "balance": 36608
       },
       {
         "date": "2025-02-26",
-        "net_profit": -83,
-        "profit_percent": -3.59,
-        "winrate": 63.69,
-        "balance": 2234
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -156,
-        "profit_percent": -7.0,
-        "winrate": 59.6,
-        "balance": 2078
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -79,
-        "profit_percent": -3.79,
-        "winrate": 63.45,
-        "balance": 1999
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -164,
-        "profit_percent": -8.18,
-        "winrate": 58.18,
-        "balance": 1835
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 29,
-        "profit_percent": 1.57,
-        "winrate": 69.88,
-        "balance": 1864
+        "net_profit": 1472,
+        "profit_percent": 4.02,
+        "winrate": 70.25,
+        "balance": 38080
       }
     ]
   },
@@ -3658,214 +3658,214 @@ export const botsData = [
     "name": "bot_018",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 260,
+        "profit_percent": 2.9,
+        "winrate": 68.41,
+        "balance": 9226
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 391,
+        "profit_percent": 4.24,
+        "winrate": 71.3,
+        "balance": 9617
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 353,
+        "profit_percent": 3.67,
+        "winrate": 69.2,
+        "balance": 9970
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 346,
+        "profit_percent": 3.47,
+        "winrate": 67.09,
+        "balance": 10316
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 221,
-        "profit_percent": 2.61,
-        "winrate": 71.13,
-        "balance": 8687
+        "net_profit": 424,
+        "profit_percent": 4.11,
+        "winrate": 69.73,
+        "balance": 10740
       },
       {
         "date": "2025-02-02",
-        "net_profit": 19,
-        "profit_percent": 0.22,
-        "winrate": 68.26,
-        "balance": 8706
+        "net_profit": 507,
+        "profit_percent": 4.72,
+        "winrate": 69.81,
+        "balance": 11247
       },
       {
         "date": "2025-02-03",
-        "net_profit": 23,
-        "profit_percent": 0.26,
-        "winrate": 68.31,
-        "balance": 8729
+        "net_profit": 444,
+        "profit_percent": 3.95,
+        "winrate": 70.36,
+        "balance": 11691
       },
       {
         "date": "2025-02-04",
-        "net_profit": 755,
-        "profit_percent": 8.65,
-        "winrate": 78,
-        "balance": 9484
+        "net_profit": 509,
+        "profit_percent": 4.35,
+        "winrate": 70.18,
+        "balance": 12200
       },
       {
         "date": "2025-02-05",
-        "net_profit": 512,
-        "profit_percent": 5.4,
-        "winrate": 74.48,
-        "balance": 9996
+        "net_profit": 423,
+        "profit_percent": 3.47,
+        "winrate": 70.26,
+        "balance": 12623
       },
       {
         "date": "2025-02-06",
-        "net_profit": 834,
-        "profit_percent": 8.34,
-        "winrate": 78,
-        "balance": 10830
+        "net_profit": 280,
+        "profit_percent": 2.22,
+        "winrate": 66.98,
+        "balance": 12903
       },
       {
         "date": "2025-02-07",
-        "net_profit": 669,
-        "profit_percent": 6.18,
-        "winrate": 75.42,
-        "balance": 11499
+        "net_profit": 356,
+        "profit_percent": 2.76,
+        "winrate": 69.31,
+        "balance": 13259
       },
       {
         "date": "2025-02-08",
-        "net_profit": 435,
-        "profit_percent": 3.78,
-        "winrate": 72.54,
-        "balance": 11934
+        "net_profit": 300,
+        "profit_percent": 2.26,
+        "winrate": 70.13,
+        "balance": 13559
       },
       {
         "date": "2025-02-09",
-        "net_profit": -175,
-        "profit_percent": -1.47,
-        "winrate": 66.24,
-        "balance": 11759
+        "net_profit": 362,
+        "profit_percent": 2.67,
+        "winrate": 71.55,
+        "balance": 13921
       },
       {
         "date": "2025-02-10",
-        "net_profit": 107,
-        "profit_percent": 0.91,
-        "winrate": 69.09,
-        "balance": 11866
+        "net_profit": 256,
+        "profit_percent": 1.84,
+        "winrate": 69.13,
+        "balance": 14177
       },
       {
         "date": "2025-02-11",
-        "net_profit": 395,
-        "profit_percent": 3.33,
-        "winrate": 72.0,
-        "balance": 12261
+        "net_profit": 349,
+        "profit_percent": 2.46,
+        "winrate": 69.75,
+        "balance": 14526
       },
       {
         "date": "2025-02-12",
-        "net_profit": 571,
-        "profit_percent": 4.66,
-        "winrate": 73.59,
-        "balance": 12832
+        "net_profit": 102,
+        "profit_percent": 0.7,
+        "winrate": 67.33,
+        "balance": 14628
       },
       {
         "date": "2025-02-13",
-        "net_profit": 121,
-        "profit_percent": 0.94,
-        "winrate": 69.13,
-        "balance": 12953
+        "net_profit": 382,
+        "profit_percent": 2.61,
+        "winrate": 70.55,
+        "balance": 15010
       },
       {
         "date": "2025-02-14",
-        "net_profit": 48,
-        "profit_percent": 0.37,
-        "winrate": 68.44,
-        "balance": 13001
+        "net_profit": 176,
+        "profit_percent": 1.17,
+        "winrate": 66.66,
+        "balance": 15186
       },
       {
         "date": "2025-02-15",
-        "net_profit": 211,
-        "profit_percent": 1.62,
-        "winrate": 69.94,
-        "balance": 13212
+        "net_profit": 304,
+        "profit_percent": 2.0,
+        "winrate": 68.69,
+        "balance": 15490
       },
       {
         "date": "2025-02-16",
-        "net_profit": 707,
-        "profit_percent": 5.35,
-        "winrate": 74.42,
-        "balance": 13919
+        "net_profit": 43,
+        "profit_percent": 0.28,
+        "winrate": 65.57,
+        "balance": 15533
       },
       {
         "date": "2025-02-17",
-        "net_profit": 546,
-        "profit_percent": 3.92,
-        "winrate": 72.7,
-        "balance": 14465
+        "net_profit": 103,
+        "profit_percent": 0.66,
+        "winrate": 66.75,
+        "balance": 15636
       },
       {
         "date": "2025-02-18",
-        "net_profit": 1296,
-        "profit_percent": 8.96,
-        "winrate": 78,
-        "balance": 15761
+        "net_profit": 158,
+        "profit_percent": 1.01,
+        "winrate": 65.96,
+        "balance": 15794
       },
       {
         "date": "2025-02-19",
-        "net_profit": 1396,
-        "profit_percent": 8.86,
-        "winrate": 78,
-        "balance": 17157
+        "net_profit": 114,
+        "profit_percent": 0.72,
+        "winrate": 66.27,
+        "balance": 15908
       },
       {
         "date": "2025-02-20",
-        "net_profit": 57,
-        "profit_percent": 0.33,
-        "winrate": 68.4,
-        "balance": 17214
+        "net_profit": 223,
+        "profit_percent": 1.4,
+        "winrate": 68.95,
+        "balance": 16131
       },
       {
         "date": "2025-02-21",
-        "net_profit": 195,
-        "profit_percent": 1.13,
-        "winrate": 69.36,
-        "balance": 17409
+        "net_profit": -10,
+        "profit_percent": -0.06,
+        "winrate": 65.22,
+        "balance": 16121
       },
       {
         "date": "2025-02-22",
-        "net_profit": -301,
-        "profit_percent": -1.73,
-        "winrate": 65.92,
-        "balance": 17108
+        "net_profit": 34,
+        "profit_percent": 0.21,
+        "winrate": 64.28,
+        "balance": 16155
       },
       {
         "date": "2025-02-23",
-        "net_profit": 1015,
-        "profit_percent": 5.93,
-        "winrate": 75.12,
-        "balance": 18123
+        "net_profit": 153,
+        "profit_percent": 0.95,
+        "winrate": 66.92,
+        "balance": 16308
       },
       {
         "date": "2025-02-24",
-        "net_profit": 1510,
-        "profit_percent": 8.33,
-        "winrate": 78.0,
-        "balance": 19633
+        "net_profit": -5,
+        "profit_percent": -0.03,
+        "winrate": 64.93,
+        "balance": 16303
       },
       {
         "date": "2025-02-25",
-        "net_profit": 426,
-        "profit_percent": 2.17,
-        "winrate": 70.6,
-        "balance": 20059
+        "net_profit": -135,
+        "profit_percent": -0.83,
+        "winrate": 63.19,
+        "balance": 16168
       },
       {
         "date": "2025-02-26",
-        "net_profit": 538,
-        "profit_percent": 2.68,
-        "winrate": 71.22,
-        "balance": 20597
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -117,
-        "profit_percent": -0.57,
-        "winrate": 67.32,
-        "balance": 20480
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1077,
-        "profit_percent": 5.26,
-        "winrate": 74.31,
-        "balance": 21557
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 2085,
-        "profit_percent": 9.67,
-        "winrate": 78,
-        "balance": 23642
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 943,
-        "profit_percent": 3.99,
-        "winrate": 72.79,
-        "balance": 24585
+        "net_profit": 200,
+        "profit_percent": 1.24,
+        "winrate": 65.62,
+        "balance": 16368
       }
     ]
   },
@@ -3873,214 +3873,214 @@ export const botsData = [
     "name": "bot_019",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 509,
+        "profit_percent": 4.23,
+        "winrate": 69.78,
+        "balance": 12551
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 680,
+        "profit_percent": 5.42,
+        "winrate": 70.63,
+        "balance": 13231
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 848,
+        "profit_percent": 6.41,
+        "winrate": 72.43,
+        "balance": 14079
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 971,
+        "profit_percent": 6.9,
+        "winrate": 72.64,
+        "balance": 15050
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 755,
-        "profit_percent": 8.88,
-        "winrate": 78,
-        "balance": 9255
+        "net_profit": 1090,
+        "profit_percent": 7.24,
+        "winrate": 72.23,
+        "balance": 16140
       },
       {
         "date": "2025-02-02",
-        "net_profit": 844,
-        "profit_percent": 9.12,
-        "winrate": 78,
-        "balance": 10099
+        "net_profit": 907,
+        "profit_percent": 5.62,
+        "winrate": 69.91,
+        "balance": 17047
       },
       {
         "date": "2025-02-03",
-        "net_profit": 733,
-        "profit_percent": 7.26,
-        "winrate": 76.71,
-        "balance": 10832
+        "net_profit": 898,
+        "profit_percent": 5.27,
+        "winrate": 71.42,
+        "balance": 17945
       },
       {
         "date": "2025-02-04",
-        "net_profit": 619,
-        "profit_percent": 5.71,
-        "winrate": 74.85,
-        "balance": 11451
+        "net_profit": 1337,
+        "profit_percent": 7.45,
+        "winrate": 74.72,
+        "balance": 19282
       },
       {
         "date": "2025-02-05",
-        "net_profit": 348,
-        "profit_percent": 3.04,
-        "winrate": 71.65,
-        "balance": 11799
+        "net_profit": 1244,
+        "profit_percent": 6.45,
+        "winrate": 72.33,
+        "balance": 20526
       },
       {
         "date": "2025-02-06",
-        "net_profit": 346,
-        "profit_percent": 2.93,
-        "winrate": 71.52,
-        "balance": 12145
+        "net_profit": 1030,
+        "profit_percent": 5.02,
+        "winrate": 72.22,
+        "balance": 21556
       },
       {
         "date": "2025-02-07",
-        "net_profit": 532,
-        "profit_percent": 4.38,
-        "winrate": 73.26,
-        "balance": 12677
+        "net_profit": 780,
+        "profit_percent": 3.62,
+        "winrate": 70.45,
+        "balance": 22336
       },
       {
         "date": "2025-02-08",
-        "net_profit": 526,
-        "profit_percent": 4.15,
-        "winrate": 72.98,
-        "balance": 13203
+        "net_profit": 788,
+        "profit_percent": 3.53,
+        "winrate": 70.44,
+        "balance": 23124
       },
       {
         "date": "2025-02-09",
-        "net_profit": 1071,
-        "profit_percent": 8.11,
-        "winrate": 77.73,
-        "balance": 14274
+        "net_profit": 562,
+        "profit_percent": 2.43,
+        "winrate": 67.14,
+        "balance": 23686
       },
       {
         "date": "2025-02-10",
-        "net_profit": 521,
-        "profit_percent": 3.65,
-        "winrate": 72.38,
-        "balance": 14795
+        "net_profit": 478,
+        "profit_percent": 2.02,
+        "winrate": 65.47,
+        "balance": 24164
       },
       {
         "date": "2025-02-11",
-        "net_profit": 1184,
-        "profit_percent": 8.0,
-        "winrate": 77.6,
-        "balance": 15979
+        "net_profit": 401,
+        "profit_percent": 1.66,
+        "winrate": 66.55,
+        "balance": 24565
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1355,
-        "profit_percent": 8.48,
-        "winrate": 78,
-        "balance": 17334
+        "net_profit": 673,
+        "profit_percent": 2.74,
+        "winrate": 66.94,
+        "balance": 25238
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1085,
-        "profit_percent": 6.26,
-        "winrate": 75.51,
-        "balance": 18419
+        "net_profit": 1027,
+        "profit_percent": 4.07,
+        "winrate": 68.52,
+        "balance": 26265
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1838,
-        "profit_percent": 9.98,
-        "winrate": 78,
-        "balance": 20257
+        "net_profit": 643,
+        "profit_percent": 2.45,
+        "winrate": 66.01,
+        "balance": 26908
       },
       {
         "date": "2025-02-15",
-        "net_profit": 117,
-        "profit_percent": 0.58,
-        "winrate": 68.7,
-        "balance": 20374
+        "net_profit": 538,
+        "profit_percent": 2.0,
+        "winrate": 65.2,
+        "balance": 27446
       },
       {
         "date": "2025-02-16",
-        "net_profit": -187,
-        "profit_percent": -0.92,
-        "winrate": 66.9,
-        "balance": 20187
+        "net_profit": 607,
+        "profit_percent": 2.21,
+        "winrate": 68.0,
+        "balance": 28053
       },
       {
         "date": "2025-02-17",
-        "net_profit": 880,
-        "profit_percent": 4.36,
-        "winrate": 73.23,
-        "balance": 21067
+        "net_profit": 1091,
+        "profit_percent": 3.89,
+        "winrate": 69.99,
+        "balance": 29144
       },
       {
         "date": "2025-02-18",
-        "net_profit": 590,
-        "profit_percent": 2.8,
-        "winrate": 71.36,
-        "balance": 21657
+        "net_profit": 793,
+        "profit_percent": 2.72,
+        "winrate": 70.28,
+        "balance": 29937
       },
       {
         "date": "2025-02-19",
-        "net_profit": 2293,
-        "profit_percent": 10.59,
-        "winrate": 78,
-        "balance": 23950
+        "net_profit": 1081,
+        "profit_percent": 3.61,
+        "winrate": 72.65,
+        "balance": 31018
       },
       {
         "date": "2025-02-20",
-        "net_profit": 601,
-        "profit_percent": 2.51,
-        "winrate": 71.01,
-        "balance": 24551
+        "net_profit": 707,
+        "profit_percent": 2.28,
+        "winrate": 68.38,
+        "balance": 31725
       },
       {
         "date": "2025-02-21",
-        "net_profit": 589,
-        "profit_percent": 2.4,
-        "winrate": 70.88,
-        "balance": 25140
+        "net_profit": 190,
+        "profit_percent": 0.6,
+        "winrate": 64.49,
+        "balance": 31915
       },
       {
         "date": "2025-02-22",
-        "net_profit": 483,
-        "profit_percent": 1.92,
-        "winrate": 70.3,
-        "balance": 25623
+        "net_profit": 399,
+        "profit_percent": 1.25,
+        "winrate": 64.52,
+        "balance": 32314
       },
       {
         "date": "2025-02-23",
-        "net_profit": 2027,
-        "profit_percent": 7.91,
-        "winrate": 77.49,
-        "balance": 27650
+        "net_profit": 485,
+        "profit_percent": 1.5,
+        "winrate": 65.02,
+        "balance": 32799
       },
       {
         "date": "2025-02-24",
-        "net_profit": 478,
-        "profit_percent": 1.73,
-        "winrate": 70.08,
-        "balance": 28128
+        "net_profit": 715,
+        "profit_percent": 2.18,
+        "winrate": 66.07,
+        "balance": 33514
       },
       {
         "date": "2025-02-25",
-        "net_profit": 1525,
-        "profit_percent": 5.42,
-        "winrate": 74.5,
-        "balance": 29653
+        "net_profit": 593,
+        "profit_percent": 1.77,
+        "winrate": 67.52,
+        "balance": 34107
       },
       {
         "date": "2025-02-26",
-        "net_profit": 2013,
-        "profit_percent": 6.79,
-        "winrate": 76.15,
-        "balance": 31666
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 2068,
-        "profit_percent": 6.53,
-        "winrate": 75.84,
-        "balance": 33734
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 3,
-        "profit_percent": 0.01,
-        "winrate": 68.01,
-        "balance": 33737
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 624,
-        "profit_percent": 1.85,
-        "winrate": 70.22,
-        "balance": 34361
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -179,
-        "profit_percent": -0.52,
-        "winrate": 67.38,
-        "balance": 34182
+        "net_profit": 1228,
+        "profit_percent": 3.6,
+        "winrate": 69.54,
+        "balance": 35335
       }
     ]
   },
@@ -4088,214 +4088,214 @@ export const botsData = [
     "name": "bot_020",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 450,
+        "profit_percent": 4.72,
+        "winrate": 70.04,
+        "balance": 9984
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 536,
+        "profit_percent": 5.37,
+        "winrate": 71.23,
+        "balance": 10520
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 533,
+        "profit_percent": 5.07,
+        "winrate": 71.79,
+        "balance": 11053
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 647,
+        "profit_percent": 5.85,
+        "winrate": 72.7,
+        "balance": 11700
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 419,
-        "profit_percent": 3.89,
-        "winrate": 72.67,
-        "balance": 11201
+        "net_profit": 600,
+        "profit_percent": 5.13,
+        "winrate": 69.75,
+        "balance": 12300
       },
       {
         "date": "2025-02-02",
-        "net_profit": 1007,
-        "profit_percent": 8.99,
-        "winrate": 78,
-        "balance": 12208
+        "net_profit": 674,
+        "profit_percent": 5.48,
+        "winrate": 69.78,
+        "balance": 12974
       },
       {
         "date": "2025-02-03",
-        "net_profit": 89,
-        "profit_percent": 0.73,
-        "winrate": 68.88,
-        "balance": 12297
+        "net_profit": 695,
+        "profit_percent": 5.36,
+        "winrate": 69.75,
+        "balance": 13669
       },
       {
         "date": "2025-02-04",
-        "net_profit": 996,
-        "profit_percent": 8.1,
-        "winrate": 77.72,
-        "balance": 13293
+        "net_profit": 748,
+        "profit_percent": 5.47,
+        "winrate": 72.38,
+        "balance": 14417
       },
       {
         "date": "2025-02-05",
-        "net_profit": 233,
-        "profit_percent": 1.75,
-        "winrate": 70.1,
-        "balance": 13526
+        "net_profit": 836,
+        "profit_percent": 5.8,
+        "winrate": 72.07,
+        "balance": 15253
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1244,
-        "profit_percent": 9.2,
-        "winrate": 78,
-        "balance": 14770
+        "net_profit": 763,
+        "profit_percent": 5.0,
+        "winrate": 71.07,
+        "balance": 16016
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1418,
-        "profit_percent": 9.6,
-        "winrate": 78,
-        "balance": 16188
+        "net_profit": 636,
+        "profit_percent": 3.97,
+        "winrate": 71.43,
+        "balance": 16652
       },
       {
         "date": "2025-02-08",
-        "net_profit": 369,
-        "profit_percent": 2.28,
-        "winrate": 70.74,
-        "balance": 16557
+        "net_profit": 618,
+        "profit_percent": 3.71,
+        "winrate": 68.72,
+        "balance": 17270
       },
       {
         "date": "2025-02-09",
-        "net_profit": 1197,
-        "profit_percent": 7.23,
-        "winrate": 76.68,
-        "balance": 17754
+        "net_profit": 527,
+        "profit_percent": 3.05,
+        "winrate": 68.41,
+        "balance": 17797
       },
       {
         "date": "2025-02-10",
-        "net_profit": 206,
-        "profit_percent": 1.16,
-        "winrate": 69.39,
-        "balance": 17960
+        "net_profit": 466,
+        "profit_percent": 2.62,
+        "winrate": 67.13,
+        "balance": 18263
       },
       {
         "date": "2025-02-11",
-        "net_profit": 1026,
-        "profit_percent": 5.71,
-        "winrate": 74.85,
-        "balance": 18986
+        "net_profit": 535,
+        "profit_percent": 2.93,
+        "winrate": 69.35,
+        "balance": 18798
       },
       {
         "date": "2025-02-12",
-        "net_profit": -46,
-        "profit_percent": -0.24,
-        "winrate": 67.71,
-        "balance": 18940
+        "net_profit": 378,
+        "profit_percent": 2.01,
+        "winrate": 69.17,
+        "balance": 19176
       },
       {
         "date": "2025-02-13",
-        "net_profit": 375,
-        "profit_percent": 1.98,
-        "winrate": 70.38,
-        "balance": 19315
+        "net_profit": 451,
+        "profit_percent": 2.35,
+        "winrate": 69.28,
+        "balance": 19627
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1671,
-        "profit_percent": 8.65,
-        "winrate": 78,
-        "balance": 20986
+        "net_profit": 398,
+        "profit_percent": 2.03,
+        "winrate": 66.99,
+        "balance": 20025
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1121,
-        "profit_percent": 5.34,
-        "winrate": 74.41,
-        "balance": 22107
+        "net_profit": 605,
+        "profit_percent": 3.02,
+        "winrate": 69.01,
+        "balance": 20630
       },
       {
         "date": "2025-02-16",
-        "net_profit": 345,
-        "profit_percent": 1.56,
-        "winrate": 69.87,
-        "balance": 22452
+        "net_profit": 594,
+        "profit_percent": 2.88,
+        "winrate": 68.98,
+        "balance": 21224
       },
       {
         "date": "2025-02-17",
-        "net_profit": 1392,
-        "profit_percent": 6.2,
-        "winrate": 75.44,
-        "balance": 23844
+        "net_profit": 522,
+        "profit_percent": 2.46,
+        "winrate": 69.86,
+        "balance": 21746
       },
       {
         "date": "2025-02-18",
-        "net_profit": -52,
-        "profit_percent": -0.22,
-        "winrate": 67.74,
-        "balance": 23792
+        "net_profit": 441,
+        "profit_percent": 2.03,
+        "winrate": 70.58,
+        "balance": 22187
       },
       {
         "date": "2025-02-19",
-        "net_profit": 868,
-        "profit_percent": 3.65,
-        "winrate": 72.38,
-        "balance": 24660
+        "net_profit": 495,
+        "profit_percent": 2.23,
+        "winrate": 70.94,
+        "balance": 22682
       },
       {
         "date": "2025-02-20",
-        "net_profit": 1699,
-        "profit_percent": 6.89,
-        "winrate": 76.27,
-        "balance": 26359
+        "net_profit": 563,
+        "profit_percent": 2.48,
+        "winrate": 68.75,
+        "balance": 23245
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1128,
-        "profit_percent": 4.28,
-        "winrate": 73.14,
-        "balance": 27487
+        "net_profit": 397,
+        "profit_percent": 1.71,
+        "winrate": 68.63,
+        "balance": 23642
       },
       {
         "date": "2025-02-22",
-        "net_profit": 1226,
-        "profit_percent": 4.46,
-        "winrate": 73.35,
-        "balance": 28713
+        "net_profit": 371,
+        "profit_percent": 1.57,
+        "winrate": 69.95,
+        "balance": 24013
       },
       {
         "date": "2025-02-23",
-        "net_profit": 138,
-        "profit_percent": 0.48,
-        "winrate": 68.58,
-        "balance": 28851
+        "net_profit": 545,
+        "profit_percent": 2.27,
+        "winrate": 68.49,
+        "balance": 24558
       },
       {
         "date": "2025-02-24",
-        "net_profit": 2337,
-        "profit_percent": 8.1,
-        "winrate": 77.72,
-        "balance": 31188
+        "net_profit": 376,
+        "profit_percent": 1.53,
+        "winrate": 67.66,
+        "balance": 24934
       },
       {
         "date": "2025-02-25",
-        "net_profit": 175,
-        "profit_percent": 0.56,
-        "winrate": 68.67,
-        "balance": 31363
+        "net_profit": 352,
+        "profit_percent": 1.41,
+        "winrate": 67.08,
+        "balance": 25286
       },
       {
         "date": "2025-02-26",
-        "net_profit": 1948,
-        "profit_percent": 6.21,
-        "winrate": 75.45,
-        "balance": 33311
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 1556,
-        "profit_percent": 4.67,
-        "winrate": 73.6,
-        "balance": 34867
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 2113,
-        "profit_percent": 6.06,
-        "winrate": 75.27,
-        "balance": 36980
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1283,
-        "profit_percent": 3.47,
-        "winrate": 72.16,
-        "balance": 38263
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 2522,
-        "profit_percent": 6.59,
-        "winrate": 75.91,
-        "balance": 40785
+        "net_profit": 594,
+        "profit_percent": 2.35,
+        "winrate": 67.59,
+        "balance": 25880
       }
     ]
   },
@@ -4303,214 +4303,214 @@ export const botsData = [
     "name": "bot_021",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": -156,
+        "profit_percent": -1.27,
+        "winrate": 64.16,
+        "balance": 12135
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": -132,
+        "profit_percent": -1.09,
+        "winrate": 64.54,
+        "balance": 12003
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": -92,
+        "profit_percent": -0.77,
+        "winrate": 64.52,
+        "balance": 11911
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": -110,
+        "profit_percent": -0.92,
+        "winrate": 62.93,
+        "balance": 11801
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -1016,
-        "profit_percent": -6.91,
-        "winrate": 59.71,
-        "balance": 13682
+        "net_profit": 1,
+        "profit_percent": 0.01,
+        "winrate": 66.16,
+        "balance": 11802
       },
       {
         "date": "2025-02-02",
-        "net_profit": -56,
-        "profit_percent": -0.41,
-        "winrate": 67.51,
-        "balance": 13626
+        "net_profit": 119,
+        "profit_percent": 1.01,
+        "winrate": 67.1,
+        "balance": 11921
       },
       {
         "date": "2025-02-03",
-        "net_profit": 4,
-        "profit_percent": 0.03,
-        "winrate": 68.04,
-        "balance": 13630
+        "net_profit": -49,
+        "profit_percent": -0.41,
+        "winrate": 65.1,
+        "balance": 11872
       },
       {
         "date": "2025-02-04",
-        "net_profit": -979,
-        "profit_percent": -7.18,
-        "winrate": 59.38,
-        "balance": 12651
+        "net_profit": -56,
+        "profit_percent": -0.47,
+        "winrate": 64.49,
+        "balance": 11816
       },
       {
         "date": "2025-02-05",
-        "net_profit": -1194,
-        "profit_percent": -9.44,
-        "winrate": 58,
-        "balance": 11457
+        "net_profit": -109,
+        "profit_percent": -0.92,
+        "winrate": 65.67,
+        "balance": 11707
       },
       {
         "date": "2025-02-06",
-        "net_profit": -188,
-        "profit_percent": -1.64,
-        "winrate": 66.03,
-        "balance": 11269
+        "net_profit": -90,
+        "profit_percent": -0.77,
+        "winrate": 66.21,
+        "balance": 11617
       },
       {
         "date": "2025-02-07",
-        "net_profit": -383,
-        "profit_percent": -3.4,
-        "winrate": 63.92,
-        "balance": 10886
+        "net_profit": -115,
+        "profit_percent": -0.99,
+        "winrate": 66.13,
+        "balance": 11502
       },
       {
         "date": "2025-02-08",
-        "net_profit": -769,
-        "profit_percent": -7.06,
-        "winrate": 59.53,
-        "balance": 10117
+        "net_profit": -120,
+        "profit_percent": -1.04,
+        "winrate": 66.58,
+        "balance": 11382
       },
       {
         "date": "2025-02-09",
-        "net_profit": -813,
-        "profit_percent": -8.04,
-        "winrate": 58.35,
-        "balance": 9304
+        "net_profit": -443,
+        "profit_percent": -3.89,
+        "winrate": 61.87,
+        "balance": 10939
       },
       {
         "date": "2025-02-10",
-        "net_profit": -725,
-        "profit_percent": -7.79,
-        "winrate": 58.65,
-        "balance": 8579
+        "net_profit": -411,
+        "profit_percent": -3.76,
+        "winrate": 60.66,
+        "balance": 10528
       },
       {
         "date": "2025-02-11",
-        "net_profit": -417,
-        "profit_percent": -4.86,
-        "winrate": 62.17,
-        "balance": 8162
+        "net_profit": -183,
+        "profit_percent": -1.74,
+        "winrate": 64.59,
+        "balance": 10345
       },
       {
         "date": "2025-02-12",
-        "net_profit": -123,
-        "profit_percent": -1.51,
-        "winrate": 66.19,
-        "balance": 8039
+        "net_profit": -401,
+        "profit_percent": -3.88,
+        "winrate": 62.11,
+        "balance": 9944
       },
       {
         "date": "2025-02-13",
-        "net_profit": -35,
-        "profit_percent": -0.44,
-        "winrate": 67.47,
-        "balance": 8004
+        "net_profit": -310,
+        "profit_percent": -3.12,
+        "winrate": 60.76,
+        "balance": 9634
       },
       {
         "date": "2025-02-14",
-        "net_profit": -389,
-        "profit_percent": -4.86,
-        "winrate": 62.17,
-        "balance": 7615
+        "net_profit": -376,
+        "profit_percent": -3.9,
+        "winrate": 60.13,
+        "balance": 9258
       },
       {
         "date": "2025-02-15",
-        "net_profit": -169,
-        "profit_percent": -2.22,
-        "winrate": 65.34,
-        "balance": 7446
+        "net_profit": -255,
+        "profit_percent": -2.75,
+        "winrate": 60.45,
+        "balance": 9003
       },
       {
         "date": "2025-02-16",
-        "net_profit": -593,
-        "profit_percent": -7.97,
-        "winrate": 58.44,
-        "balance": 6853
+        "net_profit": -478,
+        "profit_percent": -5.31,
+        "winrate": 56.85,
+        "balance": 8525
       },
       {
         "date": "2025-02-17",
-        "net_profit": -290,
-        "profit_percent": -4.23,
-        "winrate": 62.92,
-        "balance": 6563
+        "net_profit": -369,
+        "profit_percent": -4.33,
+        "winrate": 57.76,
+        "balance": 8156
       },
       {
         "date": "2025-02-18",
-        "net_profit": -430,
-        "profit_percent": -6.55,
-        "winrate": 60.14,
-        "balance": 6133
+        "net_profit": -247,
+        "profit_percent": -3.03,
+        "winrate": 60.56,
+        "balance": 7909
       },
       {
         "date": "2025-02-19",
-        "net_profit": -492,
-        "profit_percent": -8.03,
-        "winrate": 58.36,
-        "balance": 5641
+        "net_profit": -316,
+        "profit_percent": -4.0,
+        "winrate": 59.69,
+        "balance": 7593
       },
       {
         "date": "2025-02-20",
-        "net_profit": -336,
-        "profit_percent": -5.96,
-        "winrate": 60.85,
-        "balance": 5305
+        "net_profit": -429,
+        "profit_percent": -5.65,
+        "winrate": 57.56,
+        "balance": 7164
       },
       {
         "date": "2025-02-21",
-        "net_profit": -237,
-        "profit_percent": -4.46,
-        "winrate": 62.65,
-        "balance": 5068
+        "net_profit": -407,
+        "profit_percent": -5.68,
+        "winrate": 57.39,
+        "balance": 6757
       },
       {
         "date": "2025-02-22",
-        "net_profit": 33,
-        "profit_percent": 0.65,
-        "winrate": 68.78,
-        "balance": 5101
+        "net_profit": -237,
+        "profit_percent": -3.51,
+        "winrate": 60.49,
+        "balance": 6520
       },
       {
         "date": "2025-02-23",
-        "net_profit": -48,
-        "profit_percent": -0.94,
-        "winrate": 66.87,
-        "balance": 5053
+        "net_profit": -291,
+        "profit_percent": -4.47,
+        "winrate": 57.86,
+        "balance": 6229
       },
       {
         "date": "2025-02-24",
-        "net_profit": -102,
-        "profit_percent": -2.02,
-        "winrate": 65.58,
-        "balance": 4951
+        "net_profit": -294,
+        "profit_percent": -4.72,
+        "winrate": 59.36,
+        "balance": 5935
       },
       {
         "date": "2025-02-25",
-        "net_profit": -233,
-        "profit_percent": -4.71,
-        "winrate": 62.35,
-        "balance": 4718
+        "net_profit": -257,
+        "profit_percent": -4.33,
+        "winrate": 59.98,
+        "balance": 5678
       },
       {
         "date": "2025-02-26",
-        "net_profit": -459,
-        "profit_percent": -9.73,
-        "winrate": 58,
-        "balance": 4259
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -165,
-        "profit_percent": -3.88,
-        "winrate": 63.34,
-        "balance": 4094
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -291,
-        "profit_percent": -7.1,
-        "winrate": 59.48,
-        "balance": 3803
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -62,
-        "profit_percent": -1.63,
-        "winrate": 66.04,
-        "balance": 3741
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -328,
-        "profit_percent": -8.78,
-        "winrate": 58,
-        "balance": 3413
+        "net_profit": -310,
+        "profit_percent": -5.46,
+        "winrate": 56.69,
+        "balance": 5368
       }
     ]
   },
@@ -4518,214 +4518,214 @@ export const botsData = [
     "name": "bot_022",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": -209,
+        "profit_percent": -1.96,
+        "winrate": 64.48,
+        "balance": 10436
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 99,
+        "profit_percent": 0.95,
+        "winrate": 69.06,
+        "balance": 10535
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": -133,
+        "profit_percent": -1.26,
+        "winrate": 64.35,
+        "balance": 10402
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": -26,
+        "profit_percent": -0.25,
+        "winrate": 65.67,
+        "balance": 10376
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 266,
-        "profit_percent": 2.86,
-        "winrate": 71.43,
-        "balance": 9581
+        "net_profit": 110,
+        "profit_percent": 1.06,
+        "winrate": 68.45,
+        "balance": 10486
       },
       {
         "date": "2025-02-02",
-        "net_profit": 477,
-        "profit_percent": 4.98,
-        "winrate": 73.98,
-        "balance": 10058
+        "net_profit": 24,
+        "profit_percent": 0.23,
+        "winrate": 66.83,
+        "balance": 10510
       },
       {
         "date": "2025-02-03",
-        "net_profit": 831,
-        "profit_percent": 8.26,
-        "winrate": 77.91,
-        "balance": 10889
+        "net_profit": 46,
+        "profit_percent": 0.44,
+        "winrate": 67.85,
+        "balance": 10556
       },
       {
         "date": "2025-02-04",
-        "net_profit": 807,
-        "profit_percent": 7.41,
-        "winrate": 76.89,
-        "balance": 11696
+        "net_profit": -99,
+        "profit_percent": -0.94,
+        "winrate": 65.04,
+        "balance": 10457
       },
       {
         "date": "2025-02-05",
-        "net_profit": 1021,
-        "profit_percent": 8.73,
-        "winrate": 78,
-        "balance": 12717
+        "net_profit": 10,
+        "profit_percent": 0.1,
+        "winrate": 66.55,
+        "balance": 10467
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1101,
-        "profit_percent": 8.66,
-        "winrate": 78,
-        "balance": 13818
+        "net_profit": 12,
+        "profit_percent": 0.11,
+        "winrate": 65.0,
+        "balance": 10479
       },
       {
         "date": "2025-02-07",
-        "net_profit": 507,
-        "profit_percent": 3.67,
-        "winrate": 72.4,
-        "balance": 14325
+        "net_profit": -124,
+        "profit_percent": -1.18,
+        "winrate": 64.0,
+        "balance": 10355
       },
       {
         "date": "2025-02-08",
-        "net_profit": 1304,
-        "profit_percent": 9.1,
-        "winrate": 78,
-        "balance": 15629
+        "net_profit": -289,
+        "profit_percent": -2.79,
+        "winrate": 61.46,
+        "balance": 10066
       },
       {
         "date": "2025-02-09",
-        "net_profit": 117,
-        "profit_percent": 0.75,
-        "winrate": 68.9,
-        "balance": 15746
+        "net_profit": -117,
+        "profit_percent": -1.16,
+        "winrate": 63.78,
+        "balance": 9949
       },
       {
         "date": "2025-02-10",
-        "net_profit": 825,
-        "profit_percent": 5.24,
-        "winrate": 74.29,
-        "balance": 16571
+        "net_profit": -167,
+        "profit_percent": -1.68,
+        "winrate": 65.07,
+        "balance": 9782
       },
       {
         "date": "2025-02-11",
-        "net_profit": 244,
-        "profit_percent": 1.47,
-        "winrate": 69.76,
-        "balance": 16815
+        "net_profit": -270,
+        "profit_percent": -2.76,
+        "winrate": 62.63,
+        "balance": 9512
       },
       {
         "date": "2025-02-12",
-        "net_profit": 970,
-        "profit_percent": 5.77,
-        "winrate": 74.92,
-        "balance": 17785
+        "net_profit": -304,
+        "profit_percent": -3.2,
+        "winrate": 61.95,
+        "balance": 9208
       },
       {
         "date": "2025-02-13",
-        "net_profit": 670,
-        "profit_percent": 3.77,
-        "winrate": 72.52,
-        "balance": 18455
+        "net_profit": -189,
+        "profit_percent": -2.05,
+        "winrate": 63.55,
+        "balance": 9019
       },
       {
         "date": "2025-02-14",
-        "net_profit": 958,
-        "profit_percent": 5.19,
-        "winrate": 74.23,
-        "balance": 19413
+        "net_profit": -92,
+        "profit_percent": -1.02,
+        "winrate": 65.76,
+        "balance": 8927
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1167,
-        "profit_percent": 6.01,
-        "winrate": 75.21,
-        "balance": 20580
+        "net_profit": -237,
+        "profit_percent": -2.65,
+        "winrate": 63.03,
+        "balance": 8690
       },
       {
         "date": "2025-02-16",
-        "net_profit": -243,
-        "profit_percent": -1.18,
-        "winrate": 66.58,
-        "balance": 20337
+        "net_profit": -153,
+        "profit_percent": -1.76,
+        "winrate": 63.85,
+        "balance": 8537
       },
       {
         "date": "2025-02-17",
-        "net_profit": 1198,
-        "profit_percent": 5.89,
-        "winrate": 75.07,
-        "balance": 21535
+        "net_profit": -143,
+        "profit_percent": -1.68,
+        "winrate": 63.3,
+        "balance": 8394
       },
       {
         "date": "2025-02-18",
-        "net_profit": 1227,
-        "profit_percent": 5.7,
-        "winrate": 74.84,
-        "balance": 22762
+        "net_profit": -246,
+        "profit_percent": -2.93,
+        "winrate": 61.95,
+        "balance": 8148
       },
       {
         "date": "2025-02-19",
-        "net_profit": -5,
-        "profit_percent": -0.02,
-        "winrate": 67.98,
-        "balance": 22757
+        "net_profit": -92,
+        "profit_percent": -1.13,
+        "winrate": 65.64,
+        "balance": 8056
       },
       {
         "date": "2025-02-20",
-        "net_profit": -39,
-        "profit_percent": -0.17,
-        "winrate": 67.8,
-        "balance": 22718
+        "net_profit": -120,
+        "profit_percent": -1.49,
+        "winrate": 64.58,
+        "balance": 7936
       },
       {
         "date": "2025-02-21",
-        "net_profit": 64,
-        "profit_percent": 0.28,
-        "winrate": 68.34,
-        "balance": 22782
+        "net_profit": -325,
+        "profit_percent": -4.1,
+        "winrate": 62.11,
+        "balance": 7611
       },
       {
         "date": "2025-02-22",
-        "net_profit": -128,
-        "profit_percent": -0.56,
-        "winrate": 67.33,
-        "balance": 22654
+        "net_profit": -123,
+        "profit_percent": -1.62,
+        "winrate": 64.89,
+        "balance": 7488
       },
       {
         "date": "2025-02-23",
-        "net_profit": 179,
-        "profit_percent": 0.79,
-        "winrate": 68.95,
-        "balance": 22833
+        "net_profit": -267,
+        "profit_percent": -3.56,
+        "winrate": 60.51,
+        "balance": 7221
       },
       {
         "date": "2025-02-24",
-        "net_profit": 368,
-        "profit_percent": 1.61,
-        "winrate": 69.93,
-        "balance": 23201
+        "net_profit": -133,
+        "profit_percent": -1.84,
+        "winrate": 63.86,
+        "balance": 7088
       },
       {
         "date": "2025-02-25",
-        "net_profit": -77,
-        "profit_percent": -0.33,
-        "winrate": 67.6,
-        "balance": 23124
+        "net_profit": -200,
+        "profit_percent": -2.82,
+        "winrate": 60.58,
+        "balance": 6888
       },
       {
         "date": "2025-02-26",
-        "net_profit": 1041,
-        "profit_percent": 4.5,
-        "winrate": 73.4,
-        "balance": 24165
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 1380,
-        "profit_percent": 5.71,
-        "winrate": 74.85,
-        "balance": 25545
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 685,
-        "profit_percent": 2.68,
-        "winrate": 71.22,
-        "balance": 26230
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -367,
-        "profit_percent": -1.4,
-        "winrate": 66.32,
-        "balance": 25863
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 1345,
-        "profit_percent": 5.2,
-        "winrate": 74.24,
-        "balance": 27208
+        "net_profit": -123,
+        "profit_percent": -1.78,
+        "winrate": 61.74,
+        "balance": 6765
       }
     ]
   },
@@ -4733,214 +4733,214 @@ export const botsData = [
     "name": "bot_023",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": -253,
+        "profit_percent": -2.65,
+        "winrate": 62.28,
+        "balance": 9292
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": -61,
+        "profit_percent": -0.66,
+        "winrate": 65.18,
+        "balance": 9231
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": -150,
+        "profit_percent": -1.62,
+        "winrate": 65.43,
+        "balance": 9081
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": -154,
+        "profit_percent": -1.7,
+        "winrate": 62.77,
+        "balance": 8927
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 180,
-        "profit_percent": 1.75,
-        "winrate": 70.1,
-        "balance": 10494
+        "net_profit": -86,
+        "profit_percent": -0.96,
+        "winrate": 62.19,
+        "balance": 8841
       },
       {
         "date": "2025-02-02",
-        "net_profit": 608,
-        "profit_percent": 5.79,
-        "winrate": 74.95,
-        "balance": 11102
+        "net_profit": -50,
+        "profit_percent": -0.56,
+        "winrate": 63.54,
+        "balance": 8791
       },
       {
         "date": "2025-02-03",
-        "net_profit": 726,
-        "profit_percent": 6.54,
-        "winrate": 75.85,
-        "balance": 11828
+        "net_profit": -101,
+        "profit_percent": -1.15,
+        "winrate": 62.55,
+        "balance": 8690
       },
       {
         "date": "2025-02-04",
-        "net_profit": 427,
-        "profit_percent": 3.61,
-        "winrate": 72.33,
-        "balance": 12255
+        "net_profit": -30,
+        "profit_percent": -0.35,
+        "winrate": 63.6,
+        "balance": 8660
       },
       {
         "date": "2025-02-05",
-        "net_profit": 1031,
-        "profit_percent": 8.41,
-        "winrate": 78,
-        "balance": 13286
+        "net_profit": -66,
+        "profit_percent": -0.76,
+        "winrate": 63.82,
+        "balance": 8594
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1113,
-        "profit_percent": 8.38,
-        "winrate": 78,
-        "balance": 14399
+        "net_profit": -217,
+        "profit_percent": -2.53,
+        "winrate": 60.28,
+        "balance": 8377
       },
       {
         "date": "2025-02-07",
-        "net_profit": 279,
-        "profit_percent": 1.94,
-        "winrate": 70.33,
-        "balance": 14678
+        "net_profit": -253,
+        "profit_percent": -3.02,
+        "winrate": 60.31,
+        "balance": 8124
       },
       {
         "date": "2025-02-08",
-        "net_profit": 929,
-        "profit_percent": 6.33,
-        "winrate": 75.6,
-        "balance": 15607
+        "net_profit": -119,
+        "profit_percent": -1.47,
+        "winrate": 63.51,
+        "balance": 8005
       },
       {
         "date": "2025-02-09",
-        "net_profit": 78,
-        "profit_percent": 0.5,
-        "winrate": 68.6,
-        "balance": 15685
+        "net_profit": -231,
+        "profit_percent": -2.88,
+        "winrate": 62.52,
+        "balance": 7774
       },
       {
         "date": "2025-02-10",
-        "net_profit": 1041,
-        "profit_percent": 6.64,
-        "winrate": 75.97,
-        "balance": 16726
+        "net_profit": -254,
+        "profit_percent": -3.27,
+        "winrate": 60.59,
+        "balance": 7520
       },
       {
         "date": "2025-02-11",
-        "net_profit": 1567,
-        "profit_percent": 9.37,
-        "winrate": 78,
-        "balance": 18293
+        "net_profit": -135,
+        "profit_percent": -1.79,
+        "winrate": 63.26,
+        "balance": 7385
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1619,
-        "profit_percent": 8.85,
-        "winrate": 78,
-        "balance": 19912
+        "net_profit": -204,
+        "profit_percent": -2.76,
+        "winrate": 63.28,
+        "balance": 7181
       },
       {
         "date": "2025-02-13",
-        "net_profit": -364,
-        "profit_percent": -1.83,
-        "winrate": 65.8,
-        "balance": 19548
+        "net_profit": -176,
+        "profit_percent": -2.45,
+        "winrate": 63.59,
+        "balance": 7005
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1194,
-        "profit_percent": 6.11,
-        "winrate": 75.33,
-        "balance": 20742
+        "net_profit": -170,
+        "profit_percent": -2.43,
+        "winrate": 63.93,
+        "balance": 6835
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1027,
-        "profit_percent": 4.95,
-        "winrate": 73.94,
-        "balance": 21769
+        "net_profit": -200,
+        "profit_percent": -2.92,
+        "winrate": 62.96,
+        "balance": 6635
       },
       {
         "date": "2025-02-16",
-        "net_profit": 1485,
-        "profit_percent": 6.82,
-        "winrate": 76.18,
-        "balance": 23254
+        "net_profit": -145,
+        "profit_percent": -2.18,
+        "winrate": 62.73,
+        "balance": 6490
       },
       {
         "date": "2025-02-17",
-        "net_profit": 26,
-        "profit_percent": 0.11,
-        "winrate": 68.13,
-        "balance": 23280
+        "net_profit": -208,
+        "profit_percent": -3.21,
+        "winrate": 61.89,
+        "balance": 6282
       },
       {
         "date": "2025-02-18",
-        "net_profit": 326,
-        "profit_percent": 1.4,
-        "winrate": 69.68,
-        "balance": 23606
+        "net_profit": -199,
+        "profit_percent": -3.17,
+        "winrate": 60.2,
+        "balance": 6083
       },
       {
         "date": "2025-02-19",
-        "net_profit": 1147,
-        "profit_percent": 4.86,
-        "winrate": 73.83,
-        "balance": 24753
+        "net_profit": -133,
+        "profit_percent": -2.18,
+        "winrate": 62.38,
+        "balance": 5950
       },
       {
         "date": "2025-02-20",
-        "net_profit": 1025,
-        "profit_percent": 4.14,
-        "winrate": 72.97,
-        "balance": 25778
+        "net_profit": -159,
+        "profit_percent": -2.68,
+        "winrate": 61.53,
+        "balance": 5791
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1665,
-        "profit_percent": 6.46,
-        "winrate": 75.75,
-        "balance": 27443
+        "net_profit": -147,
+        "profit_percent": -2.53,
+        "winrate": 63.59,
+        "balance": 5644
       },
       {
         "date": "2025-02-22",
-        "net_profit": 596,
-        "profit_percent": 2.17,
-        "winrate": 70.6,
-        "balance": 28039
+        "net_profit": -230,
+        "profit_percent": -4.07,
+        "winrate": 60.57,
+        "balance": 5414
       },
       {
         "date": "2025-02-23",
-        "net_profit": 1321,
-        "profit_percent": 4.71,
-        "winrate": 73.65,
-        "balance": 29360
+        "net_profit": -225,
+        "profit_percent": -4.15,
+        "winrate": 61.64,
+        "balance": 5189
       },
       {
         "date": "2025-02-24",
-        "net_profit": -79,
-        "profit_percent": -0.27,
-        "winrate": 67.68,
-        "balance": 29281
+        "net_profit": -162,
+        "profit_percent": -3.12,
+        "winrate": 60.56,
+        "balance": 5027
       },
       {
         "date": "2025-02-25",
-        "net_profit": -123,
-        "profit_percent": -0.42,
-        "winrate": 67.5,
-        "balance": 29158
+        "net_profit": -229,
+        "profit_percent": -4.55,
+        "winrate": 57.78,
+        "balance": 4798
       },
       {
         "date": "2025-02-26",
-        "net_profit": 665,
-        "profit_percent": 2.28,
-        "winrate": 70.74,
-        "balance": 29823
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 1193,
-        "profit_percent": 4.0,
-        "winrate": 72.8,
-        "balance": 31016
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1780,
-        "profit_percent": 5.74,
-        "winrate": 74.89,
-        "balance": 32796
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1207,
-        "profit_percent": 3.68,
-        "winrate": 72.42,
-        "balance": 34003
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 428,
-        "profit_percent": 1.26,
-        "winrate": 69.51,
-        "balance": 34431
+        "net_profit": -201,
+        "profit_percent": -4.18,
+        "winrate": 56.98,
+        "balance": 4597
       }
     ]
   },
@@ -4948,214 +4948,214 @@ export const botsData = [
     "name": "bot_024",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 292,
+        "profit_percent": 1.99,
+        "winrate": 67.96,
+        "balance": 14971
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 516,
+        "profit_percent": 3.45,
+        "winrate": 68.64,
+        "balance": 15487
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 548,
+        "profit_percent": 3.54,
+        "winrate": 69.24,
+        "balance": 16035
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 821,
+        "profit_percent": 5.12,
+        "winrate": 71.64,
+        "balance": 16856
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 922,
-        "profit_percent": 6.15,
-        "winrate": 75.38,
-        "balance": 15918
+        "net_profit": 583,
+        "profit_percent": 3.46,
+        "winrate": 67.89,
+        "balance": 17439
       },
       {
         "date": "2025-02-02",
-        "net_profit": 540,
-        "profit_percent": 3.39,
-        "winrate": 72.07,
-        "balance": 16458
+        "net_profit": 678,
+        "profit_percent": 3.89,
+        "winrate": 67.99,
+        "balance": 18117
       },
       {
         "date": "2025-02-03",
-        "net_profit": 1412,
-        "profit_percent": 8.58,
-        "winrate": 78,
-        "balance": 17870
+        "net_profit": 855,
+        "profit_percent": 4.72,
+        "winrate": 70.81,
+        "balance": 18972
       },
       {
         "date": "2025-02-04",
-        "net_profit": 818,
-        "profit_percent": 4.58,
-        "winrate": 73.5,
-        "balance": 18688
+        "net_profit": 920,
+        "profit_percent": 4.85,
+        "winrate": 72.0,
+        "balance": 19892
       },
       {
         "date": "2025-02-05",
-        "net_profit": 764,
-        "profit_percent": 4.09,
-        "winrate": 72.91,
-        "balance": 19452
+        "net_profit": 545,
+        "profit_percent": 2.74,
+        "winrate": 67.72,
+        "balance": 20437
       },
       {
         "date": "2025-02-06",
-        "net_profit": 202,
-        "profit_percent": 1.04,
-        "winrate": 69.25,
-        "balance": 19654
+        "net_profit": 399,
+        "profit_percent": 1.95,
+        "winrate": 68.6,
+        "balance": 20836
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1692,
-        "profit_percent": 8.61,
-        "winrate": 78,
-        "balance": 21346
+        "net_profit": 542,
+        "profit_percent": 2.6,
+        "winrate": 67.48,
+        "balance": 21378
       },
       {
         "date": "2025-02-08",
-        "net_profit": 847,
-        "profit_percent": 3.97,
-        "winrate": 72.76,
-        "balance": 22193
+        "net_profit": 543,
+        "profit_percent": 2.54,
+        "winrate": 66.85,
+        "balance": 21921
       },
       {
         "date": "2025-02-09",
-        "net_profit": 1356,
-        "profit_percent": 6.11,
-        "winrate": 75.33,
-        "balance": 23549
+        "net_profit": 281,
+        "profit_percent": 1.28,
+        "winrate": 67.56,
+        "balance": 22202
       },
       {
         "date": "2025-02-10",
-        "net_profit": 1507,
-        "profit_percent": 6.4,
-        "winrate": 75.68,
-        "balance": 25056
+        "net_profit": 395,
+        "profit_percent": 1.78,
+        "winrate": 67.33,
+        "balance": 22597
       },
       {
         "date": "2025-02-11",
-        "net_profit": -456,
-        "profit_percent": -1.82,
-        "winrate": 65.82,
-        "balance": 24600
+        "net_profit": 230,
+        "profit_percent": 1.02,
+        "winrate": 68.11,
+        "balance": 22827
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1427,
-        "profit_percent": 5.8,
-        "winrate": 74.96,
-        "balance": 26027
+        "net_profit": 160,
+        "profit_percent": 0.7,
+        "winrate": 66.99,
+        "balance": 22987
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1884,
-        "profit_percent": 7.24,
-        "winrate": 76.69,
-        "balance": 27911
+        "net_profit": 253,
+        "profit_percent": 1.1,
+        "winrate": 65.36,
+        "balance": 23240
       },
       {
         "date": "2025-02-14",
-        "net_profit": 798,
-        "profit_percent": 2.86,
-        "winrate": 71.43,
-        "balance": 28709
+        "net_profit": 353,
+        "profit_percent": 1.52,
+        "winrate": 66.86,
+        "balance": 23593
       },
       {
         "date": "2025-02-15",
-        "net_profit": -207,
-        "profit_percent": -0.72,
-        "winrate": 67.14,
-        "balance": 28502
+        "net_profit": 68,
+        "profit_percent": 0.29,
+        "winrate": 66.84,
+        "balance": 23661
       },
       {
         "date": "2025-02-16",
-        "net_profit": -419,
-        "profit_percent": -1.47,
-        "winrate": 66.24,
-        "balance": 28083
+        "net_profit": -142,
+        "profit_percent": -0.6,
+        "winrate": 64.91,
+        "balance": 23519
       },
       {
         "date": "2025-02-17",
-        "net_profit": -216,
-        "profit_percent": -0.77,
-        "winrate": 67.08,
-        "balance": 27867
+        "net_profit": -56,
+        "profit_percent": -0.24,
+        "winrate": 64.31,
+        "balance": 23463
       },
       {
         "date": "2025-02-18",
-        "net_profit": 28,
-        "profit_percent": 0.1,
-        "winrate": 68.12,
-        "balance": 27895
+        "net_profit": -298,
+        "profit_percent": -1.27,
+        "winrate": 62.26,
+        "balance": 23165
       },
       {
         "date": "2025-02-19",
-        "net_profit": 792,
-        "profit_percent": 2.84,
-        "winrate": 71.41,
-        "balance": 28687
+        "net_profit": -236,
+        "profit_percent": -1.02,
+        "winrate": 63.99,
+        "balance": 22929
       },
       {
         "date": "2025-02-20",
-        "net_profit": 1050,
-        "profit_percent": 3.66,
-        "winrate": 72.39,
-        "balance": 29737
+        "net_profit": -126,
+        "profit_percent": -0.55,
+        "winrate": 65.83,
+        "balance": 22803
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1888,
-        "profit_percent": 6.35,
-        "winrate": 75.62,
-        "balance": 31625
+        "net_profit": 176,
+        "profit_percent": 0.77,
+        "winrate": 68.52,
+        "balance": 22979
       },
       {
         "date": "2025-02-22",
-        "net_profit": 1626,
-        "profit_percent": 5.14,
-        "winrate": 74.17,
-        "balance": 33251
+        "net_profit": -214,
+        "profit_percent": -0.93,
+        "winrate": 65.95,
+        "balance": 22765
       },
       {
         "date": "2025-02-23",
-        "net_profit": 788,
-        "profit_percent": 2.37,
-        "winrate": 70.84,
-        "balance": 34039
+        "net_profit": 41,
+        "profit_percent": 0.18,
+        "winrate": 65.46,
+        "balance": 22806
       },
       {
         "date": "2025-02-24",
-        "net_profit": 259,
-        "profit_percent": 0.76,
-        "winrate": 68.91,
-        "balance": 34298
+        "net_profit": -68,
+        "profit_percent": -0.3,
+        "winrate": 65.08,
+        "balance": 22738
       },
       {
         "date": "2025-02-25",
-        "net_profit": 844,
-        "profit_percent": 2.46,
-        "winrate": 70.95,
-        "balance": 35142
+        "net_profit": -50,
+        "profit_percent": -0.22,
+        "winrate": 64.06,
+        "balance": 22688
       },
       {
         "date": "2025-02-26",
-        "net_profit": 857,
-        "profit_percent": 2.44,
-        "winrate": 70.93,
-        "balance": 35999
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -79,
-        "profit_percent": -0.22,
-        "winrate": 67.74,
-        "balance": 35920
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -72,
-        "profit_percent": -0.2,
-        "winrate": 67.76,
-        "balance": 35848
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -452,
-        "profit_percent": -1.26,
-        "winrate": 66.49,
-        "balance": 35396
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 2814,
-        "profit_percent": 7.95,
-        "winrate": 77.54,
-        "balance": 38210
+        "net_profit": 170,
+        "profit_percent": 0.75,
+        "winrate": 64.94,
+        "balance": 22858
       }
     ]
   },
@@ -5163,214 +5163,214 @@ export const botsData = [
     "name": "bot_025",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": -96,
+        "profit_percent": -0.92,
+        "winrate": 64.05,
+        "balance": 10337
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": -84,
+        "profit_percent": -0.81,
+        "winrate": 62.93,
+        "balance": 10253
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": -81,
+        "profit_percent": -0.79,
+        "winrate": 63.51,
+        "balance": 10172
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 7,
+        "profit_percent": 0.07,
+        "winrate": 64.92,
+        "balance": 10179
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 296,
-        "profit_percent": 2.13,
-        "winrate": 70.56,
-        "balance": 14206
+        "net_profit": -62,
+        "profit_percent": -0.61,
+        "winrate": 62.79,
+        "balance": 10117
       },
       {
         "date": "2025-02-02",
-        "net_profit": -17,
-        "profit_percent": -0.12,
-        "winrate": 67.86,
-        "balance": 14189
+        "net_profit": -83,
+        "profit_percent": -0.82,
+        "winrate": 63.12,
+        "balance": 10034
       },
       {
         "date": "2025-02-03",
-        "net_profit": 1295,
-        "profit_percent": 9.13,
-        "winrate": 78,
-        "balance": 15484
+        "net_profit": -113,
+        "profit_percent": -1.13,
+        "winrate": 61.94,
+        "balance": 9921
       },
       {
         "date": "2025-02-04",
-        "net_profit": 1006,
-        "profit_percent": 6.5,
-        "winrate": 75.8,
-        "balance": 16490
+        "net_profit": -112,
+        "profit_percent": -1.13,
+        "winrate": 60.61,
+        "balance": 9809
       },
       {
         "date": "2025-02-05",
-        "net_profit": 327,
-        "profit_percent": 1.98,
-        "winrate": 70.38,
-        "balance": 16817
+        "net_profit": -185,
+        "profit_percent": -1.89,
+        "winrate": 61.62,
+        "balance": 9624
       },
       {
         "date": "2025-02-06",
-        "net_profit": -358,
-        "profit_percent": -2.13,
-        "winrate": 65.44,
-        "balance": 16459
+        "net_profit": -191,
+        "profit_percent": -1.98,
+        "winrate": 61.35,
+        "balance": 9433
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1457,
-        "profit_percent": 8.85,
-        "winrate": 78,
-        "balance": 17916
+        "net_profit": -318,
+        "profit_percent": -3.37,
+        "winrate": 58.87,
+        "balance": 9115
       },
       {
         "date": "2025-02-08",
-        "net_profit": 550,
-        "profit_percent": 3.07,
-        "winrate": 71.68,
-        "balance": 18466
+        "net_profit": -232,
+        "profit_percent": -2.55,
+        "winrate": 58.78,
+        "balance": 8883
       },
       {
         "date": "2025-02-09",
-        "net_profit": -362,
-        "profit_percent": -1.96,
-        "winrate": 65.65,
-        "balance": 18104
+        "net_profit": -298,
+        "profit_percent": -3.36,
+        "winrate": 60.18,
+        "balance": 8585
       },
       {
         "date": "2025-02-10",
-        "net_profit": -380,
-        "profit_percent": -2.1,
-        "winrate": 65.48,
-        "balance": 17724
+        "net_profit": -222,
+        "profit_percent": -2.59,
+        "winrate": 63.31,
+        "balance": 8363
       },
       {
         "date": "2025-02-11",
-        "net_profit": 1666,
-        "profit_percent": 9.4,
-        "winrate": 78,
-        "balance": 19390
+        "net_profit": -264,
+        "profit_percent": -3.16,
+        "winrate": 60.38,
+        "balance": 8099
       },
       {
         "date": "2025-02-12",
-        "net_profit": 913,
-        "profit_percent": 4.71,
-        "winrate": 73.65,
-        "balance": 20303
+        "net_profit": -283,
+        "profit_percent": -3.49,
+        "winrate": 59.61,
+        "balance": 7816
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1171,
-        "profit_percent": 5.77,
-        "winrate": 74.92,
-        "balance": 21474
+        "net_profit": -274,
+        "profit_percent": -3.51,
+        "winrate": 59.97,
+        "balance": 7542
       },
       {
         "date": "2025-02-14",
-        "net_profit": -118,
-        "profit_percent": -0.55,
-        "winrate": 67.34,
-        "balance": 21356
+        "net_profit": -232,
+        "profit_percent": -3.07,
+        "winrate": 60.51,
+        "balance": 7310
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1862,
-        "profit_percent": 8.72,
-        "winrate": 78,
-        "balance": 23218
+        "net_profit": -276,
+        "profit_percent": -3.77,
+        "winrate": 58.85,
+        "balance": 7034
       },
       {
         "date": "2025-02-16",
-        "net_profit": 1460,
-        "profit_percent": 6.29,
-        "winrate": 75.55,
-        "balance": 24678
+        "net_profit": -228,
+        "profit_percent": -3.24,
+        "winrate": 61.24,
+        "balance": 6806
       },
       {
         "date": "2025-02-17",
-        "net_profit": 1224,
-        "profit_percent": 4.96,
-        "winrate": 73.95,
-        "balance": 25902
+        "net_profit": -209,
+        "profit_percent": -3.07,
+        "winrate": 63.01,
+        "balance": 6597
       },
       {
         "date": "2025-02-18",
-        "net_profit": 2010,
-        "profit_percent": 7.76,
-        "winrate": 77.31,
-        "balance": 27912
+        "net_profit": -187,
+        "profit_percent": -2.84,
+        "winrate": 63.14,
+        "balance": 6410
       },
       {
         "date": "2025-02-19",
-        "net_profit": 1390,
-        "profit_percent": 4.98,
-        "winrate": 73.98,
-        "balance": 29302
+        "net_profit": -187,
+        "profit_percent": -2.92,
+        "winrate": 64.14,
+        "balance": 6223
       },
       {
         "date": "2025-02-20",
-        "net_profit": 1450,
-        "profit_percent": 4.95,
-        "winrate": 73.94,
-        "balance": 30752
+        "net_profit": -272,
+        "profit_percent": -4.37,
+        "winrate": 59.75,
+        "balance": 5951
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1817,
-        "profit_percent": 5.91,
-        "winrate": 75.09,
-        "balance": 32569
+        "net_profit": -259,
+        "profit_percent": -4.35,
+        "winrate": 59.58,
+        "balance": 5692
       },
       {
         "date": "2025-02-22",
-        "net_profit": 1700,
-        "profit_percent": 5.22,
-        "winrate": 74.26,
-        "balance": 34269
+        "net_profit": -255,
+        "profit_percent": -4.48,
+        "winrate": 59.98,
+        "balance": 5437
       },
       {
         "date": "2025-02-23",
-        "net_profit": -298,
-        "profit_percent": -0.87,
-        "winrate": 66.96,
-        "balance": 33971
+        "net_profit": -245,
+        "profit_percent": -4.51,
+        "winrate": 58.64,
+        "balance": 5192
       },
       {
         "date": "2025-02-24",
-        "net_profit": 20,
-        "profit_percent": 0.06,
-        "winrate": 68.07,
-        "balance": 33991
+        "net_profit": -213,
+        "profit_percent": -4.1,
+        "winrate": 58.65,
+        "balance": 4979
       },
       {
         "date": "2025-02-25",
-        "net_profit": 112,
-        "profit_percent": 0.33,
-        "winrate": 68.4,
-        "balance": 34103
+        "net_profit": -239,
+        "profit_percent": -4.81,
+        "winrate": 59.76,
+        "balance": 4740
       },
       {
         "date": "2025-02-26",
-        "net_profit": 1115,
-        "profit_percent": 3.27,
-        "winrate": 71.92,
-        "balance": 35218
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 1599,
-        "profit_percent": 4.54,
-        "winrate": 73.45,
-        "balance": 36817
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1738,
-        "profit_percent": 4.72,
-        "winrate": 73.66,
-        "balance": 38555
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1828,
-        "profit_percent": 4.74,
-        "winrate": 73.69,
-        "balance": 40383
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": 69,
-        "profit_percent": 0.17,
-        "winrate": 68.2,
-        "balance": 40452
+        "net_profit": -181,
+        "profit_percent": -3.81,
+        "winrate": 62.13,
+        "balance": 4559
       }
     ]
   },
@@ -5378,214 +5378,214 @@ export const botsData = [
     "name": "bot_026",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 196,
+        "profit_percent": 2.13,
+        "winrate": 66.16,
+        "balance": 9401
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 218,
+        "profit_percent": 2.32,
+        "winrate": 65.2,
+        "balance": 9619
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 339,
+        "profit_percent": 3.52,
+        "winrate": 69.0,
+        "balance": 9958
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 329,
+        "profit_percent": 3.3,
+        "winrate": 67.97,
+        "balance": 10287
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 682,
-        "profit_percent": 5.52,
-        "winrate": 74.62,
-        "balance": 13041
+        "net_profit": 379,
+        "profit_percent": 3.68,
+        "winrate": 68.73,
+        "balance": 10666
       },
       {
         "date": "2025-02-02",
-        "net_profit": 317,
-        "profit_percent": 2.43,
-        "winrate": 70.92,
-        "balance": 13358
+        "net_profit": 522,
+        "profit_percent": 4.89,
+        "winrate": 71.23,
+        "balance": 11188
       },
       {
         "date": "2025-02-03",
-        "net_profit": 1162,
-        "profit_percent": 8.7,
-        "winrate": 78,
-        "balance": 14520
+        "net_profit": 355,
+        "profit_percent": 3.17,
+        "winrate": 68.62,
+        "balance": 11543
       },
       {
         "date": "2025-02-04",
-        "net_profit": -264,
-        "profit_percent": -1.82,
-        "winrate": 65.82,
-        "balance": 14256
+        "net_profit": 467,
+        "profit_percent": 4.05,
+        "winrate": 69.51,
+        "balance": 12010
       },
       {
         "date": "2025-02-05",
-        "net_profit": 115,
-        "profit_percent": 0.81,
-        "winrate": 68.97,
-        "balance": 14371
+        "net_profit": 306,
+        "profit_percent": 2.55,
+        "winrate": 65.96,
+        "balance": 12316
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1052,
-        "profit_percent": 7.32,
-        "winrate": 76.78,
-        "balance": 15423
+        "net_profit": 284,
+        "profit_percent": 2.31,
+        "winrate": 67.36,
+        "balance": 12600
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1110,
-        "profit_percent": 7.2,
-        "winrate": 76.64,
-        "balance": 16533
+        "net_profit": 74,
+        "profit_percent": 0.59,
+        "winrate": 64.14,
+        "balance": 12674
       },
       {
         "date": "2025-02-08",
-        "net_profit": -124,
-        "profit_percent": -0.75,
-        "winrate": 67.1,
-        "balance": 16409
+        "net_profit": 147,
+        "profit_percent": 1.16,
+        "winrate": 63.54,
+        "balance": 12821
       },
       {
         "date": "2025-02-09",
-        "net_profit": -108,
-        "profit_percent": -0.66,
-        "winrate": 67.21,
-        "balance": 16301
+        "net_profit": 105,
+        "profit_percent": 0.82,
+        "winrate": 64.91,
+        "balance": 12926
       },
       {
         "date": "2025-02-10",
-        "net_profit": -194,
-        "profit_percent": -1.19,
-        "winrate": 66.57,
-        "balance": 16107
+        "net_profit": -1,
+        "profit_percent": -0.01,
+        "winrate": 63.24,
+        "balance": 12925
       },
       {
         "date": "2025-02-11",
-        "net_profit": 188,
-        "profit_percent": 1.17,
-        "winrate": 69.4,
-        "balance": 16295
+        "net_profit": 83,
+        "profit_percent": 0.64,
+        "winrate": 66.36,
+        "balance": 13008
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1089,
-        "profit_percent": 6.68,
-        "winrate": 76.02,
-        "balance": 17384
+        "net_profit": -40,
+        "profit_percent": -0.31,
+        "winrate": 63.46,
+        "balance": 12968
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1445,
-        "profit_percent": 8.31,
-        "winrate": 77.97,
-        "balance": 18829
+        "net_profit": 77,
+        "profit_percent": 0.59,
+        "winrate": 64.16,
+        "balance": 13045
       },
       {
         "date": "2025-02-14",
-        "net_profit": 139,
-        "profit_percent": 0.74,
-        "winrate": 68.89,
-        "balance": 18968
+        "net_profit": 110,
+        "profit_percent": 0.84,
+        "winrate": 65.94,
+        "balance": 13155
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1149,
-        "profit_percent": 6.06,
-        "winrate": 75.27,
-        "balance": 20117
+        "net_profit": 29,
+        "profit_percent": 0.22,
+        "winrate": 65.67,
+        "balance": 13184
       },
       {
         "date": "2025-02-16",
-        "net_profit": 123,
-        "profit_percent": 0.61,
-        "winrate": 68.73,
-        "balance": 20240
+        "net_profit": -33,
+        "profit_percent": -0.25,
+        "winrate": 65.92,
+        "balance": 13151
       },
       {
         "date": "2025-02-17",
-        "net_profit": 1140,
-        "profit_percent": 5.63,
-        "winrate": 74.76,
-        "balance": 21380
+        "net_profit": 1,
+        "profit_percent": 0.01,
+        "winrate": 64.68,
+        "balance": 13152
       },
       {
         "date": "2025-02-18",
-        "net_profit": -197,
-        "profit_percent": -0.92,
-        "winrate": 66.9,
-        "balance": 21183
+        "net_profit": -12,
+        "profit_percent": -0.09,
+        "winrate": 62.68,
+        "balance": 13140
       },
       {
         "date": "2025-02-19",
-        "net_profit": 138,
-        "profit_percent": 0.65,
-        "winrate": 68.78,
-        "balance": 21321
+        "net_profit": -126,
+        "profit_percent": -0.96,
+        "winrate": 61.91,
+        "balance": 13014
       },
       {
         "date": "2025-02-20",
-        "net_profit": 738,
-        "profit_percent": 3.46,
-        "winrate": 72.15,
-        "balance": 22059
+        "net_profit": -68,
+        "profit_percent": -0.52,
+        "winrate": 64.22,
+        "balance": 12946
       },
       {
         "date": "2025-02-21",
-        "net_profit": 1451,
-        "profit_percent": 6.58,
-        "winrate": 75.9,
-        "balance": 23510
+        "net_profit": -92,
+        "profit_percent": -0.71,
+        "winrate": 63.67,
+        "balance": 12854
       },
       {
         "date": "2025-02-22",
-        "net_profit": -186,
-        "profit_percent": -0.79,
-        "winrate": 67.05,
-        "balance": 23324
+        "net_profit": -131,
+        "profit_percent": -1.02,
+        "winrate": 65.18,
+        "balance": 12723
       },
       {
         "date": "2025-02-23",
-        "net_profit": 774,
-        "profit_percent": 3.32,
-        "winrate": 71.98,
-        "balance": 24098
+        "net_profit": -129,
+        "profit_percent": -1.01,
+        "winrate": 63.97,
+        "balance": 12594
       },
       {
         "date": "2025-02-24",
-        "net_profit": 1101,
-        "profit_percent": 4.57,
-        "winrate": 73.48,
-        "balance": 25199
+        "net_profit": -111,
+        "profit_percent": -0.88,
+        "winrate": 62.2,
+        "balance": 12483
       },
       {
         "date": "2025-02-25",
-        "net_profit": 1960,
-        "profit_percent": 7.78,
-        "winrate": 77.34,
-        "balance": 27159
+        "net_profit": -287,
+        "profit_percent": -2.3,
+        "winrate": 59.67,
+        "balance": 12196
       },
       {
         "date": "2025-02-26",
-        "net_profit": 1809,
-        "profit_percent": 6.66,
-        "winrate": 75.99,
-        "balance": 28968
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 1431,
-        "profit_percent": 4.94,
-        "winrate": 73.93,
-        "balance": 30399
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 1958,
-        "profit_percent": 6.44,
-        "winrate": 75.73,
-        "balance": 32357
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1890,
-        "profit_percent": 5.84,
-        "winrate": 75.01,
-        "balance": 34247
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -247,
-        "profit_percent": -0.72,
-        "winrate": 67.14,
-        "balance": 34000
+        "net_profit": -144,
+        "profit_percent": -1.18,
+        "winrate": 61.32,
+        "balance": 12052
       }
     ]
   },
@@ -5593,214 +5593,214 @@ export const botsData = [
     "name": "bot_027",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 142,
+        "profit_percent": 1.48,
+        "winrate": 65.83,
+        "balance": 9705
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 145,
+        "profit_percent": 1.49,
+        "winrate": 66.75,
+        "balance": 9850
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 393,
+        "profit_percent": 3.99,
+        "winrate": 71.64,
+        "balance": 10243
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 261,
+        "profit_percent": 2.55,
+        "winrate": 68.49,
+        "balance": 10504
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 684,
-        "profit_percent": 5.33,
-        "winrate": 74.4,
-        "balance": 13519
+        "net_profit": 330,
+        "profit_percent": 3.14,
+        "winrate": 68.45,
+        "balance": 10834
       },
       {
         "date": "2025-02-02",
-        "net_profit": 128,
-        "profit_percent": 0.95,
-        "winrate": 69.14,
-        "balance": 13647
+        "net_profit": 449,
+        "profit_percent": 4.14,
+        "winrate": 69.78,
+        "balance": 11283
       },
       {
         "date": "2025-02-03",
-        "net_profit": 592,
-        "profit_percent": 4.34,
-        "winrate": 73.21,
-        "balance": 14239
+        "net_profit": 376,
+        "profit_percent": 3.33,
+        "winrate": 68.67,
+        "balance": 11659
       },
       {
         "date": "2025-02-04",
-        "net_profit": -108,
-        "profit_percent": -0.76,
-        "winrate": 67.09,
-        "balance": 14131
+        "net_profit": 230,
+        "profit_percent": 1.97,
+        "winrate": 66.07,
+        "balance": 11889
       },
       {
         "date": "2025-02-05",
-        "net_profit": 1229,
-        "profit_percent": 8.7,
-        "winrate": 78,
-        "balance": 15360
+        "net_profit": 244,
+        "profit_percent": 2.05,
+        "winrate": 68.36,
+        "balance": 12133
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1061,
-        "profit_percent": 6.91,
-        "winrate": 76.29,
-        "balance": 16421
+        "net_profit": 351,
+        "profit_percent": 2.89,
+        "winrate": 70.37,
+        "balance": 12484
       },
       {
         "date": "2025-02-07",
-        "net_profit": 56,
-        "profit_percent": 0.34,
-        "winrate": 68.41,
-        "balance": 16477
+        "net_profit": 330,
+        "profit_percent": 2.64,
+        "winrate": 70.71,
+        "balance": 12814
       },
       {
         "date": "2025-02-08",
-        "net_profit": 1094,
-        "profit_percent": 6.64,
-        "winrate": 75.97,
-        "balance": 17571
+        "net_profit": 290,
+        "profit_percent": 2.26,
+        "winrate": 69.74,
+        "balance": 13104
       },
       {
         "date": "2025-02-09",
-        "net_profit": 1198,
-        "profit_percent": 6.82,
-        "winrate": 76.18,
-        "balance": 18769
+        "net_profit": 97,
+        "profit_percent": 0.74,
+        "winrate": 66.72,
+        "balance": 13201
       },
       {
         "date": "2025-02-10",
-        "net_profit": 1633,
-        "profit_percent": 8.7,
-        "winrate": 78,
-        "balance": 20402
+        "net_profit": 150,
+        "profit_percent": 1.14,
+        "winrate": 66.13,
+        "balance": 13351
       },
       {
         "date": "2025-02-11",
-        "net_profit": 149,
-        "profit_percent": 0.73,
-        "winrate": 68.88,
-        "balance": 20551
+        "net_profit": 212,
+        "profit_percent": 1.59,
+        "winrate": 67.13,
+        "balance": 13563
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1634,
-        "profit_percent": 7.95,
-        "winrate": 77.54,
-        "balance": 22185
+        "net_profit": 60,
+        "profit_percent": 0.44,
+        "winrate": 64.4,
+        "balance": 13623
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1848,
-        "profit_percent": 8.33,
-        "winrate": 78.0,
-        "balance": 24033
+        "net_profit": 188,
+        "profit_percent": 1.38,
+        "winrate": 67.79,
+        "balance": 13811
       },
       {
         "date": "2025-02-14",
-        "net_profit": 704,
-        "profit_percent": 2.93,
-        "winrate": 71.52,
-        "balance": 24737
+        "net_profit": 236,
+        "profit_percent": 1.71,
+        "winrate": 69.32,
+        "balance": 14047
       },
       {
         "date": "2025-02-15",
-        "net_profit": 2164,
-        "profit_percent": 8.75,
-        "winrate": 78,
-        "balance": 26901
+        "net_profit": 105,
+        "profit_percent": 0.75,
+        "winrate": 66.3,
+        "balance": 14152
       },
       {
         "date": "2025-02-16",
-        "net_profit": 1528,
-        "profit_percent": 5.68,
-        "winrate": 74.82,
-        "balance": 28429
+        "net_profit": -41,
+        "profit_percent": -0.29,
+        "winrate": 63.14,
+        "balance": 14111
       },
       {
         "date": "2025-02-17",
-        "net_profit": -279,
-        "profit_percent": -0.98,
-        "winrate": 66.82,
-        "balance": 28150
+        "net_profit": 131,
+        "profit_percent": 0.93,
+        "winrate": 66.28,
+        "balance": 14242
       },
       {
         "date": "2025-02-18",
-        "net_profit": -611,
-        "profit_percent": -2.17,
-        "winrate": 65.4,
-        "balance": 27539
+        "net_profit": 148,
+        "profit_percent": 1.04,
+        "winrate": 67.63,
+        "balance": 14390
       },
       {
         "date": "2025-02-19",
-        "net_profit": 1360,
-        "profit_percent": 4.94,
-        "winrate": 73.93,
-        "balance": 28899
+        "net_profit": 16,
+        "profit_percent": 0.11,
+        "winrate": 66.52,
+        "balance": 14406
       },
       {
         "date": "2025-02-20",
-        "net_profit": 2477,
-        "profit_percent": 8.57,
-        "winrate": 78,
-        "balance": 31376
+        "net_profit": 135,
+        "profit_percent": 0.94,
+        "winrate": 68.55,
+        "balance": 14541
       },
       {
         "date": "2025-02-21",
-        "net_profit": 2043,
-        "profit_percent": 6.51,
-        "winrate": 75.81,
-        "balance": 33419
+        "net_profit": -12,
+        "profit_percent": -0.08,
+        "winrate": 65.91,
+        "balance": 14529
       },
       {
         "date": "2025-02-22",
-        "net_profit": 906,
-        "profit_percent": 2.71,
-        "winrate": 71.25,
-        "balance": 34325
+        "net_profit": -109,
+        "profit_percent": -0.75,
+        "winrate": 65.49,
+        "balance": 14420
       },
       {
         "date": "2025-02-23",
-        "net_profit": 916,
-        "profit_percent": 2.67,
-        "winrate": 71.2,
-        "balance": 35241
+        "net_profit": -131,
+        "profit_percent": -0.91,
+        "winrate": 63.45,
+        "balance": 14289
       },
       {
         "date": "2025-02-24",
-        "net_profit": 673,
-        "profit_percent": 1.91,
-        "winrate": 70.29,
-        "balance": 35914
+        "net_profit": -9,
+        "profit_percent": -0.06,
+        "winrate": 64.65,
+        "balance": 14280
       },
       {
         "date": "2025-02-25",
-        "net_profit": -208,
-        "profit_percent": -0.58,
-        "winrate": 67.3,
-        "balance": 35706
+        "net_profit": -156,
+        "profit_percent": -1.09,
+        "winrate": 65.33,
+        "balance": 14124
       },
       {
         "date": "2025-02-26",
-        "net_profit": 2553,
-        "profit_percent": 7.15,
-        "winrate": 76.58,
-        "balance": 38259
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 945,
-        "profit_percent": 2.47,
-        "winrate": 70.96,
-        "balance": 39204
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 220,
-        "profit_percent": 0.56,
-        "winrate": 68.67,
-        "balance": 39424
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -781,
-        "profit_percent": -1.98,
-        "winrate": 65.62,
-        "balance": 38643
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -522,
-        "profit_percent": -1.35,
-        "winrate": 66.38,
-        "balance": 38121
+        "net_profit": 143,
+        "profit_percent": 1.01,
+        "winrate": 66.47,
+        "balance": 14267
       }
     ]
   },
@@ -5808,214 +5808,214 @@ export const botsData = [
     "name": "bot_028",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 357,
+        "profit_percent": 3.1,
+        "winrate": 67.51,
+        "balance": 11873
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 273,
+        "profit_percent": 2.3,
+        "winrate": 65.57,
+        "balance": 12146
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 424,
+        "profit_percent": 3.49,
+        "winrate": 66.85,
+        "balance": 12570
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 652,
+        "profit_percent": 5.19,
+        "winrate": 70.65,
+        "balance": 13222
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -498,
-        "profit_percent": -5.04,
-        "winrate": 61.95,
-        "balance": 9382
+        "net_profit": 629,
+        "profit_percent": 4.76,
+        "winrate": 69.4,
+        "balance": 13851
       },
       {
         "date": "2025-02-02",
-        "net_profit": -521,
-        "profit_percent": -5.55,
-        "winrate": 61.34,
-        "balance": 8861
+        "net_profit": 791,
+        "profit_percent": 5.71,
+        "winrate": 72.56,
+        "balance": 14642
       },
       {
         "date": "2025-02-03",
-        "net_profit": -298,
-        "profit_percent": -3.36,
-        "winrate": 63.97,
-        "balance": 8563
+        "net_profit": 754,
+        "profit_percent": 5.15,
+        "winrate": 70.79,
+        "balance": 15396
       },
       {
         "date": "2025-02-04",
-        "net_profit": -438,
-        "profit_percent": -5.12,
-        "winrate": 61.86,
-        "balance": 8125
+        "net_profit": 737,
+        "profit_percent": 4.79,
+        "winrate": 69.19,
+        "balance": 16133
       },
       {
         "date": "2025-02-05",
-        "net_profit": -617,
-        "profit_percent": -7.59,
-        "winrate": 58.89,
-        "balance": 7508
+        "net_profit": 862,
+        "profit_percent": 5.34,
+        "winrate": 70.89,
+        "balance": 16995
       },
       {
         "date": "2025-02-06",
-        "net_profit": -86,
-        "profit_percent": -1.14,
-        "winrate": 66.63,
-        "balance": 7422
+        "net_profit": 571,
+        "profit_percent": 3.36,
+        "winrate": 67.69,
+        "balance": 17566
       },
       {
         "date": "2025-02-07",
-        "net_profit": -779,
-        "profit_percent": -10.5,
-        "winrate": 58,
-        "balance": 6643
+        "net_profit": 546,
+        "profit_percent": 3.11,
+        "winrate": 68.72,
+        "balance": 18112
       },
       {
         "date": "2025-02-08",
-        "net_profit": -605,
-        "profit_percent": -9.1,
-        "winrate": 58,
-        "balance": 6038
+        "net_profit": 596,
+        "profit_percent": 3.29,
+        "winrate": 69.97,
+        "balance": 18708
       },
       {
         "date": "2025-02-09",
-        "net_profit": -427,
-        "profit_percent": -7.08,
-        "winrate": 59.5,
-        "balance": 5611
+        "net_profit": 445,
+        "profit_percent": 2.38,
+        "winrate": 66.62,
+        "balance": 19153
       },
       {
         "date": "2025-02-10",
-        "net_profit": -18,
-        "profit_percent": -0.32,
-        "winrate": 67.62,
-        "balance": 5593
+        "net_profit": 655,
+        "profit_percent": 3.42,
+        "winrate": 69.06,
+        "balance": 19808
       },
       {
         "date": "2025-02-11",
-        "net_profit": -452,
-        "profit_percent": -8.09,
-        "winrate": 58.29,
-        "balance": 5141
+        "net_profit": 644,
+        "profit_percent": 3.25,
+        "winrate": 67.98,
+        "balance": 20452
       },
       {
         "date": "2025-02-12",
-        "net_profit": -360,
-        "profit_percent": -7.0,
-        "winrate": 59.6,
-        "balance": 4781
+        "net_profit": 198,
+        "profit_percent": 0.97,
+        "winrate": 67.47,
+        "balance": 20650
       },
       {
         "date": "2025-02-13",
-        "net_profit": -17,
-        "profit_percent": -0.36,
-        "winrate": 67.57,
-        "balance": 4764
+        "net_profit": 836,
+        "profit_percent": 4.05,
+        "winrate": 71.84,
+        "balance": 21486
       },
       {
         "date": "2025-02-14",
-        "net_profit": -202,
-        "profit_percent": -4.23,
-        "winrate": 62.92,
-        "balance": 4562
+        "net_profit": 808,
+        "profit_percent": 3.76,
+        "winrate": 70.64,
+        "balance": 22294
       },
       {
         "date": "2025-02-15",
-        "net_profit": -385,
-        "profit_percent": -8.45,
-        "winrate": 58,
-        "balance": 4177
+        "net_profit": 669,
+        "profit_percent": 3.0,
+        "winrate": 69.96,
+        "balance": 22963
       },
       {
         "date": "2025-02-16",
-        "net_profit": -42,
-        "profit_percent": -1.0,
-        "winrate": 66.8,
-        "balance": 4135
+        "net_profit": 762,
+        "profit_percent": 3.32,
+        "winrate": 71.91,
+        "balance": 23725
       },
       {
         "date": "2025-02-17",
-        "net_profit": -57,
-        "profit_percent": -1.37,
-        "winrate": 66.36,
-        "balance": 4078
+        "net_profit": 254,
+        "profit_percent": 1.07,
+        "winrate": 68.4,
+        "balance": 23979
       },
       {
         "date": "2025-02-18",
-        "net_profit": -394,
-        "profit_percent": -9.65,
-        "winrate": 58,
-        "balance": 3684
+        "net_profit": 870,
+        "profit_percent": 3.63,
+        "winrate": 70.75,
+        "balance": 24849
       },
       {
         "date": "2025-02-19",
-        "net_profit": -145,
-        "profit_percent": -3.93,
-        "winrate": 63.28,
-        "balance": 3539
+        "net_profit": 504,
+        "profit_percent": 2.03,
+        "winrate": 69.92,
+        "balance": 25353
       },
       {
         "date": "2025-02-20",
-        "net_profit": -1,
-        "profit_percent": -0.02,
-        "winrate": 67.98,
-        "balance": 3538
+        "net_profit": 520,
+        "profit_percent": 2.05,
+        "winrate": 70.31,
+        "balance": 25873
       },
       {
         "date": "2025-02-21",
-        "net_profit": 20,
-        "profit_percent": 0.56,
-        "winrate": 68.67,
-        "balance": 3558
+        "net_profit": 693,
+        "profit_percent": 2.68,
+        "winrate": 70.23,
+        "balance": 26566
       },
       {
         "date": "2025-02-22",
-        "net_profit": 1,
-        "profit_percent": 0.02,
-        "winrate": 68.02,
-        "balance": 3559
+        "net_profit": 499,
+        "profit_percent": 1.88,
+        "winrate": 67.22,
+        "balance": 27065
       },
       {
         "date": "2025-02-23",
-        "net_profit": -16,
-        "profit_percent": -0.44,
-        "winrate": 67.47,
-        "balance": 3543
+        "net_profit": 287,
+        "profit_percent": 1.06,
+        "winrate": 64.93,
+        "balance": 27352
       },
       {
         "date": "2025-02-24",
-        "net_profit": -227,
-        "profit_percent": -6.41,
-        "winrate": 60.31,
-        "balance": 3316
+        "net_profit": 38,
+        "profit_percent": 0.14,
+        "winrate": 65.25,
+        "balance": 27390
       },
       {
         "date": "2025-02-25",
-        "net_profit": -33,
-        "profit_percent": -1.01,
-        "winrate": 66.79,
-        "balance": 3283
+        "net_profit": 271,
+        "profit_percent": 0.99,
+        "winrate": 65.17,
+        "balance": 27661
       },
       {
         "date": "2025-02-26",
-        "net_profit": -270,
-        "profit_percent": -8.23,
-        "winrate": 58.12,
-        "balance": 3013
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": -130,
-        "profit_percent": -4.33,
-        "winrate": 62.8,
-        "balance": 2883
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": -174,
-        "profit_percent": -6.03,
-        "winrate": 60.76,
-        "balance": 2709
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": -49,
-        "profit_percent": -1.81,
-        "winrate": 65.83,
-        "balance": 2660
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -157,
-        "profit_percent": -5.9,
-        "winrate": 60.92,
-        "balance": 2503
+        "net_profit": 846,
+        "profit_percent": 3.06,
+        "winrate": 67.98,
+        "balance": 28507
       }
     ]
   },
@@ -6023,214 +6023,214 @@ export const botsData = [
     "name": "bot_029",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 32,
+        "profit_percent": 0.24,
+        "winrate": 64.88,
+        "balance": 13390
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 138,
+        "profit_percent": 1.03,
+        "winrate": 67.71,
+        "balance": 13528
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 145,
+        "profit_percent": 1.07,
+        "winrate": 67.8,
+        "balance": 13673
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 268,
+        "profit_percent": 1.96,
+        "winrate": 68.8,
+        "balance": 13941
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": 809,
-        "profit_percent": 6.37,
-        "winrate": 75.64,
-        "balance": 13502
+        "net_profit": 283,
+        "profit_percent": 2.03,
+        "winrate": 70.22,
+        "balance": 14224
       },
       {
         "date": "2025-02-02",
-        "net_profit": 1134,
-        "profit_percent": 8.4,
-        "winrate": 78,
-        "balance": 14636
+        "net_profit": 339,
+        "profit_percent": 2.38,
+        "winrate": 70.32,
+        "balance": 14563
       },
       {
         "date": "2025-02-03",
-        "net_profit": 446,
-        "profit_percent": 3.05,
-        "winrate": 71.66,
-        "balance": 15082
+        "net_profit": 160,
+        "profit_percent": 1.1,
+        "winrate": 66.62,
+        "balance": 14723
       },
       {
         "date": "2025-02-04",
-        "net_profit": 225,
-        "profit_percent": 1.49,
-        "winrate": 69.79,
-        "balance": 15307
+        "net_profit": 177,
+        "profit_percent": 1.2,
+        "winrate": 65.96,
+        "balance": 14900
       },
       {
         "date": "2025-02-05",
-        "net_profit": 3,
-        "profit_percent": 0.02,
-        "winrate": 68.02,
-        "balance": 15310
+        "net_profit": 80,
+        "profit_percent": 0.54,
+        "winrate": 63.61,
+        "balance": 14980
       },
       {
         "date": "2025-02-06",
-        "net_profit": -153,
-        "profit_percent": -1.0,
-        "winrate": 66.8,
-        "balance": 15157
+        "net_profit": -49,
+        "profit_percent": -0.33,
+        "winrate": 62.98,
+        "balance": 14931
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1038,
-        "profit_percent": 6.85,
-        "winrate": 76.22,
-        "balance": 16195
+        "net_profit": -66,
+        "profit_percent": -0.44,
+        "winrate": 63.93,
+        "balance": 14865
       },
       {
         "date": "2025-02-08",
-        "net_profit": 965,
-        "profit_percent": 5.96,
-        "winrate": 75.15,
-        "balance": 17160
+        "net_profit": 4,
+        "profit_percent": 0.03,
+        "winrate": 65.98,
+        "balance": 14869
       },
       {
         "date": "2025-02-09",
-        "net_profit": -381,
-        "profit_percent": -2.22,
-        "winrate": 65.34,
-        "balance": 16779
+        "net_profit": -129,
+        "profit_percent": -0.87,
+        "winrate": 63.02,
+        "balance": 14740
       },
       {
         "date": "2025-02-10",
-        "net_profit": 406,
-        "profit_percent": 2.42,
-        "winrate": 70.9,
-        "balance": 17185
+        "net_profit": -224,
+        "profit_percent": -1.52,
+        "winrate": 61.61,
+        "balance": 14516
       },
       {
         "date": "2025-02-11",
-        "net_profit": -48,
-        "profit_percent": -0.28,
-        "winrate": 67.66,
-        "balance": 17137
+        "net_profit": -125,
+        "profit_percent": -0.86,
+        "winrate": 64.37,
+        "balance": 14391
       },
       {
         "date": "2025-02-12",
-        "net_profit": 946,
-        "profit_percent": 5.52,
-        "winrate": 74.62,
-        "balance": 18083
+        "net_profit": -343,
+        "profit_percent": -2.38,
+        "winrate": 60.45,
+        "balance": 14048
       },
       {
         "date": "2025-02-13",
-        "net_profit": 580,
-        "profit_percent": 3.21,
-        "winrate": 71.85,
-        "balance": 18663
+        "net_profit": -155,
+        "profit_percent": -1.1,
+        "winrate": 63.34,
+        "balance": 13893
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1023,
-        "profit_percent": 5.48,
-        "winrate": 74.58,
-        "balance": 19686
+        "net_profit": -258,
+        "profit_percent": -1.86,
+        "winrate": 60.76,
+        "balance": 13635
       },
       {
         "date": "2025-02-15",
-        "net_profit": 984,
-        "profit_percent": 5.0,
-        "winrate": 74.0,
-        "balance": 20670
+        "net_profit": -331,
+        "profit_percent": -2.43,
+        "winrate": 58.79,
+        "balance": 13304
       },
       {
         "date": "2025-02-16",
-        "net_profit": 1007,
-        "profit_percent": 4.87,
-        "winrate": 73.84,
-        "balance": 21677
+        "net_profit": -287,
+        "profit_percent": -2.16,
+        "winrate": 61.88,
+        "balance": 13017
       },
       {
         "date": "2025-02-17",
-        "net_profit": 2057,
-        "profit_percent": 9.49,
-        "winrate": 78,
-        "balance": 23734
+        "net_profit": -156,
+        "profit_percent": -1.2,
+        "winrate": 65.18,
+        "balance": 12861
       },
       {
         "date": "2025-02-18",
-        "net_profit": -152,
-        "profit_percent": -0.64,
-        "winrate": 67.23,
-        "balance": 23582
+        "net_profit": -188,
+        "profit_percent": -1.46,
+        "winrate": 64.11,
+        "balance": 12673
       },
       {
         "date": "2025-02-19",
-        "net_profit": 2078,
-        "profit_percent": 8.81,
-        "winrate": 78,
-        "balance": 25660
+        "net_profit": -124,
+        "profit_percent": -0.98,
+        "winrate": 65.12,
+        "balance": 12549
       },
       {
         "date": "2025-02-20",
-        "net_profit": 2381,
-        "profit_percent": 9.28,
-        "winrate": 78,
-        "balance": 28041
+        "net_profit": -246,
+        "profit_percent": -1.96,
+        "winrate": 61.87,
+        "balance": 12303
       },
       {
         "date": "2025-02-21",
-        "net_profit": -614,
-        "profit_percent": -2.19,
-        "winrate": 65.37,
-        "balance": 27427
+        "net_profit": -359,
+        "profit_percent": -2.92,
+        "winrate": 60.51,
+        "balance": 11944
       },
       {
         "date": "2025-02-22",
-        "net_profit": 562,
-        "profit_percent": 2.05,
-        "winrate": 70.46,
-        "balance": 27989
+        "net_profit": -276,
+        "profit_percent": -2.31,
+        "winrate": 63.13,
+        "balance": 11668
       },
       {
         "date": "2025-02-23",
-        "net_profit": 148,
-        "profit_percent": 0.53,
-        "winrate": 68.64,
-        "balance": 28137
+        "net_profit": -237,
+        "profit_percent": -2.03,
+        "winrate": 62.33,
+        "balance": 11431
       },
       {
         "date": "2025-02-24",
-        "net_profit": -70,
-        "profit_percent": -0.25,
-        "winrate": 67.7,
-        "balance": 28067
+        "net_profit": -202,
+        "profit_percent": -1.77,
+        "winrate": 64.43,
+        "balance": 11229
       },
       {
         "date": "2025-02-25",
-        "net_profit": 365,
-        "profit_percent": 1.3,
-        "winrate": 69.56,
-        "balance": 28432
+        "net_profit": -282,
+        "profit_percent": -2.51,
+        "winrate": 62.76,
+        "balance": 10947
       },
       {
         "date": "2025-02-26",
-        "net_profit": 2476,
-        "profit_percent": 8.71,
-        "winrate": 78,
-        "balance": 30908
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 2881,
-        "profit_percent": 9.32,
-        "winrate": 78,
-        "balance": 33789
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 2348,
-        "profit_percent": 6.95,
-        "winrate": 76.34,
-        "balance": 36137
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 1933,
-        "profit_percent": 5.35,
-        "winrate": 74.42,
-        "balance": 38070
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -780,
-        "profit_percent": -2.05,
-        "winrate": 65.54,
-        "balance": 37290
+        "net_profit": -136,
+        "profit_percent": -1.24,
+        "winrate": 65.4,
+        "balance": 10811
       }
     ]
   },
@@ -6238,214 +6238,214 @@ export const botsData = [
     "name": "bot_030",
     "daily_stats": [
       {
+        "date": "2025-01-28",
+        "net_profit": 286,
+        "profit_percent": 3.4,
+        "winrate": 70.36,
+        "balance": 8698
+      },
+      {
+        "date": "2025-01-29",
+        "net_profit": 357,
+        "profit_percent": 4.11,
+        "winrate": 71.77,
+        "balance": 9055
+      },
+      {
+        "date": "2025-01-30",
+        "net_profit": 418,
+        "profit_percent": 4.62,
+        "winrate": 70.94,
+        "balance": 9473
+      },
+      {
+        "date": "2025-01-31",
+        "net_profit": 336,
+        "profit_percent": 3.55,
+        "winrate": 69.72,
+        "balance": 9809
+      },
+      {
         "date": "2025-02-01",
-        "net_profit": -256,
-        "profit_percent": -1.77,
-        "winrate": 65.88,
-        "balance": 14235
+        "net_profit": 445,
+        "profit_percent": 4.54,
+        "winrate": 72.2,
+        "balance": 10254
       },
       {
         "date": "2025-02-02",
-        "net_profit": 1075,
-        "profit_percent": 7.55,
-        "winrate": 77.06,
-        "balance": 15310
+        "net_profit": 627,
+        "profit_percent": 6.11,
+        "winrate": 74.88,
+        "balance": 10881
       },
       {
         "date": "2025-02-03",
-        "net_profit": 554,
-        "profit_percent": 3.62,
-        "winrate": 72.34,
-        "balance": 15864
+        "net_profit": 487,
+        "profit_percent": 4.48,
+        "winrate": 73.79,
+        "balance": 11368
       },
       {
         "date": "2025-02-04",
-        "net_profit": 278,
-        "profit_percent": 1.75,
-        "winrate": 70.1,
-        "balance": 16142
+        "net_profit": 588,
+        "profit_percent": 5.17,
+        "winrate": 72.08,
+        "balance": 11956
       },
       {
         "date": "2025-02-05",
-        "net_profit": 1267,
-        "profit_percent": 7.85,
-        "winrate": 77.42,
-        "balance": 17409
+        "net_profit": 424,
+        "profit_percent": 3.55,
+        "winrate": 68.57,
+        "balance": 12380
       },
       {
         "date": "2025-02-06",
-        "net_profit": 1266,
-        "profit_percent": 7.27,
-        "winrate": 76.72,
-        "balance": 18675
+        "net_profit": 415,
+        "profit_percent": 3.35,
+        "winrate": 68.63,
+        "balance": 12795
       },
       {
         "date": "2025-02-07",
-        "net_profit": 1582,
-        "profit_percent": 8.47,
-        "winrate": 78,
-        "balance": 20257
+        "net_profit": 280,
+        "profit_percent": 2.19,
+        "winrate": 66.3,
+        "balance": 13075
       },
       {
         "date": "2025-02-08",
-        "net_profit": 1373,
-        "profit_percent": 6.78,
-        "winrate": 76.14,
-        "balance": 21630
+        "net_profit": 311,
+        "profit_percent": 2.38,
+        "winrate": 67.54,
+        "balance": 13386
       },
       {
         "date": "2025-02-09",
-        "net_profit": 84,
-        "profit_percent": 0.39,
-        "winrate": 68.47,
-        "balance": 21714
+        "net_profit": 147,
+        "profit_percent": 1.1,
+        "winrate": 66.29,
+        "balance": 13533
       },
       {
         "date": "2025-02-10",
-        "net_profit": -476,
-        "profit_percent": -2.19,
-        "winrate": 65.37,
-        "balance": 21238
+        "net_profit": 273,
+        "profit_percent": 2.02,
+        "winrate": 66.22,
+        "balance": 13806
       },
       {
         "date": "2025-02-11",
-        "net_profit": 1489,
-        "profit_percent": 7.01,
-        "winrate": 76.41,
-        "balance": 22727
+        "net_profit": 104,
+        "profit_percent": 0.75,
+        "winrate": 66.69,
+        "balance": 13910
       },
       {
         "date": "2025-02-12",
-        "net_profit": 1350,
-        "profit_percent": 5.94,
-        "winrate": 75.13,
-        "balance": 24077
+        "net_profit": 97,
+        "profit_percent": 0.7,
+        "winrate": 67.73,
+        "balance": 14007
       },
       {
         "date": "2025-02-13",
-        "net_profit": 1784,
-        "profit_percent": 7.41,
-        "winrate": 76.89,
-        "balance": 25861
+        "net_profit": 339,
+        "profit_percent": 2.42,
+        "winrate": 69.65,
+        "balance": 14346
       },
       {
         "date": "2025-02-14",
-        "net_profit": 1609,
-        "profit_percent": 6.22,
-        "winrate": 75.46,
-        "balance": 27470
+        "net_profit": 186,
+        "profit_percent": 1.3,
+        "winrate": 67.72,
+        "balance": 14532
       },
       {
         "date": "2025-02-15",
-        "net_profit": 1580,
-        "profit_percent": 5.75,
-        "winrate": 74.9,
-        "balance": 29050
+        "net_profit": -6,
+        "profit_percent": -0.04,
+        "winrate": 63.99,
+        "balance": 14526
       },
       {
         "date": "2025-02-16",
-        "net_profit": 1281,
-        "profit_percent": 4.41,
-        "winrate": 73.29,
-        "balance": 30331
+        "net_profit": 126,
+        "profit_percent": 0.87,
+        "winrate": 67.32,
+        "balance": 14652
       },
       {
         "date": "2025-02-17",
-        "net_profit": -224,
-        "profit_percent": -0.74,
-        "winrate": 67.11,
-        "balance": 30107
+        "net_profit": 119,
+        "profit_percent": 0.81,
+        "winrate": 65.14,
+        "balance": 14771
       },
       {
         "date": "2025-02-18",
-        "net_profit": -3,
-        "profit_percent": -0.01,
-        "winrate": 67.99,
-        "balance": 30104
+        "net_profit": 120,
+        "profit_percent": 0.81,
+        "winrate": 65.87,
+        "balance": 14891
       },
       {
         "date": "2025-02-19",
-        "net_profit": 762,
-        "profit_percent": 2.53,
-        "winrate": 71.04,
-        "balance": 30866
+        "net_profit": 16,
+        "profit_percent": 0.11,
+        "winrate": 64.15,
+        "balance": 14907
       },
       {
         "date": "2025-02-20",
-        "net_profit": 2287,
-        "profit_percent": 7.41,
-        "winrate": 76.89,
-        "balance": 33153
+        "net_profit": 131,
+        "profit_percent": 0.88,
+        "winrate": 65.86,
+        "balance": 15038
       },
       {
         "date": "2025-02-21",
-        "net_profit": 259,
-        "profit_percent": 0.78,
-        "winrate": 68.94,
-        "balance": 33412
+        "net_profit": 77,
+        "profit_percent": 0.51,
+        "winrate": 66.72,
+        "balance": 15115
       },
       {
         "date": "2025-02-22",
-        "net_profit": 1948,
-        "profit_percent": 5.83,
-        "winrate": 75.0,
-        "balance": 35360
+        "net_profit": 20,
+        "profit_percent": 0.13,
+        "winrate": 67.19,
+        "balance": 15135
       },
       {
         "date": "2025-02-23",
-        "net_profit": 1499,
-        "profit_percent": 4.24,
-        "winrate": 73.09,
-        "balance": 36859
+        "net_profit": -56,
+        "profit_percent": -0.37,
+        "winrate": 65.85,
+        "balance": 15079
       },
       {
         "date": "2025-02-24",
-        "net_profit": 988,
-        "profit_percent": 2.68,
-        "winrate": 71.22,
-        "balance": 37847
+        "net_profit": -48,
+        "profit_percent": -0.32,
+        "winrate": 65.52,
+        "balance": 15031
       },
       {
         "date": "2025-02-25",
-        "net_profit": 1468,
-        "profit_percent": 3.88,
-        "winrate": 72.66,
-        "balance": 39315
+        "net_profit": -213,
+        "profit_percent": -1.42,
+        "winrate": 62.81,
+        "balance": 14818
       },
       {
         "date": "2025-02-26",
-        "net_profit": 2493,
-        "profit_percent": 6.34,
-        "winrate": 75.61,
-        "balance": 41808
-      },
-      {
-        "date": "2025-02-27",
-        "net_profit": 3219,
-        "profit_percent": 7.7,
-        "winrate": 77.24,
-        "balance": 45027
-      },
-      {
-        "date": "2025-02-28",
-        "net_profit": 419,
-        "profit_percent": 0.93,
-        "winrate": 69.12,
-        "balance": 45446
-      },
-      {
-        "date": "2025-03-01",
-        "net_profit": 2031,
-        "profit_percent": 4.47,
-        "winrate": 73.36,
-        "balance": 47477
-      },
-      {
-        "date": "2025-03-02",
-        "net_profit": -90,
-        "profit_percent": -0.19,
-        "winrate": 67.77,
-        "balance": 47387
+        "net_profit": -30,
+        "profit_percent": -0.2,
+        "winrate": 65.5,
+        "balance": 14788
       }
     ]
   }

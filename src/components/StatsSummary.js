@@ -10,13 +10,26 @@ function StatsSummary({
   bottomPerformanceValue,
   profitableBots,
   totalBots,
-  profitableBotsChange
+  profitableBotsChange,
+  todayNetProfitAmount
 }) {
+  const formatCurrency = (value) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(value);
+  };
+
   return (
     <div className="stats-summary">
       <div className="summary-item">
         <div className="summary-value" style={{ color: todayNetProfit >= 0 ? COLORS.status.success : COLORS.status.danger }}>
-          {todayNetProfit >= 0 ? '+' : ''}{todayNetProfit}%
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+            <span>{todayNetProfit >= 0 ? '+' : ''}{todayNetProfit}%</span>
+            <span>({todayNetProfitAmount >= 0 ? '+' : ''}{formatCurrency(todayNetProfitAmount)})</span>
+          </div>
           <span className="change-indicator" style={{ color: todayNetProfitChange >= 0 ? COLORS.status.success : COLORS.status.danger }}>
             ({todayNetProfitChange >= 0 ? '↑' : '↓'}{Math.abs(todayNetProfitChange)}% vs yesterday)
           </span>

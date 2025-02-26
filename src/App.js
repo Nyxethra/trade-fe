@@ -10,7 +10,7 @@ import { botsData } from './mocks/botsData';
 
 function App() {
   const [hoveredBot, setHoveredBot] = useState(null);
-  const [selectedDate, setSelectedDate] = useState(new Date('2025-02-23')); // Use the latest date from mock data
+  const [selectedDate, setSelectedDate] = useState(new Date('2025-02-09')); // dùng ngày mặc định để review.
 
   // Format date for display
   const formattedDate = selectedDate.toLocaleDateString('vi-VN', {
@@ -59,6 +59,9 @@ function App() {
   const previousNetProfit = previousDateStats.reduce((sum, bot) => sum + bot.performance, 0).toFixed(1);
   const netProfitChange = (selectedNetProfit - previousNetProfit).toFixed(1);
 
+  // Calculate today's net profit amount
+  const todayNetProfitAmount = selectedDateStats.reduce((sum, bot) => sum + bot.net_profit, 0);
+
   // Find top and bottom performers
   const topPerformer = selectedDateStats.reduce((best, current) =>
     current.performance > best.performance ? current : best
@@ -75,25 +78,6 @@ function App() {
 
   // Calculate trading volume (total balance)
   const tradingVolume = selectedDateStats.reduce((sum, bot) => sum + bot.balance, 0);
-  const formattedVolume = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0
-  }).format(tradingVolume);
-
-  // Determine market sentiment
-  const marketSentiment = profitableBotsToday > botsData.length / 2 ? "Bullish" : "Bearish";
-
-  // Get alerts based on performance
-  const alerts = [
-    topPerformer.performance > 5 ?
-      `🔥 ${topPerformer.name} just reached a profit of ${topPerformer.performance}% in the last 24 hours` : null,
-    profitableBotsToday > profitableBotsYesterday ?
-      `📈 Number of profitable bots increased by ${profitableBotsChange} compared to yesterday` : null,
-    bottomPerformer.performance < -5 ?
-      `⚠️ ${bottomPerformer.name} is down ${Math.abs(bottomPerformer.performance)}% in the last 24 hours` : null
-  ].filter(Boolean);
 
   // Latest data for bot cards
   const latestBotsData = selectedDateStats.map(bot => ({
@@ -106,17 +90,38 @@ function App() {
   }));
 
   // Prepare weekly data
-  const weeklyData = Array.from({ length: 7 }).map((_, index) => ({
-    date: botsData[0].daily_stats[index].date,
-    bots: botsData.map(bot => ({
-      name: bot.name,
-      performance: bot.daily_stats[index].profit_percent
-    }))
-  }));
+  const weeklyData = Array.from({ length: 7 }).map((_, index) => {
+    const currentDate = new Date(selectedDate);
+    currentDate.setDate(selectedDate.getDate() - index);
+    
+    return {
+      date: currentDate.toISOString().split('T')[0],
+      bots: botsData.map(bot => {
+        const dailyStat = bot.daily_stats.find(stat => 
+          new Date(stat.date).toISOString().split('T')[0] === currentDate.toISOString().split('T')[0]
+        );
+        return {
+          name: bot.name,
+          performance: dailyStat ? dailyStat.profit_percent : 0
+        };
+      })
+    };
+  });
 
   // Calculate weekly metrics for each bot
   const weeklyBotsData = botsData.map(bot => {
-    const weeklyStats = bot.daily_stats.slice(0, 7);
+    const weeklyStats = weeklyData.map(day => {
+      const botStat = day.bots.find(b => b.name === bot.name);
+      const dailyStat = bot.daily_stats.find(stat => 
+        new Date(stat.date).toISOString().split('T')[0] === day.date
+      );
+      return {
+        profit_percent: botStat ? botStat.performance : 0,
+        winrate: dailyStat ? dailyStat.winrate : 0,
+        net_profit: dailyStat ? dailyStat.net_profit : 0,
+        balance: dailyStat ? dailyStat.balance : 0
+      };
+    });
 
     // Calculate average daily performance
     const avgPerformance = (weeklyStats.reduce((sum, day) => sum + day.profit_percent, 0) / 7).toFixed(1);
@@ -136,10 +141,7 @@ function App() {
   });
 
   // Calculate weekly summary metrics
-  const weeklyNetProfit = botsData.reduce((sum, bot) => {
-    const weeklyStats = bot.daily_stats.slice(0, 7);
-    return sum + weeklyStats.reduce((daySum, day) => daySum + day.net_profit, 0);
-  }, 0);
+  const weeklyNetProfit = weeklyBotsData.reduce((sum, bot) => sum + bot.netProfit, 0);
 
   const topWeeklyPerformer = weeklyBotsData.reduce((best, current) =>
     parseFloat(current.performance) > parseFloat(best.performance) ? current : best
@@ -173,7 +175,10 @@ function App() {
         );
         return {
           name: bot.name,
-          performance: dailyStat ? dailyStat.profit_percent : 0
+          performance: dailyStat ? dailyStat.profit_percent : 0,
+          net_profit: dailyStat ? dailyStat.net_profit : 0,
+          balance: dailyStat ? dailyStat.balance : 0,
+          winrate: dailyStat ? dailyStat.winrate : 0
         };
       })
     };
@@ -181,31 +186,35 @@ function App() {
 
   // Calculate monthly metrics for each bot
   const monthlyBotsData = botsData.map(bot => {
-    const monthlyStats = bot.daily_stats.slice(0, 30);
-    if (!monthlyStats.length) return null;
+    const monthlyStats = monthlyData.map(day => {
+      const botStat = day.bots.find(b => b.name === bot.name);
+      return {
+        profit_percent: botStat ? botStat.performance : 0,
+        winrate: botStat ? botStat.winrate : 0,
+        net_profit: botStat ? botStat.net_profit : 0,
+        balance: botStat ? botStat.balance : 0
+      };
+    });
 
     // Calculate average daily performance for the month
-    const avgPerformance = (monthlyStats.reduce((sum, day) => sum + (day ? day.profit_percent : 0), 0) / monthlyStats.length).toFixed(1);
-    const avgWinRate = (monthlyStats.reduce((sum, day) => sum + (day ? day.winrate : 0), 0) / monthlyStats.length).toFixed(2);
-    const totalNetProfit = monthlyStats.reduce((sum, day) => sum + (day ? day.net_profit : 0), 0);
-    const avgBalance = Math.round(monthlyStats.reduce((sum, day) => sum + (day ? day.balance : 0), 0) / monthlyStats.length);
+    const avgPerformance = (monthlyStats.reduce((sum, day) => sum + day.profit_percent, 0) / monthlyStats.length).toFixed(1);
+    const avgWinRate = (monthlyStats.reduce((sum, day) => sum + day.winrate, 0) / monthlyStats.length).toFixed(2);
+    const totalNetProfit = monthlyStats.reduce((sum, day) => sum + day.net_profit, 0);
+    const avgBalance = Math.round(monthlyStats.reduce((sum, day) => sum + day.balance, 0) / monthlyStats.length);
 
     return {
       id: bot.name,
       name: bot.name,
       performance: avgPerformance,
       winRate: `${avgWinRate}%`,
-      balance: monthlyStats[0].balance,
-      avgBalance: avgBalance,
+      balance: monthlyStats[0].balance,  // Balance hiện tại (ngày mới nhất)
+      avgBalance: avgBalance,            // Balance trung bình của 30 ngày
       netProfit: totalNetProfit
     };
-  }).filter(Boolean);
+  });
 
   // Calculate monthly summary metrics
-  const monthlyNetProfit = botsData.reduce((sum, bot) => {
-    const monthlyStats = bot.daily_stats.slice(0, 30);
-    return sum + monthlyStats.reduce((daySum, day) => daySum + day.net_profit, 0);
-  }, 0);
+  const monthlyNetProfit = monthlyBotsData.reduce((sum, bot) => sum + bot.netProfit, 0);
 
   const topMonthlyPerformer = monthlyBotsData.reduce((best, current) =>
     parseFloat(current.performance) > parseFloat(best.performance) ? current : best
@@ -247,7 +256,7 @@ function App() {
                         className="date-nav-btn"
                         onClick={() => changeDate(-1)}
                         title="Previous day"
-                        disabled={selectedDateIndex === botsData[0].daily_stats.length - 1}
+                        disabled={selectedDate <= new Date('2025-01-28')}
                       >
                         ←
                       </button>
@@ -256,14 +265,14 @@ function App() {
                         value={selectedDate.toISOString().split('T')[0]}
                         onChange={(e) => setSelectedDate(new Date(e.target.value))}
                         className="date-picker"
-                        min={new Date(botsData[0].daily_stats[botsData[0].daily_stats.length - 1].date).toISOString().split('T')[0]}
-                        max={new Date(botsData[0].daily_stats[0].date).toISOString().split('T')[0]}
+                        min="2025-01-28"
+                        max="2025-02-26"
                       />
                       <button
                         className="date-nav-btn"
                         onClick={() => changeDate(1)}
                         title="Next day"
-                        disabled={selectedDateIndex === 0}
+                        disabled={selectedDate >= new Date('2025-02-26')}
                       >
                         →
                       </button>
@@ -281,6 +290,7 @@ function App() {
                 profitableBots={profitableBotsToday}
                 totalBots={botsData.length}
                 profitableBotsChange={profitableBotsChange}
+                todayNetProfitAmount={todayNetProfitAmount}
               />
             </div>
             <div className="dashboard-container">

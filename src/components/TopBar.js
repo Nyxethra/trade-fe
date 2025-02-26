@@ -13,7 +13,7 @@ function TopBar() {
       <div className="topbar-right">
         <div className="nav-links">
           <a href="#" className="nav-link active">
-            <span className="nav-icon">��</span>
+            <span className="nav-icon">📊 </span>
             Dashboard
           </a>
           <a href="#" className="nav-link">

@@ -730,11 +730,11 @@
 
 /* Quick Overview Styles */
 .quick-overview {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
   margin-bottom: 32px;
-  width: 100%;
+  width: auto;
 }
 
 .overview-section {
@@ -850,7 +850,7 @@
 
 @media screen and (max-width: 2000px) {
   .quick-overview {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 
