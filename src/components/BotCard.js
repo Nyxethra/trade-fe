@@ -1,9 +1,18 @@
 import React from 'react';
 import { BOT_COLORS, COLORS } from '../constants/colors';
 
-function BotCard({ bot, index, isHighlighted, type = 'daily' }) {
+function BotCard({ bot, index, isHighlighted, type = 'daily', selectedDate = null }) {
   // Get color for bot
   const botColor = BOT_COLORS[index % BOT_COLORS.length];
+  
+  const getPerformanceLabel = () => {
+    if (type === 'daily' && !selectedDate) {
+      return '7-day Performance 📈';
+    } else if (type === 'daily' && selectedDate) {
+      return `Daily Performance • ${new Date(selectedDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
+    }
+    return type === 'weekly' ? 'Weekly Performance' : 'Monthly Performance';
+  };
   
   return (
     <div 
@@ -18,6 +27,10 @@ function BotCard({ bot, index, isHighlighted, type = 'daily' }) {
         </div>
       </div>
       <div className="bot-stats">
+        <div className="stat-item">
+          <span className="label">{getPerformanceLabel()}</span>
+          <span className="value">{bot.performance > 0 ? '+' : ''}{bot.performance}%</span>
+        </div>
         <div className="stat-item">
           <span className="label">Win Rate</span>
           <span className="value">{bot.winRate}</span>

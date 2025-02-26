@@ -299,6 +299,7 @@ function App() {
                   botsData={latestBotsData}
                   onBotHover={setHoveredBot}
                   type="daily"
+                  weeklyData={weeklyData}
                 />
               </div>
               <div className="bots-list">
@@ -309,6 +310,7 @@ function App() {
                     index={index}
                     isHighlighted={hoveredBot === bot.name}
                     type="daily"
+                    selectedDate={selectedDate.toISOString().split('T')[0]}
                   />
                 ))}
               </div>
