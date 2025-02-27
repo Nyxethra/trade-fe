@@ -81,17 +81,31 @@ function App() {
   , [selectedDateStats]);
 
   // Find top and bottom performers
-  const topPerformer = useMemo(() => 
-    selectedDateStats.reduce((best, current) =>
-    current.performance > best.performance ? current : best
-    )
-  , [selectedDateStats]);
+  const { topBot, bottomBot } = useMemo(() => {
+    let maxPerf = -Infinity;
+    let minPerf = Infinity;
+    let topBot = null;
+    let bottomBot = null;
 
-  const bottomPerformer = useMemo(() => 
-    selectedDateStats.reduce((worst, current) =>
-    current.performance < worst.performance ? current : worst
-    )
-  , [selectedDateStats]);
+    selectedDateStats.forEach(bot => {
+      if (bot.performance > maxPerf) {
+        maxPerf = bot.performance;
+        topBot = {
+          name: bot.name,
+          performance: bot.performance
+        };
+      }
+      if (bot.performance < minPerf) {
+        minPerf = bot.performance;
+        bottomBot = {
+          name: bot.name,
+          performance: bot.performance
+        };
+      }
+    });
+
+    return { topBot, bottomBot };
+  }, [selectedDateStats]);
 
   // Calculate profitable bots
   const profitableBotsToday = useMemo(() => 
@@ -105,6 +119,8 @@ function App() {
   const profitableBotsChange = useMemo(() => 
     profitableBotsToday - profitableBotsYesterday
   , [profitableBotsToday, profitableBotsYesterday]);
+
+  const totalBots = useMemo(() => selectedDateStats.length, [selectedDateStats]);
 
   // Calculate trading volume (total balance)
   const tradingVolume = useMemo(() => 
@@ -464,14 +480,14 @@ function App() {
               <StatsSummary
                 todayNetProfit={selectedNetProfit}
                 todayNetProfitChange={netProfitChange}
-                topPerformer={topPerformer.name}
-                topPerformanceValue={topPerformer.performance.toFixed(1)}
-                bottomPerformer={bottomPerformer.name}
-                bottomPerformanceValue={bottomPerformer.performance.toFixed(1)}
-                profitableBots={profitableBotsToday}
-                totalBots={botsData.length}
-                profitableBotsChange={profitableBotsChange}
                 todayNetProfitAmount={todayNetProfitAmount}
+                topPerformer={topBot?.name}
+                topPerformanceValue={topBot?.performance?.toFixed(2)}
+                bottomPerformer={bottomBot?.name}
+                bottomPerformanceValue={bottomBot?.performance?.toFixed(2)}
+                profitableBots={profitableBotsToday}
+                totalBots={totalBots}
+                profitableBotsChange={profitableBotsChange}
               />
             </div>
             <div className="dashboard-container">
