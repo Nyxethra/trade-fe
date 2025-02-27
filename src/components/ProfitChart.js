@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -33,7 +33,7 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
     }
   }, [weeklyData, selectedDayIndex, setSelectedDayData]);
 
-  const getDailyChartData = () => {
+  const getDailyChartData = useCallback(() => {
     if (selectedDayData) {
       // Show detailed bot performance for selected day
       return {
@@ -105,9 +105,9 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
         }]
       };
     }
-  };
+  }, [selectedDayData, weeklyData]);
 
-  const getWeeklyChartData = () => {
+  const getWeeklyChartData = useCallback(() => {
     if (selectedWeekData) {
       // Show detailed bot performance for selected week
       return {
@@ -179,9 +179,9 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
         }]
       };
     }
-  };
+  }, [selectedWeekData, fourWeekData]);
 
-  const getMonthlyChartData = () => {
+  const getMonthlyChartData = useCallback(() => {
     if (selectedMonthData) {
       // Show detailed bot performance for selected month
       return {
@@ -259,9 +259,70 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
         }]
       };
     }
-  };
+  }, [selectedMonthData, twelveMonthData]);
 
-  const options = {
+  const handleChartClick = useCallback((event, elements) => {
+    if (type === 'daily') {
+      if (!selectedDayData && elements && elements.length > 0) {
+        // When clicking on a day in 7-day view
+        const dayIndex = weeklyData.length - 1 - elements[0].index;
+        setSelectedDayIndex(dayIndex);
+      } else if (selectedDayData && elements && elements.length > 0) {
+        // When clicking on a bot in detailed view
+        const botName = selectedDayData.bots[elements[0].index].name;
+        onBotHover(botName);
+        
+        const botCard = document.getElementById(`bot-${type}-${botName}`);
+        if (botCard) {
+          botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      } else {
+        // When clicking outside bars, reset to 7-day view
+        setSelectedDayIndex(null);
+        setSelectedDayData(null);
+        onBotHover(null);
+      }
+    } else if (type === 'weekly') {
+      if (!selectedWeekData && elements && elements.length > 0) {
+        // When clicking on a week in 4-week view
+        const weekIndex = fourWeekData.length - 1 - elements[0].index;
+        setSelectedWeekData(fourWeekData[weekIndex]);
+      } else if (selectedWeekData && elements && elements.length > 0) {
+        // When clicking on a bot in weekly detail view
+        const botName = selectedWeekData.botPerformances[elements[0].index].name;
+        onBotHover(botName);
+        
+        const botCard = document.getElementById(`bot-${type}-${botName}`);
+        if (botCard) {
+          botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      } else {
+        // When clicking outside bars, reset to 4-week view
+        setSelectedWeekData(null);
+        onBotHover(null);
+      }
+    } else if (type === 'monthly') {
+      if (!selectedMonthData && elements && elements.length > 0) {
+        // When clicking on a month in 12-month view
+        const monthIndex = twelveMonthData.length - 1 - elements[0].index;
+        onMonthSelect(twelveMonthData[monthIndex]);
+      } else if (selectedMonthData && elements && elements.length > 0) {
+        // When clicking on a bot in monthly detail view
+        const botName = selectedMonthData.botPerformances[elements[0].index].name;
+        onBotHover(botName);
+        
+        const botCard = document.getElementById(`bot-${type}-${botName}`);
+        if (botCard) {
+          botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      } else {
+        // When clicking outside bars in detail view
+        onBotHover(null);
+      }
+    }
+  }, [type, selectedDayData, selectedWeekData, selectedMonthData, weeklyData, fourWeekData, twelveMonthData, onBotHover, setSelectedDayData, setSelectedDayIndex, setSelectedWeekData, onMonthSelect]);
+
+  const options = useMemo(() => ({
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
@@ -393,66 +454,7 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
         }
       }
     },
-    onClick: (event, elements) => {
-      if (type === 'daily') {
-        if (!selectedDayData && elements && elements.length > 0) {
-          // When clicking on a day in 7-day view
-          const dayIndex = weeklyData.length - 1 - elements[0].index;
-          setSelectedDayIndex(dayIndex);
-        } else if (selectedDayData && elements && elements.length > 0) {
-          // When clicking on a bot in detailed view
-          const botName = selectedDayData.bots[elements[0].index].name;
-          onBotHover(botName);
-          
-          const botCard = document.getElementById(`bot-${type}-${botName}`);
-          if (botCard) {
-            botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-          }
-        } else {
-          // When clicking outside bars, reset to 7-day view
-          setSelectedDayIndex(null);
-          setSelectedDayData(null);
-          onBotHover(null);
-        }
-      } else if (type === 'weekly') {
-        if (!selectedWeekData && elements && elements.length > 0) {
-          // When clicking on a week in 4-week view
-          const weekIndex = fourWeekData.length - 1 - elements[0].index;
-          setSelectedWeekData(fourWeekData[weekIndex]);
-        } else if (selectedWeekData && elements && elements.length > 0) {
-          // When clicking on a bot in weekly detail view
-          const botName = selectedWeekData.botPerformances[elements[0].index].name;
-          onBotHover(botName);
-          
-          const botCard = document.getElementById(`bot-${type}-${botName}`);
-          if (botCard) {
-            botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-          }
-        } else {
-          // When clicking outside bars, reset to 4-week view
-          setSelectedWeekData(null);
-          onBotHover(null);
-        }
-      } else if (type === 'monthly') {
-        if (!selectedMonthData && elements && elements.length > 0) {
-          // When clicking on a month in 12-month view
-          const monthIndex = twelveMonthData.length - 1 - elements[0].index;
-          onMonthSelect(twelveMonthData[monthIndex]);
-        } else if (selectedMonthData && elements && elements.length > 0) {
-          // When clicking on a bot in monthly detail view
-          const botName = selectedMonthData.botPerformances[elements[0].index].name;
-        onBotHover(botName);
-        
-        const botCard = document.getElementById(`bot-${type}-${botName}`);
-        if (botCard) {
-          botCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-      } else {
-          // When clicking outside bars in detail view
-        onBotHover(null);
-        }
-      }
-    },
+    onClick: handleChartClick,
     scales: {
       x: {
         grid: {
@@ -509,12 +511,13 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
       mode: 'index',
       intersect: false
     }
-  };
+  }), [handleChartClick]);
 
-  const data = type === 'daily' ? getDailyChartData() : 
-               type === 'weekly' ? getWeeklyChartData() : 
-               type === 'monthly' ? getMonthlyChartData() : 
-               getMonthlyChartData();
+  const data = useMemo(() => {
+    if (type === 'daily') return getDailyChartData();
+    if (type === 'weekly') return getWeeklyChartData();
+    return getMonthlyChartData();
+  }, [type, getDailyChartData, getWeeklyChartData, getMonthlyChartData]);
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>

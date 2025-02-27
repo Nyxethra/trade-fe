@@ -5,13 +5,13 @@ function BotCard({ bot, index, isHighlighted, type = 'daily', selectedDate = nul
   // Get color for bot
   const botColor = BOT_COLORS[index % BOT_COLORS.length];
   
-  const getPerformanceLabel = () => {
+  const getProfitLabel = () => {
     if (type === 'daily' && !selectedDate) {
-      return '7-day Performance 📈';
+      return '7-day Profit 📈';
     } else if (type === 'daily' && selectedDate) {
-      return `Daily Performance • ${new Date(selectedDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
+      return `Daily Profit • ${new Date(selectedDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
     }
-    return type === 'weekly' ? 'Weekly Performance' : 'Monthly Performance';
+    return type === 'weekly' ? 'Weekly Profit' : 'Monthly Profit';
   };
   
   return (
@@ -22,21 +22,20 @@ function BotCard({ bot, index, isHighlighted, type = 'daily', selectedDate = nul
     >
       <div className="bot-header">
         <h3>{bot.name}</h3>
-        <div className="profit">
-          {bot.performance > 0 ? '+' : ''}{bot.performance}%
-        </div>
       </div>
       <div className="bot-stats">
         <div className="stat-item">
-          <span className="label">{getPerformanceLabel()}</span>
-          <span className="value">{bot.performance > 0 ? '+' : ''}{bot.performance}%</span>
+          <span className="label">{getProfitLabel()}</span>
+          <span className="value" style={{ color: bot.performance >= 0 ? COLORS.status.success : COLORS.status.danger }}>
+            {bot.performance > 0 ? '+' : ''}{bot.performance}%
+          </span>
         </div>
         <div className="stat-item">
           <span className="label">Win Rate</span>
           <span className="value">{bot.winRate}</span>
         </div>
         <div className="stat-item">
-          <span className="label">Balance</span>
+          <span className="label">Current Balance</span>
           <span className="value">${bot.balance.toLocaleString()}</span>
         </div>
         <div className="stat-item">

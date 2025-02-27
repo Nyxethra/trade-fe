@@ -53,7 +53,7 @@ function WeeklyStatsSummary({
         <div className="summary-value">
           {profitableBots}/{totalBots}
         </div>
-        <div className="summary-label">AVG PROFITABLE BOTS/DAY</div>
+        <div className="summary-label">PROFITABLE BOTS</div>
       </div>
     </div>
   );
