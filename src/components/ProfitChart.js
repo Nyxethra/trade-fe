@@ -23,17 +23,15 @@ ChartJS.register(
   ChartDataLabels
 );
 
-function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWeekData, twelveMonthData, selectedMonthData, onMonthSelect }) {
-  const [selectedDayData, setSelectedDayData] = useState(null);
+function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWeekData, twelveMonthData, selectedMonthData, onMonthSelect, selectedDayData, setSelectedDayData, selectedWeekData, setSelectedWeekData }) {
   const [selectedDayIndex, setSelectedDayIndex] = useState(null);
-  const [selectedWeekData, setSelectedWeekData] = useState(null);
 
   // Update selectedDayData when weeklyData or selectedDayIndex changes
   React.useEffect(() => {
     if (selectedDayIndex !== null) {
       setSelectedDayData(weeklyData[selectedDayIndex]);
     }
-  }, [weeklyData, selectedDayIndex]);
+  }, [weeklyData, selectedDayIndex, setSelectedDayData]);
 
   const getDailyChartData = () => {
     if (selectedDayData) {
@@ -305,19 +303,19 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
             let value = dataPoint.raw;
 
             if (type === 'daily') {
-              const dayData = weeklyData[weeklyData.length - 1 - dataPoint.dataIndex];
-              title = new Date(dayData.date).toLocaleDateString('en-US', { 
+              const dayData = weeklyData?.[weeklyData.length - 1 - dataPoint.dataIndex];
+              title = dayData ? new Date(dayData.date).toLocaleDateString('en-US', { 
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
-              });
+              }) : 'Daily overview';
             } else if (type === 'weekly') {
-              const weekData = fourWeekData[fourWeekData.length - 1 - dataPoint.dataIndex];
-              title = `Week ${weekData.weekIndex + 1}`;
+              const weekData = fourWeekData?.[fourWeekData.length - 1 - dataPoint.dataIndex];
+              title = weekData ? `Week ${weekData.weekIndex + 1}` : 'Weekly overview';
             } else if (type === 'monthly') {
-              const monthData = twelveMonthData[twelveMonthData.length - 1 - dataPoint.dataIndex];
-              title = monthData.monthLabel;
+              const monthData = twelveMonthData?.[twelveMonthData.length - 1 - dataPoint.dataIndex];
+              title = monthData ? monthData.monthLabel : 'Monthly overview';
             }
 
             tooltipEl.innerHTML = `
@@ -337,15 +335,20 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
             // Detail view tooltips (bot performance)
             let bot;
             if (type === 'daily' && selectedDayData) {
-              bot = selectedDayData.bots[dataPoint.dataIndex];
+              bot = selectedDayData.bots?.[dataPoint.dataIndex];
             } else if (type === 'weekly' && selectedWeekData) {
-              bot = selectedWeekData.botPerformances[dataPoint.dataIndex];
+              bot = selectedWeekData.botPerformances?.[dataPoint.dataIndex];
             } else if (type === 'monthly' && selectedMonthData) {
-              bot = selectedMonthData.botPerformances[dataPoint.dataIndex];
+              bot = selectedMonthData.botPerformances?.[dataPoint.dataIndex];
             }
 
             if (bot) {
-              const botColor = BOT_COLORS[dataPoint.dataIndex % BOT_COLORS.length];
+          const botColor = BOT_COLORS[dataPoint.dataIndex % BOT_COLORS.length];
+              const winRate = bot.winRate || 'N/A';
+              const balance = typeof bot.balance === 'number' ? bot.balance.toLocaleString() : 'N/A';
+              const netProfit = typeof bot.netProfit === 'number' ? Math.abs(bot.netProfit).toLocaleString() : 'N/A';
+              const profitSign = typeof bot.netProfit === 'number' && bot.netProfit >= 0 ? '+' : '-';
+          
           tooltipEl.innerHTML = `
             <div style="font-family: Inter, sans-serif; min-width: 150px;">
               <div style="color: ${botColor}; font-size: 12px; margin-bottom: 4px;">
@@ -357,16 +360,16 @@ function ProfitChart({ botsData, onBotHover, type = 'daily', weeklyData, fourWee
               <div style="color: ${COLORS.text.primary}; font-size: 13px;">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
                   <span style="color: ${COLORS.text.secondary};">Win Rate</span>
-                  <span>${bot.winRate}</span>
+                      <span>${winRate}</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
                   <span style="color: ${COLORS.text.secondary};">Balance</span>
-                      <span>$${bot.balance?.toLocaleString()}</span>
+                      <span>$${balance}</span>
                 </div>
                 <div style="display: flex; justify-content: space-between;">
                   <span style="color: ${COLORS.text.secondary};">Net Profit</span>
-                  <span style="color: ${bot.netProfit >= 0 ? COLORS.status.success : COLORS.status.danger}">
-                    ${bot.netProfit >= 0 ? '+' : '-'}$${Math.abs(bot.netProfit).toLocaleString()}
+                      <span style="color: ${typeof bot.netProfit === 'number' && bot.netProfit >= 0 ? COLORS.status.success : COLORS.status.danger}">
+                        ${profitSign}$${netProfit}
                   </span>
                 </div>
               </div>

@@ -12,6 +12,8 @@ function App() {
   const [hoveredBot, setHoveredBot] = useState(null);
   const [selectedDate, setSelectedDate] = useState(new Date('2025-02-09')); // dùng ngày mặc định để review.
   const [selectedMonthData, setSelectedMonthData] = useState(null);
+  const [selectedDayData, setSelectedDayData] = useState(null);
+  const [selectedWeekData, setSelectedWeekData] = useState(null);
 
   // Format date for display
   const formattedDate = selectedDate.toLocaleDateString('vi-VN', {
@@ -102,8 +104,12 @@ function App() {
           new Date(stat.date).toISOString().split('T')[0] === currentDate.toISOString().split('T')[0]
         );
         return {
+          id: bot.name,
           name: bot.name,
-          performance: dailyStat ? dailyStat.profit_percent : 0
+          performance: dailyStat ? dailyStat.profit_percent : 0,
+          winRate: dailyStat ? `${dailyStat.winrate}%` : 'N/A',
+          balance: dailyStat ? dailyStat.balance : 0,
+          netProfit: dailyStat ? dailyStat.net_profit : 0
         };
       })
     };
@@ -435,10 +441,12 @@ function App() {
                   onBotHover={setHoveredBot}
                   type="daily"
                   weeklyData={weeklyData}
+                  selectedDayData={selectedDayData}
+                  setSelectedDayData={setSelectedDayData}
                 />
               </div>
               <div className="bots-list">
-                {latestBotsData.map((bot, index) => (
+                {(selectedDayData ? selectedDayData.bots : latestBotsData).map((bot, index) => (
                   <BotCard
                     key={bot.id}
                     bot={bot}
@@ -507,10 +515,12 @@ function App() {
                   type="weekly"
                   fourWeekData={fourWeekData}
                   weeklyData={weeklyData}
+                  selectedWeekData={selectedWeekData}
+                  setSelectedWeekData={setSelectedWeekData}
                 />
               </div>
               <div className="bots-list">
-                {weeklyBotsData.map((bot, index) => (
+                {(selectedWeekData ? selectedWeekData.botPerformances : weeklyBotsData).map((bot, index) => (
                   <BotCard
                     key={bot.id}
                     bot={bot}
@@ -552,25 +562,25 @@ function App() {
               <WeeklyStatsSummary
                 weeklyNetProfit={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((sum, bot) => sum + bot.netProfit, 0) : 
-                  twelveMonthData[0].botPerformances.reduce((sum, bot) => sum + bot.netProfit, 0)}
+                  monthlyNetProfit}
                 totalProfitPercent={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((sum, bot) => sum + parseFloat(bot.performance), 0).toFixed(2) : 
-                  twelveMonthData[0].botPerformances.reduce((sum, bot) => sum + parseFloat(bot.performance), 0).toFixed(2)}
+                  monthlyTotalProfitPercent}
                 topPerformer={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).name :
-                  twelveMonthData[0].botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).name}
+                  topMonthlyPerformer.name}
                 topPerformanceValue={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).performance :
-                  twelveMonthData[0].botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).performance}
+                  topMonthlyPerformer.performance}
                 bottomPerformer={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).name :
-                  twelveMonthData[0].botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).name}
+                  bottomMonthlyPerformer.name}
                 bottomPerformanceValue={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).performance :
-                  twelveMonthData[0].botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).performance}
+                  bottomMonthlyPerformer.performance}
                 profitableBots={selectedMonthData ? 
                   selectedMonthData.botPerformances.filter(bot => bot.performance > 0).length :
-                  twelveMonthData[0].botPerformances.filter(bot => bot.performance > 0).length}
+                  avgProfitableBotsPerDayMonthly}
                 totalBots={botsData.length}
               />
             </div>
@@ -586,7 +596,7 @@ function App() {
                 />
               </div>
               <div className="bots-list">
-                {(selectedMonthData ? selectedMonthData.botPerformances : twelveMonthData[0].botPerformances).map((bot, index) => (
+                {(selectedMonthData ? selectedMonthData.botPerformances : monthlyBotsData).map((bot, index) => (
                   <BotCard
                     key={bot.id}
                     bot={bot}
