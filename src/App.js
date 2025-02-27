@@ -528,7 +528,7 @@ function App() {
                 <h1>Monthly Profit Analysis</h1>
                 <div className="subtitle-with-controls">
                   <div className="subtitle">
-                    {selectedMonthData ? 'Monthly Detail View' : '12 Months Overview'} •
+                    {selectedMonthData ? 'Monthly Detail View' : 'Current Month'} •
                     <div className="date-controls">
                       {selectedMonthData && (
                         <button
@@ -542,7 +542,7 @@ function App() {
                       <span>
                         {selectedMonthData 
                           ? `${new Date(selectedMonthData.monthStart).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`
-                          : `Last 12 months`
+                          : `${new Date(twelveMonthData[0].monthStart).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`
                         }
                       </span>
                     </div>
@@ -550,23 +550,27 @@ function App() {
                 </div>
               </div>
               <WeeklyStatsSummary
-                weeklyNetProfit={selectedMonthData ? selectedMonthData.botPerformances.reduce((sum, bot) => sum + bot.netProfit, 0) : monthlyNetProfit}
-                totalProfitPercent={selectedMonthData ? selectedMonthData.botPerformances.reduce((sum, bot) => sum + parseFloat(bot.performance), 0).toFixed(2) : monthlyTotalProfitPercent}
+                weeklyNetProfit={selectedMonthData ? 
+                  selectedMonthData.botPerformances.reduce((sum, bot) => sum + bot.netProfit, 0) : 
+                  twelveMonthData[0].botPerformances.reduce((sum, bot) => sum + bot.netProfit, 0)}
+                totalProfitPercent={selectedMonthData ? 
+                  selectedMonthData.botPerformances.reduce((sum, bot) => sum + parseFloat(bot.performance), 0).toFixed(2) : 
+                  twelveMonthData[0].botPerformances.reduce((sum, bot) => sum + parseFloat(bot.performance), 0).toFixed(2)}
                 topPerformer={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).name :
-                  topMonthlyPerformer.name}
+                  twelveMonthData[0].botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).name}
                 topPerformanceValue={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).performance :
-                  topMonthlyPerformer.performance}
+                  twelveMonthData[0].botPerformances.reduce((best, current) => parseFloat(current.performance) > parseFloat(best.performance) ? current : best).performance}
                 bottomPerformer={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).name :
-                  bottomMonthlyPerformer.name}
+                  twelveMonthData[0].botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).name}
                 bottomPerformanceValue={selectedMonthData ? 
                   selectedMonthData.botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).performance :
-                  bottomMonthlyPerformer.performance}
+                  twelveMonthData[0].botPerformances.reduce((worst, current) => parseFloat(current.performance) < parseFloat(worst.performance) ? current : worst).performance}
                 profitableBots={selectedMonthData ? 
                   selectedMonthData.botPerformances.filter(bot => bot.performance > 0).length :
-                  avgProfitableBotsPerDayMonthly}
+                  twelveMonthData[0].botPerformances.filter(bot => bot.performance > 0).length}
                 totalBots={botsData.length}
               />
             </div>
@@ -582,7 +586,7 @@ function App() {
                 />
               </div>
               <div className="bots-list">
-                {(selectedMonthData ? selectedMonthData.botPerformances : monthlyBotsData).map((bot, index) => (
+                {(selectedMonthData ? selectedMonthData.botPerformances : twelveMonthData[0].botPerformances).map((bot, index) => (
                   <BotCard
                     key={bot.id}
                     bot={bot}
